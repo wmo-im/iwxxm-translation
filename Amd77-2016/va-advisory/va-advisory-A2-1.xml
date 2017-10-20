@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- A volcanic ash advisory.  Original VA Advisory from ICAO Annex 3 Amd 77 Example A2-1:
-
+<!--
 FVFE01 RJTD 230130
 VA ADVISORY
 
@@ -27,7 +26,6 @@ FCST VA CLD +18 HR:         23/1900Z NO VA EXP
 RMK:                        LATEST REP FM KVERT (0120Z) INDICATES ERUPTION HAS CEASED.
                             TWO DISPERSING VA CLD ARE EVIDENT ON SATELLITE IMAGERY
 NXT ADVISORY:               20080923/0730Z
-
 -->
 <iwxxm:VolcanicAshAdvisory xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2"
   xmlns:iwxxm="http://icao.int/iwxxm/2.1" xmlns:metce="http://def.wmo.int/metce/2013"

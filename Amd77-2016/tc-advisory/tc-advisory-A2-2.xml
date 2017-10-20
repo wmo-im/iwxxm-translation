@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- A tropical cyclone advisory.  Original TC Advisory from ICAO Annex 3 Amd 77 Example A2-2:
-
+<!--
 TC ADVISORY
 
 DTG:                        20040925/1600Z
@@ -21,7 +20,6 @@ FCST PSN +24 HR:            26/1600Z N2912 W07530
 FCST MAX WIND +24 HR:       20MPS
 RMK:                        NIL
 NXT MSG:                    20040925/2000Z
-
 -->
 <iwxxm:TropicalCycloneAdvisory xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2"
   xmlns:iwxxm="http://icao.int/iwxxm/2.1" xmlns:metce="http://def.wmo.int/metce/2013"

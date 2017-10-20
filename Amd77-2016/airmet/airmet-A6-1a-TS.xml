@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-    An example of a AIRMET.  Original AIRMET from ICAO Annex 3 Example A6-1:
-    
-    YUDD AIRMET 1 VALID 151520/151800 YUSO – 
+    YUDD AIRMET 1 VALID 151520/151800 YUSO –
     YUDD SHANLON FIR ISOL TS 
-    OBS N OF S50 TOP ABV FL100 STNR WKN -->
+    OBS N OF S50 TOP ABV FL100 STNR WKN
+-->
 <iwxxm:AIRMET xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:iwxxm="http://icao.int/iwxxm/2.1" xmlns:metce="http://def.wmo.int/metce/2013"
     xmlns:aixm="http://www.aixm.aero/schema/5.1.1" 

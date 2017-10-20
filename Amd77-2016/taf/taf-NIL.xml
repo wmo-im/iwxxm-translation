@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    An example of a NIL TAF:
       TAF YUDO 160000Z NIL
 -->
 <iwxxm:TAF xmlns:iwxxm="http://icao.int/iwxxm/2.1" xmlns:xlink="http://www.w3.org/1999/xlink"

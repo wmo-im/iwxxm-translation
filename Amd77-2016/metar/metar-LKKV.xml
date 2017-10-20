@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+METAR LKKV 251200Z 21003MPS VCSH 27/10 Q1010 RETS R11/1/////
+-->
 <iwxxm:METAR xmlns:iwxxm="http://icao.int/iwxxm/2.1"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:gml="http://www.opengis.net/gml/3.2"
