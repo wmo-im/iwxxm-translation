@@ -9,4 +9,16 @@ amendment.  Every XML file should contain an equivalent TAC text as the first li
 
 # Contributing
 Pull requests with additional cases are both welcomed and encouraged.  File names should indicate the unique aspects
-of the message and should contain the relevant TAC in a comment.
+of the message and should contain the corresponding TAC.  The format for TAC and other information is shown below.
+
+```XML
+<!--
+History, provenance, and other information about the file go here.
+This can extend to multiple lines down to the 'TAC:' delimiter below
+
+TAC:
+THE MULTILINE TAC MESSAGE STARTS HERE
+AND CONTINUES HERE UNTIL THE END OF THE XML COMMENT BLOCK
+-->
+<iwxxm:Report />
+```

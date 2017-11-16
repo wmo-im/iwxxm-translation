@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+TAC:
 METAR LKKV 251200Z 21003MPS VCSH 27/10 Q1010 RETS R11/1/////
 -->
 <iwxxm:METAR xmlns:iwxxm="http://icao.int/iwxxm/2.1"

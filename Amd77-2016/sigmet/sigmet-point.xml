@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Example from 1.10.2017, supplied by IBL Soft in October 2017
+
+TAC:
+WSNZ21 NZKL 012125
+NZZC SIGMET 21 VALID 012134/020134 NZKL-
+NZZC NEW ZEALAND FIR SEV TURB OBS AT 2123Z S4123 E17315 FL045 STNR NC=
+-->
+<iwxxm:SIGMET xmlns:iwxxm="http://icao.int/iwxxm/2.0" xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:metce="http://def.wmo.int/metce/2013" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sf="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://icao.int/iwxxm/2.0 http://schemas.wmo.int/iwxxm/2.0/iwxxm.xsd http://www.aixm.aero/schema/5.1.1 http://www.aixm.aero/schema/5.1.1/AIXM_Features.xsd http://def.wmo.int/metce/2013 http://schemas.wmo.int/metce/1.2/metce.xsd http://www.opengis.net/om/2.0 http://schemas.opengis.net/om/2.0/observation.xsd http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd" gml:id="sigmet-NZZC-20171001213400Z" status="NORMAL" translationTime="2017-10-25T11:13:07Z" permissibleUsage="OPERATIONAL" translationCentreName="" translationCentreDesignator="" translatedBulletinID="" translatedBulletinReceptionTime="2017-10-25T11:13:07Z" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <iwxxm:issuingAirTrafficServicesUnit>
+  <aixm:Unit gml:id="uuid.b72e9de8-b964-11e7-806f-6e9b7e00d87a">
+   <aixm:timeSlice>
+    <aixm:UnitTimeSlice gml:id="uuid.b72ea270-b964-11e7-806f-6e9b7e00d87a">
+     <gml:validTime/>
+     <aixm:interpretation>BASELINE</aixm:interpretation>
+     <aixm:name>FIC</aixm:name>
+     <aixm:type>FIC</aixm:type>
+     <aixm:designator>NZZC</aixm:designator>
+    </aixm:UnitTimeSlice>
+   </aixm:timeSlice>
+  </aixm:Unit>
+ </iwxxm:issuingAirTrafficServicesUnit>
+ <iwxxm:originatingMeteorologicalWatchOffice>
+  <aixm:Unit gml:id="uuid.b72eab8a-b964-11e7-806f-6e9b7e00d87a">
+   <aixm:timeSlice>
+    <aixm:UnitTimeSlice gml:id="uuid.b72eaeb4-b964-11e7-806f-6e9b7e00d87a">
+     <gml:validTime/>
+     <aixm:interpretation>BASELINE</aixm:interpretation>
+     <aixm:name>WELLINGTON</aixm:name>
+     <aixm:type>MWO</aixm:type>
+     <aixm:designator>NZKL</aixm:designator>
+    </aixm:UnitTimeSlice>
+   </aixm:timeSlice>
+  </aixm:Unit>
+ </iwxxm:originatingMeteorologicalWatchOffice>
+ <iwxxm:sequenceNumber>21</iwxxm:sequenceNumber>
+ <iwxxm:validPeriod>
+  <gml:TimePeriod gml:id="tp-012134Z-020134Z">
+   <gml:beginPosition>2017-10-01T21:34:00Z</gml:beginPosition>
+   <gml:endPosition>2017-10-02T01:34:00Z</gml:endPosition>
+  </gml:TimePeriod>
+ </iwxxm:validPeriod>
+ <iwxxm:phenomenon xlink:href="http://codes.wmo.int/49-2/SigWxPhenomena/SEV_TURB" xlink:title="Severe turbulence"/>
+ <iwxxm:analysis>
+  <om:OM_Observation gml:id="analysis-20171001213400Z">
+   <om:type xlink:href="http://codes.wmo.int/49-2/observation-type/IWXXM/1.0/SIGMETEvolvingConditionAnalysis" xlink:title="SIGMET Evolving Condition Analysis"/>
+   <om:phenomenonTime>
+    <gml:TimeInstant gml:id="ti-20171001212300Z">
+     <gml:timePosition>2017-10-01T21:23:00Z</gml:timePosition>
+    </gml:TimeInstant>
+   </om:phenomenonTime>
+   <om:resultTime xlink:href="#ti-20171001212300Z"/>
+   <om:validTime xlink:href="#tp-012134Z-020134Z"/>
+   <om:procedure>
+    <metce:Process gml:id="p-49-2-sigmet">
+     <gml:description>WMO No. 49 Volume 2 Meteorological Service for International Air Navigation [C.3.1.]7 SIGMET AND AIRMET INFORMATION, AERODROME WARNINGS AND WIND SHEAR WARNINGS AND ALERTS</gml:description>
+    </metce:Process>
+   </om:procedure>
+   <om:observedProperty xlink:href="http://codes.wmo.int/49-2/SigWxPhenomena/SEV_TURB" xlink:title="Severe turbulence"/>
+   <om:featureOfInterest>
+    <sams:SF_SpatialSamplingFeature gml:id="sampling-surface">
+     <sf:type xlink:href="http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingSurface" xlink:title="SF Sampling Surface"/>
+     <sf:sampledFeature>
+      <aixm:Airspace gml:id="uuid.b72ec21e-b964-11e7-806f-6e9b7e00d87a">
+       <aixm:timeSlice>
+        <aixm:AirspaceTimeSlice gml:id="NZZC-airspace-ts">
+         <gml:validTime/>
+         <aixm:interpretation>BASELINE</aixm:interpretation>
+         <aixm:type>FIR</aixm:type>
+         <aixm:designator>NZZC</aixm:designator>
+         <aixm:name>NEW ZEALAND</aixm:name>
+        </aixm:AirspaceTimeSlice>
+       </aixm:timeSlice>
+      </aixm:Airspace>
+     </sf:sampledFeature>
+     <sams:shape nilReason="withheld"/>
+    </sams:SF_SpatialSamplingFeature>
+   </om:featureOfInterest>
+   <om:result>
+    <iwxxm:EvolvingMeteorologicalCondition gml:id="analysis-OBS" intensityChange="NO_CHANGE" timeIndicator="OBSERVATION">
+     <iwxxm:directionOfMotion uom="deg" xsi:nil="true" nilReason="inapplicable"/>
+     <iwxxm:geometry>
+      <aixm:AirspaceVolume gml:id="analysis-OBS-volume-0">
+       <aixm:upperLimit uom="FL">45</aixm:upperLimit>
+       <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+       <aixm:lowerLimit uom="FL">45</aixm:lowerLimit>
+       <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+       <aixm:horizontalProjection>
+        <aixm:Surface gml:id="analysis-OBS-surface-0" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+         <gml:polygonPatches>
+          <gml:PolygonPatch>
+           <gml:exterior>
+            <gml:Ring>
+             <gml:curveMember>
+              <gml:Curve gml:id="analysis-OBS-position-0">
+               <gml:segments>
+                <gml:CircleByCenterPoint numArc="1">
+                 <gml:pos>-41.38 173.25</gml:pos>
+                 <gml:radius uom="km">0</gml:radius>
+                </gml:CircleByCenterPoint>
+               </gml:segments>
+              </gml:Curve>
+             </gml:curveMember>
+            </gml:Ring>
+           </gml:exterior>
+          </gml:PolygonPatch>
+         </gml:polygonPatches>
+        </aixm:Surface>
+       </aixm:horizontalProjection>
+      </aixm:AirspaceVolume>
+     </iwxxm:geometry>
+     <iwxxm:speedOfMotion uom="[kn_i]">0</iwxxm:speedOfMotion>
+    </iwxxm:EvolvingMeteorologicalCondition>
+   </om:result>
+  </om:OM_Observation>
+ </iwxxm:analysis>
+</iwxxm:SIGMET>
