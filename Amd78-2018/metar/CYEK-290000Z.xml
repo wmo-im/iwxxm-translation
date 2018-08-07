@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:METAR automatedStation="true" gml:id="uuid.1183cc8e-b553-4765-99b4-fd4818eb791c" permissibleUsage="OPERATIONAL" status="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
+  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+  <!--                                                                                      -->
+  <!--TAC:METAR CYEK 290000Z AUTO 29020G28KT M1/4SM +SN VV006 M24/M26 A2962-->
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.4db5eeb2-e6e1-4bf3-9b05-cf9174382376">
+      <gml:timePosition>2018-07-29T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.7bbf6e96-d5ab-4b76-8d18-e1c66150e392">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.10212906-2ede-4d62-ae27-8109f5fe9f20">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>CYEK</aixm:designator>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.4db5eeb2-e6e1-4bf3-9b05-cf9174382376"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.7f5dd0ba-1ab0-48b7-8b77-0c615f3902e4">
+      <!--METAR CYEK 290000Z AUTO 29020G28KT M1/4SM +SN VV006 M24/M26 A2962-->
+      <iwxxm:airTemperature uom="Cel">-24</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-26</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1003.0</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">290</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">20</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">28</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">400</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>BELOW</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/+SN"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:verticalVisibility uom="[ft_i]">600</iwxxm:verticalVisibility>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:METAR>
