@@ -48,7 +48,7 @@
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
               <iwxxm:base uom="[ft_i]">1800</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-12/32" xlink:title="Towering Cumulus (TCU)"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32" xlink:title="Towering Cumulus (TCU)"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
