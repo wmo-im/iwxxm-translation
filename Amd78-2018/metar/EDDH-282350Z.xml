@@ -67,6 +67,17 @@
     <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
       gml:id="uuid.5554b307-06f4-4bfb-9187-377d2989f20a">
       <iwxxm:phenomenonTime nilReason="missing"/>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SN"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.cc12be56-3b3e-414e-a2fb-58b93138f0dc">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">400</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
     </iwxxm:MeteorologicalAerodromeTrendForecast>
   </iwxxm:trendForecast>
 </iwxxm:SPECI>

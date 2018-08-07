@@ -68,6 +68,13 @@
     <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
       gml:id="uuid.a045b966-19ee-45ff-98b3-03725ca837f1">
       <iwxxm:phenomenonTime nilReason="missing"/>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindTrendForecast>
+          <iwxxm:meanWindDirection uom="deg">250</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">15</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">25</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWindTrendForecast>
+      </iwxxm:surfaceWind>
     </iwxxm:MeteorologicalAerodromeTrendForecast>
   </iwxxm:trendForecast>
 </iwxxm:SPECI>

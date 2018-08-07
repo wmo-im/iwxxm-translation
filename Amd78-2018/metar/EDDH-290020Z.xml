@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="false" gml:id="uuid.494195fa-ac38-47fb-9382-533eae575372" permissibleUsage="OPERATIONAL" status="NORMAL"
+<iwxxm:SPECI automatedStation="false" gml:id="uuid.494195fa-ac38-47fb-9382-533eae575372" permissibleUsage="OPERATIONAL" status="CORRECTION"
   translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
   translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
   xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -8,7 +8,7 @@
   <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
   <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
   <!--                                                                                      -->
-  <!--TAC:SPECI EDDH 290020Z VRB02KT 1500 SN FEW003 BKN005 00/M00 Q0996 TEMPO NSW BKN004-->
+  <!--TAC:SPECI EDDH 290020Z COR VRB02KT 1500 SN FEW003 BKN005 00/M00 Q0996 TEMPO NSW BKN004-->
   <iwxxm:issueTime>
     <gml:TimeInstant gml:id="uuid.92767638-879e-47b1-895c-6955ba1ceea5">
       <gml:timePosition>2018-07-29T00:20:00Z</gml:timePosition>
@@ -28,7 +28,7 @@
   <iwxxm:observationTime xlink:href="#uuid.92767638-879e-47b1-895c-6955ba1ceea5"/>
   <iwxxm:observation>
     <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.f6d8765f-bfac-4336-8e88-75852a7d523f">
-      <!--SPECI EDDH 290020Z VRB02KT 1500 SN FEW003 BKN005 00/M00 Q0996 TEMPO NSW BKN004-->
+      <!--SPECI EDDH 290020Z COR VRB02KT 1500 SN FEW003 BKN005 00/M00 Q0996 TEMPO NSW BKN004-->
       <iwxxm:airTemperature uom="Cel">0</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">0</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">996</iwxxm:qnh>
@@ -65,6 +65,17 @@
     <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
       gml:id="uuid.eabc7994-296d-4dba-9a97-3991690a3808">
       <iwxxm:phenomenonTime nilReason="missing"/>
+      <iwxxm:weather nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.97fbf6da-3f4c-4dd3-b734-d207c8fb7877">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">400</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
     </iwxxm:MeteorologicalAerodromeTrendForecast>
   </iwxxm:trendForecast>
 </iwxxm:SPECI>
