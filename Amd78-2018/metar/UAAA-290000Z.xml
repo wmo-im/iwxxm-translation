@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:METAR automatedStation="false" gml:id="uuid.15f053f1-46e4-40ce-94f4-446a02a60374" permissibleUsage="OPERATIONAL" status="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
+  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+  <!--                                                                                      -->
+  <!--TAC:METAR UAAA 290000Z 13003MPS 4500 BR SCT050 BKN100 05/04 Q1016 R88/CLRD65 NOSIG-->
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.b17cf871-2222-4e70-ac76-65fdfd9d937e">
+      <gml:timePosition>2018-07-29T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.c030eacf-d994-4a54-9a0d-21761a9c79d0">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.d7e463e3-3cb1-4e00-95a5-f529431fbaab">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>UAAA</aixm:designator>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.b17cf871-2222-4e70-ac76-65fdfd9d937e"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.9adf7887-b0ab-409c-962d-30712fcc17fb">
+      <!--METAR UAAA 290000Z 13003MPS 4500 BR SCT050 BKN100 05/04 Q1016 R88/CLRD65 NOSIG-->
+      <iwxxm:airTemperature uom="Cel">5</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">4</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1016</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">130</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="m/s">3</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">4500</iwxxm:prevailingVisibility>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/BR"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">10000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:runwayState>
+        <iwxxm:AerodromeRunwayState allRunways="true" cleared="true">
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/65"
+            xlink:title="Friction coefficient: 0.65"/>
+        </iwxxm:AerodromeRunwayState>
+      </iwxxm:runwayState>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast nilReason="http://codes.wmo.int/common/nil/noSignificantChange" xsi:nil="true"/>
+</iwxxm:METAR>

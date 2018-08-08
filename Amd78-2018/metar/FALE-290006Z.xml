@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:SPECI automatedStation="false" gml:id="uuid.cf099472-c088-4486-bb45-cacc947480c8" permissibleUsage="OPERATIONAL" status="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
+  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+  <!--                                                                                      -->
+  <!--TAC:SPECI FALE 290006Z VRB01KT 0200 R24/0275D R06/0650D FG VV002 19/18 Q1010 NOSIG-->
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.223ecec7-937d-4005-ad9e-e56a14488b14">
+      <gml:timePosition>2018-07-29T00:06:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.a721d4c8-44a1-4dfd-a920-7d65a0ef55b1">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.f4c3fe91-fd4b-4217-bd68-09b386ea3c49">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>FALE</aixm:designator>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.223ecec7-937d-4005-ad9e-e56a14488b14"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.c423e19e-491c-4d25-86d2-ac99c7b6113e">
+      <!--SPECI FALE 290006Z VRB01KT 0200 R24/0275D R06/0650D FG VV002 19/18 Q1010 NOSIG-->
+      <iwxxm:airTemperature uom="Cel">19</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">18</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1010</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="true">
+          <iwxxm:meanWindSpeed uom="[kn_i]">1</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">200</iwxxm:prevailingVisibility>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="DOWNWARD">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.09335da8-822c-4d84-bb94-04c58cd04e0e">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.bd29fd2c-a660-4385-bc5d-3205ed7e4b30">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>24</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">275</iwxxm:meanRVR>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="DOWNWARD">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.f367faad-d7da-4c10-8c34-a689b6080bda">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.6a8e6f59-0391-47e7-a361-99c38825be50">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>06</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">650</iwxxm:meanRVR>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/FG"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:verticalVisibility uom="[ft_i]">200</iwxxm:verticalVisibility>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast nilReason="http://codes.wmo.int/common/nil/noSignificantChange" xsi:nil="true"/>
+</iwxxm:SPECI>

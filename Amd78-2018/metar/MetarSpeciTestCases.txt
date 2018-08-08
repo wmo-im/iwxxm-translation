@@ -1,0 +1,38 @@
+BGBW-282350Z.xml - Missing wind, no directional visibility
+BGGH-282350Z.xml - Wind speed exceeds measurement
+BGJN-282350Z.xml - Wind gust exceeds measurement
+BGTL-282356Z.xml - Missing visibility, Clear Sky by automated station
+BGTL-290039Z.xml - Missing temperatures
+BIAR-290000Z.xml - Variable wind direction, missing altimeter
+CWFD-290000Z.xml - Missing visibility, current weather, cloud layer and altimeter
+CYEK-290000Z.xml - Prevailing visibility exceeds measurement
+CYLK-290000Z.xml - Clear sky by observer
+CYUX-290000Z.xml - Missing weather code in Code registry
+EDDH-282350Z.xml - Recent weather, TEMPO trend forecast 
+EDDH-290020Z.xml - No significant weather in TEMPO forecast
+EDDP-290020Z.xml - Trend forecast with BECMG
+EETN-290020Z.xml - NOSIG trend forecast
+EFHK-290020Z.xml - Multiple RVRs and tendencies, No significant cloud
+EHAK-282355Z.xml - Missing cloud types and missing state-of-the-sea
+EHJR-282355Z.xml - Missing visibility, present and recent weather and sky condition, state-of-the-sea
+EKCH-282350Z.xml - CAVOK, Runway conditions
+EKRK-290020Z.xml - Use of R99
+ENFB-280000Z.xml - Missing visibility, sea temperature;sea state provided
+ENFB-282350Z.xml - Missing visibility, sea temperature;wave height provided
+ESMS-290020Z.xml - Use of R88
+FALE-290006Z.xml - Variable wind, runway RVRs
+LCRA-282350Z.xml - Thunderstorm
+LTCN-282350Z.xml - Varible wind direction, trend no signficant weather
+NTAA-290000Z.xml - Wind shear on runway
+NTAA-290015Z.xml - Wind shear on all runways
+UAAA-290000Z.xml - Runway cleared with friction report
+UBBB-290000Z.xml - Runway cleared with missing friction report
+UIBB-290000Z.xml - 
+UKHH-290000Z.xml - 
+URMT-290000Z.xml - Directional minimum visibility, horizontal visibility and surface state of runway, trend forecast
+USRR-290000Z.xml - Heavy snow
+USRR-290020Z.xml - Heavy snow with blowing snow, closed runways.
+USTR-290030Z.xml - Directional minimum visibility in heavy snow showers
+VTUO-290000Z.xml - Use of FM in trend forecast
+WSSS-290000Z.xml - Use of FM in trend forecast
+ZSPD-290000Z.xml - Use of TL in trend forecast

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:SPECI automatedStation="false" gml:id="uuid.9dd46db5-7254-41a2-a37c-50ce53674e50" permissibleUsage="OPERATIONAL" status="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
+  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+  <!--                                                                                      -->
+  <!--TAC:SPECI EETN 290020Z 24006KT 9999 FEW019 M05/M07 Q1015 R08/0///95 NOSIG-->
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.9507c68a-77ce-476b-a5e6-31d3fc14fdc8">
+      <gml:timePosition>2018-07-29T00:20:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.b632549a-66f2-4745-b631-bef89d4cf970">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.99421fe9-8728-417d-966d-7911473c69a1">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>EETN</aixm:designator>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.9507c68a-77ce-476b-a5e6-31d3fc14fdc8"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.a2605b9a-4859-46c9-9dc4-9f67f92e50f5">
+      <!--SPECI EETN 290020Z 24006KT 9999 FEW019 M05/M07 Q1015 R08/0///95 NOSIG-->
+      <iwxxm:airTemperature uom="Cel">-5</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-7</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1015</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">240</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">6</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:base uom="[ft_i]">1900</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:runwayState>
+        <iwxxm:AerodromeRunwayState allRunways="false">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.022a4e24-9bd5-4c74-a197-eadd50b49492">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.94e2eaca-1127-46f9-bd47-003a01a91588">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>08</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/0" xlink:title="Clear and dry"/>
+          <iwxxm:depthOfDeposit nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/95"
+            xlink:title="Braking action good"/>
+        </iwxxm:AerodromeRunwayState>
+      </iwxxm:runwayState>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast nilReason="http://codes.wmo.int/common/nil/noSignificantChange" xsi:nil="true"/>
+</iwxxm:SPECI>

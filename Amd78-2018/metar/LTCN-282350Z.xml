@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:SPECI automatedStation="false" gml:id="uuid.8f335457-b991-423c-980c-335a35f40d7c" permissibleUsage="OPERATIONAL" status="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
+  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+  <!--                                                                                      -->
+  <!--TAC:SPECI LTCN 282350Z 11007KT 080V140 4500 SHRA BR SCT030 BKN090 13/11 Q1009 BECMG TL0050 6000 NSW-->
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.161dd2be-e96b-4985-b7e8-7a5d74de3f2b">
+      <gml:timePosition>2018-07-28T23:50:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.84d7a432-694b-4b2d-9633-4583c84d37c0">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.f9bf2f12-9025-4fb0-a0a5-3520e73785a4">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>LTCN</aixm:designator>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.161dd2be-e96b-4985-b7e8-7a5d74de3f2b"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.ad0f7eff-a976-4830-acde-8006300fadd1">
+      <!--SPECI LTCN 282350Z 11007KT 080V140 4500 SHRA BR SCT030 BKN090 13/11 Q1009 BECMG TL0050 6000 NSW-->
+      <iwxxm:airTemperature uom="Cel">13</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">11</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1009</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="true">
+          <iwxxm:meanWindDirection uom="deg">110</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">7</iwxxm:meanWindSpeed>
+          <iwxxm:extremeClockwiseWindDirection uom="deg">140</iwxxm:extremeClockwiseWindDirection>
+          <iwxxm:extremeCounterClockwiseWindDirection uom="deg">80</iwxxm:extremeCounterClockwiseWindDirection>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">4500</iwxxm:prevailingVisibility>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/SHRA"/>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/BR"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">9000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast>
+    <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
+      gml:id="uuid.805c4b6b-7c6f-426c-977e-8a5a2932ca36">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.fc790c38-ae05-4ad3-bf95-45f45df194ae">
+          <gml:beginPosition indeterminatePosition="before">2018-07-29T00:50:00Z</gml:beginPosition>
+          <gml:endPosition>2018-07-29T00:50:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">6000</iwxxm:prevailingVisibility>
+      <iwxxm:weather nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
+    </iwxxm:MeteorologicalAerodromeTrendForecast>
+  </iwxxm:trendForecast>
+</iwxxm:SPECI>

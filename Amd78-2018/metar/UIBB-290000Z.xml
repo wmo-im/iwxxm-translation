@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:METAR automatedStation="false" gml:id="uuid.235c2ea4-02d3-4287-85a9-79027127c315" permissibleUsage="OPERATIONAL" status="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
+  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+  <!--                                                                                      -->
+  <!--TAC:METAR UIBB 290000Z 25005MPS 220V280 9999 SCT033 M01/M07 Q1018 R30/811050 NOSIG-->
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.2783fcfd-89b6-4417-94d7-e67a2f5a2121">
+      <gml:timePosition>2018-07-29T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.4e19eb41-aa1d-4b0b-805f-9d55a61a8fd7">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.c75fc5fe-0b80-49cc-9a28-3571596b0370">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>UIBB</aixm:designator>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.2783fcfd-89b6-4417-94d7-e67a2f5a2121"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.a00aad45-9fb6-4d58-96d6-50f7616393bc">
+      <!--METAR UIBB 290000Z 25005MPS 220V280 9999 SCT033 M01/M07 Q1018 R30/811050 NOSIG-->
+      <iwxxm:airTemperature uom="Cel">-1</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-7</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1018</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="true">
+          <iwxxm:meanWindDirection uom="deg">250</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="m/s">5</iwxxm:meanWindSpeed>
+          <iwxxm:extremeClockwiseWindDirection uom="deg">280</iwxxm:extremeClockwiseWindDirection>
+          <iwxxm:extremeCounterClockwiseWindDirection uom="deg">220</iwxxm:extremeCounterClockwiseWindDirection>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:base uom="[ft_i]">3300</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:runwayState>
+        <iwxxm:AerodromeRunwayState allRunways="false">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.6d4a89c7-ec64-4996-ac9e-db4d34beb902">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.da19f0cd-3ec2-4dee-9141-1db09adf762b">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>30</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/8" xlink:title="Compacted or rolled snow"/>
+          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1" xlink:title="Less than 10% of runway covered"/>
+          <iwxxm:depthOfDeposit uom="mm">10</iwxxm:depthOfDeposit>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/50"
+            xlink:title="Friction coefficient: 0.50"/>
+        </iwxxm:AerodromeRunwayState>
+      </iwxxm:runwayState>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast nilReason="http://codes.wmo.int/common/nil/noSignificantChange" xsi:nil="true"/>
+</iwxxm:METAR>
