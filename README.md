@@ -1,5 +1,5 @@
 # IWXXM Translation Suite
-A repository of examples of IWXXM and TAC message pairs that are deemed to be equivalent. As a body these examples represent
+A repository of examples of IWXXM and Traditional Alphanumeric Code (TAC) message pairs that are deemed to be equivalent. As a body these examples represent
 a set of IWXXM and TAC messages that a tool may expected to be able to translate exactly,
 other than whitespace and newlines differences.  This repository is provided by the WMO Task Team for Aviation XML (TT-AvXML)
 as a convenience for IWXXM developers, but the contents are not reviewed for correctness by TT-AvXML and has no official status in WMO or ICAO.
