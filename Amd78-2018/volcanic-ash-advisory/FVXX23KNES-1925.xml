@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--This example of Volcanic Ash Advisory TAC to XML translation should not be considered authorative-->
+<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+<!--                                                                                      -->
+<!--TAC: 208 
+FVXX23 KNES 031922
+VA ADVISORY
+DTG: 20180603/1922Z
+
+VAAC: WASHINGTON
+
+VOLCANO: FUEGO 342090
+PSN: N1428 W09052
+
+AREA: GUATEMALA
+
+SUMMIT ELEV: 12346 FT (3763 M)
+
+ADVISORY NR: 2018/425
+
+INFO SOURCE: GOES-EAST. NWP MODELS. HYSPLIT.
+INSIVUMEH. 
+
+ERUPTION DETAILS: NEW EXPLOSIVE VA EM.
+
+OBS VA DTG: 03/1730Z
+
+OBS VA CLD: SFC/FL300 N1459 W09053 - N1448 W09026
+- N1419 W09048 - N1422 W09101 - N1459 W09053 MOV
+NE 15-20KT SFC/FL500 N1449 W09111 - N1448 W09022
+- N1359 W09019 - N1408 W09113 - N1449 W09111 MOV
+E 20-25KT 
+
+FCST VA CLD +6HR: 03/2330Z SFC/FL300 N1735 W08938
+- N1711 W08840 - N1621 W08927 - N1650 W09002 -
+N1735 W08938 SFC/FL500 N1452 W08847 - N1448
+W08725 - N1317 W08722 - N1322 W08905 - N1452
+W08847 
+
+FCST VA CLD +12HR: 04/0530Z SFC/FL300 N1949
+W08750 - N1904 W08632 - N1751 W08737 - N1848
+W08835 - N1949 W08750 SFC/FL500 N1548 W08352 -
+N1249 W08352 - N1310 W08608 - N1508 W08602 -
+N1548 W08352 
+
+FCST VA CLD +18HR: 04/1130Z SFC/FL300 N2135
+W08625 - N2123 W08431 - N2001 W08529 - N2035
+W08701 - N2135 W08625 SFC/FL500 N1751 W08138 -
+N1548 W07914 - N1416 W08158 - N1649 W08307 -
+N1751 W08138 
+
+RMK: EXPLOSIVE VA EM SEEN IN STLT AND RPRTD BY
+MULTIPLE AGENCIES. STLT SIGNATURE SUGGEST VA
+EJECTED TO EL AROUND FL500. NWP MDLS SUGGEST VA
+WILL MOVE NE AND E IN SEPARATE PLUMES. WILL
+UPDATE AS NEEDED. ...LEE
+
+NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
+<iwxxm:VolcanicAshAdvisory gml:id="uuid.0e9064ef-e319-422a-8b81-cd36d15274ef" permissibleUsage="OPERATIONAL"
+  translatedBulletinID="FVXX23KNES031922" translatedBulletinReceptionTime="2018-06-03T19:22:00Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-09T12:10:52Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:metce="http://def.wmo.int/metce/2013"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.3779ef53-4eb5-4eb4-9894-7a43a6f0e663">
+      <gml:timePosition>2018-06-03T19:22:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:issuingVolcanicAshAdvisoryCentre>
+    <aixm:Unit gml:id="uuid.37a54930-c78d-4135-93b2-6c245c5e771c">
+      <aixm:timeSlice>
+        <aixm:UnitTimeSlice gml:id="uuid.c840fec0-b6f5-4817-b696-825a50fa441e">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>WASHINGTON</aixm:name>
+          <aixm:type>OTHER:VAAC</aixm:type>
+        </aixm:UnitTimeSlice>
+      </aixm:timeSlice>
+    </aixm:Unit>
+  </iwxxm:issuingVolcanicAshAdvisoryCentre>
+  <iwxxm:volcano>
+    <metce:EruptingVolcano gml:id="uuid.1916bba9-9cab-455c-94ec-6f23346adf0f">
+      <gml:description>NEW EXPLOSIVE VA EM.</gml:description>
+      <metce:name>FUEGO 342090</metce:name>
+      <metce:position>
+        <gml:Point axisLabels="Latitude Longitude SummitHeight" gml:id="uuid.ce43aa39-15e5-4e1b-8e60-a55a5d29af98"
+          srsName="urn:ogc:def:crs:EPSG::4979" uomLabels="deg deg m">
+          <gml:pos>14.467 -90.867 3763</gml:pos>
+        </gml:Point>
+      </metce:position>
+      <metce:eruptionDate>2018-06-03T19:22:00Z</metce:eruptionDate>
+    </metce:EruptingVolcano>
+  </iwxxm:volcano>
+  <iwxxm:advisoryNumber>2018/425</iwxxm:advisoryNumber>
+  <iwxxm:informationSource>GOES-EAST. NWP MODELS. HYSPLIT. INSIVUMEH.</iwxxm:informationSource>
+  <iwxxm:analysis>
+    <iwxxm:VolcanicAshConditions gml:id="uuid.08ba7be9-3efb-48d7-847f-a0e8fd12b2ef">
+      <iwxxm:phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.e294fa01-2de5-4693-a3fc-8257d99b04ff">
+          <gml:timePosition>2018-06-03T17:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </iwxxm:phenomenonTime>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.6768cfd9-3b08-49f8-84fb-8df780898d03">
+          <iwxxm:ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.9bb9e122-8ab5-40dd-ae94-812a40ec00e7">
+              <aixm:upperLimit uom="FL">300</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface axisLabels="Latitude Longitude" gml:id="uuid.7a63ba7f-52df-4336-8191-69a4b46c4f8b"
+                  srsName="urn:ogc:def:crs:EPSG::4326" uomLabels="deg deg">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">14.984 -90.884 14.800 -90.433 14.317 -90.800 14.367 -91.017 14.984 -90.884</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </iwxxm:ashCloudExtent>
+          <iwxxm:directionOfMotion uom="deg">45</iwxxm:directionOfMotion>
+          <iwxxm:speedOfMotion uom="[kn_i]">15</iwxxm:speedOfMotion>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.efb0cdc7-1039-4f3c-9ba4-8d24bdf9d2fe">
+          <iwxxm:ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.6160c866-81a2-435c-9fcd-e64cab42b5c5">
+              <aixm:upperLimit uom="FL">500</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.05a548fe-d167-400f-8a6d-92546247e801">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">14.817 -91.183 14.800 -90.367 13.984 -90.317 14.133 -91.217 14.817 -91.183</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </iwxxm:ashCloudExtent>
+          <iwxxm:directionOfMotion uom="deg">90</iwxxm:directionOfMotion>
+          <iwxxm:speedOfMotion uom="[kn_i]">20</iwxxm:speedOfMotion>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+    </iwxxm:VolcanicAshConditions>
+  </iwxxm:analysis>
+  <iwxxm:analysis>
+    <iwxxm:VolcanicAshConditions gml:id="uuid.4304c2b8-3ab2-4324-90cc-6da129636310">
+      <iwxxm:phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.b32629e2-98d7-4e55-b683-820641c95220">
+          <gml:timePosition>2018-06-03T23:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </iwxxm:phenomenonTime>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.d322c901-a9f3-4499-a400-b687c07f4443">
+          <iwxxm:ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.478a8501-d759-4bb4-92c7-6d486ad915e5">
+              <aixm:upperLimit uom="FL">300</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.e4367ccb-e090-45eb-8a3c-e7375fc7e0d3">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">17.583 -89.633 17.183 -88.667 16.350 -89.450 16.834 -90.033 17.583 -89.633</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </iwxxm:ashCloudExtent>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.799e9084-d6a2-4919-b7df-9980a9dbab26">
+          <iwxxm:ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.f9a9236f-e767-4bd3-be25-05b9640ae168">
+              <aixm:upperLimit uom="FL">500</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.d1e3c1e4-5fbd-4244-ba8e-4a492d19b1d7">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">14.867 -88.783 14.800 -87.417 13.283 -87.367 13.367 -89.083 14.867 -88.783</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </iwxxm:ashCloudExtent>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+    </iwxxm:VolcanicAshConditions>
+  </iwxxm:analysis>
+  <iwxxm:analysis>
+    <iwxxm:VolcanicAshConditions gml:id="uuid.b0468497-f1e8-4761-92b7-9cdb0addcc1f">
+      <iwxxm:phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.f765fc4b-976f-41fd-947c-689504dbb571">
+          <gml:timePosition>2018-06-04T05:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </iwxxm:phenomenonTime>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.c2e5817e-a37d-4b68-8c71-8b5edec595a9">
+          <iwxxm:ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.e35c880a-1ab0-43c3-8d9c-7526f621a5ff">
+              <aixm:upperLimit uom="FL">300</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.49612105-166e-4442-89ed-5e73159c6174">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">19.817 -87.834 19.067 -86.533 17.850 -87.617 18.800 -88.583 19.817 -87.834</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </iwxxm:ashCloudExtent>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.887ac07b-9179-4a8f-8df0-c59f3fe27713">
+          <iwxxm:ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.d344d3f5-9e7e-4b27-84c8-140d8d610168">
+              <aixm:upperLimit uom="FL">500</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.c8f9f5df-637a-4856-81f1-1e03a2baa903">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">15.800 -83.867 12.817 -83.867 13.167 -86.133 15.133 -86.033 15.800 -83.867</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </iwxxm:ashCloudExtent>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+    </iwxxm:VolcanicAshConditions>
+  </iwxxm:analysis>
+  <iwxxm:analysis>
+    <iwxxm:VolcanicAshConditions gml:id="uuid.7a0ac5b5-f0ac-4942-a6bd-cce12685a47a">
+      <iwxxm:phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.8119ff7a-3a5e-4671-813e-274f923c37c4">
+          <gml:timePosition>2018-06-04T11:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </iwxxm:phenomenonTime>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.368b1b2a-2873-4e9b-a5b6-151783f7942c">
+          <iwxxm:ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.8d073737-4c19-40dd-8b61-84780add11a2">
+              <aixm:upperLimit uom="FL">300</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.873b7554-6fcf-4c5f-b06d-1f1d87f6150e">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">21.583 -86.417 21.383 -84.517 20.017 -85.483 20.583 -87.017 21.583 -86.417</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </iwxxm:ashCloudExtent>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.21f239e9-969c-4c9b-8b36-090eb108d609">
+          <iwxxm:ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.a4e4895a-6904-4cf9-944d-dce18029220c">
+              <aixm:upperLimit uom="FL">500</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.e866ce75-1706-4f02-ba56-a91d99067427">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">17.850 -81.633 15.800 -79.233 14.267 -81.967 16.817 -83.117 17.850 -81.633</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </iwxxm:ashCloudExtent>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+    </iwxxm:VolcanicAshConditions>
+  </iwxxm:analysis>
+  <iwxxm:remarks>EXPLOSIVE VA EM SEEN IN STLT AND RPRTD BY MULTIPLE AGENCIES. STLT SIGNATURE SUGGEST VA EJECTED TO EL AROUND FL500. NWP MDLS SUGGEST VA WILL MOVE NE AND E IN SEPARATE PLUMES. WILL UPDATE AS NEEDED. ...LEE</iwxxm:remarks>
+  <iwxxm:nextAdvisoryTime>
+    <gml:TimeInstant gml:id="uuid.0c68dd70-1bc6-472b-bc1e-9a76369d7e81">
+      <gml:timePosition indeterminatePosition="after">2018-06-04T01:15:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:nextAdvisoryTime>
+</iwxxm:VolcanicAshAdvisory>
