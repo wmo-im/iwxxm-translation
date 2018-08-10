@@ -1,5 +1,5 @@
 # IWXXM Translation Suite
-A repository of examples of IWXXM and TAC message pairs that are deemed to be equivalent. As a body these examples represent
+A repository of examples of IWXXM and Traditional Alphanumeric Code (TAC) message pairs that are deemed to be equivalent. As a body these examples represent
 a set of IWXXM and TAC messages that a tool may expected to be able to translate exactly,
 other than whitespace and newlines differences.  This repository is provided by the WMO Task Team for Aviation XML (TT-AvXML)
 as a convenience for IWXXM developers, but the contents are not reviewed for correctness by TT-AvXML and has no official status in WMO or ICAO.
@@ -22,6 +22,8 @@ AND CONTINUES HERE UNTIL THE END OF THE XML COMMENT BLOCK
 -->
 <iwxxm:Report />
 ```
+The comments in these XML documents are for illustrating how TAC forms (or portions thereof) are translated into IWXXM XML. There should
+be no expectation that such comments will appear in operational IWXXM XML products produced by member states.
 
 # TAC Guidelines
 Only ICAO-compliant TAC messages will be accepted into this repository.  There are many TAC messages being produced that have formatting errors, regional content, and other issues that can not be represented in IWXXM.  The focus of this repository is on standard ICAO data exchanges.

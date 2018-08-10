@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--This example of Volcanic Ash Advisory TAC to XML translation should not be considered authorative-->
+<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+<!--                                                                                      -->
+<!--TAC: 210 
+FVAG01 SABM 301600
+VA ADVISORY
+DTG: 20180530/1600Z
+VAAC: BUENOS AIRES
+VOLCANO: NEVADO DE CHILLAN 357070
+PSN: S3651 W07122
+AREA: CHILE
+SUMMIT ELEV: 10538 FT (3212 M)
+ADVISORY NR: 2018/030
+INFO SOURCE: GOES-E. GFS WINDS. VOLCANO WEB
+CAMERA.
+AVIATION COLOR CODE: NOT GIVEN
+ERUPTION DETAILS: WEAK EMISSIONS OF STEAM AND
+PSBL VA
+OBS VA DTG: 30/1515Z
+OBS VA CLD: VA NOT IDENTIFIABLE FM STLT DATA
+WINDS FL100 310/15KT FL140 290/30KT FL180 280/35KT
+FCST VA CLD +6HR: 30/2130Z NOT AVBL
+FCST VA CLD +12HR: 31/0330Z NOT AVBL
+FCST VA CLD +18HR: 31/0930Z NOT AVBL
+RMK: WEBCAM SHOWS SPORADIC WEAK EMISSIONS OF WV
+AND GASES WITH  PSBL ASH. VA IS NOT SEEN IN STLT
+IMAGERY. WILL KEEP MONITORING AND ISSUE AN ADVICE
+IF NECESARY. ...SMN
+NXT ADVISORY: NO FURTHER ADVISORIES=-->
+<iwxxm:VolcanicAshAdvisory gml:id="uuid.4e1d83cb-b1db-4374-9484-0a9971cd2cb5" permissibleUsage="OPERATIONAL"
+  translatedBulletinID="FVAG01SABM301600" translatedBulletinReceptionTime="2018-05-30T16:00:00Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-09T12:10:52Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:metce="http://def.wmo.int/metce/2013"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.9a998a4c-18bc-46a2-ae1a-4cecfab46b4d">
+      <gml:timePosition>2018-05-30T16:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:issuingVolcanicAshAdvisoryCentre>
+    <aixm:Unit gml:id="uuid.be56e2d1-51bb-4f0e-9af0-7e59c07c0d40">
+      <aixm:timeSlice>
+        <aixm:UnitTimeSlice gml:id="uuid.858ac4bf-4af1-4559-bdbe-a5262c601461">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>BUENOS AIRES</aixm:name>
+          <aixm:type>OTHER:VAAC</aixm:type>
+        </aixm:UnitTimeSlice>
+      </aixm:timeSlice>
+    </aixm:Unit>
+  </iwxxm:issuingVolcanicAshAdvisoryCentre>
+  <iwxxm:volcano>
+    <metce:EruptingVolcano gml:id="uuid.8418bac8-29b9-4797-bc54-41fc6045847c">
+      <gml:description>WEAK EMISSIONS OF STEAM AND PSBL VA</gml:description>
+      <metce:name>NEVADO DE CHILLAN 357070</metce:name>
+      <metce:position>
+        <gml:Point axisLabels="Latitude Longitude SummitHeight" gml:id="uuid.79d8f6be-7d83-4d51-9f2b-e1a69840e225"
+          srsName="urn:ogc:def:crs:EPSG::4979" uomLabels="deg deg m">
+          <gml:pos>-36.850 -71.367 3212</gml:pos>
+        </gml:Point>
+      </metce:position>
+      <metce:eruptionDate>2018-05-30T16:00:00Z</metce:eruptionDate>
+    </metce:EruptingVolcano>
+  </iwxxm:volcano>
+  <iwxxm:advisoryNumber>2018/030</iwxxm:advisoryNumber>
+  <iwxxm:informationSource>GOES-E. GFS WINDS. VOLCANO WEB CAMERA.</iwxxm:informationSource>
+  <iwxxm:colourCode nilReason="withheld"/>
+  <iwxxm:analysis>
+    <iwxxm:VolcanicAshConditions gml:id="uuid.7a70bfe0-0d7d-435c-8753-52008101ab5f">
+      <iwxxm:phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.bb8a8536-2451-4382-b3db-22035d3bc6f8">
+          <gml:timePosition>2018-05-30T15:15:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </iwxxm:phenomenonTime>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.cf6a3b85-c0ab-472b-9a08-b53676df3e5a">
+          <iwxxm:ashCloudExtent nilReason="unknown"/>
+          <iwxxm:directionOfMotion uom="deg">310</iwxxm:directionOfMotion>
+          <iwxxm:speedOfMotion uom="[kn_i]">15</iwxxm:speedOfMotion>
+          <iwxxm:windLowerLimit uom="FL">100</iwxxm:windLowerLimit>
+          <iwxxm:windLowerLimitReference>STD</iwxxm:windLowerLimitReference>
+          <iwxxm:windUpperLimit uom="FL">100</iwxxm:windUpperLimit>
+          <iwxxm:windUpperLimitReference>STD</iwxxm:windUpperLimitReference>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.58e47fbd-543a-4b31-9554-e65b3badcd70">
+          <iwxxm:ashCloudExtent nilReason="unknown"/>
+          <iwxxm:directionOfMotion uom="deg">290</iwxxm:directionOfMotion>
+          <iwxxm:speedOfMotion uom="[kn_i]">30</iwxxm:speedOfMotion>
+          <iwxxm:windLowerLimit uom="FL">140</iwxxm:windLowerLimit>
+          <iwxxm:windLowerLimitReference>STD</iwxxm:windLowerLimitReference>
+          <iwxxm:windUpperLimit uom="FL">140</iwxxm:windUpperLimit>
+          <iwxxm:windUpperLimitReference>STD</iwxxm:windUpperLimitReference>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.a6218d7e-8f1e-4732-afe8-154b75d06eac">
+          <iwxxm:ashCloudExtent nilReason="unknown"/>
+          <iwxxm:directionOfMotion uom="deg">280</iwxxm:directionOfMotion>
+          <iwxxm:speedOfMotion uom="[kn_i]">35</iwxxm:speedOfMotion>
+          <iwxxm:windLowerLimit uom="FL">180</iwxxm:windLowerLimit>
+          <iwxxm:windLowerLimitReference>STD</iwxxm:windLowerLimitReference>
+          <iwxxm:windUpperLimit uom="FL">180</iwxxm:windUpperLimit>
+          <iwxxm:windUpperLimitReference>STD</iwxxm:windUpperLimitReference>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+    </iwxxm:VolcanicAshConditions>
+  </iwxxm:analysis>
+  <iwxxm:analysis>
+    <iwxxm:VolcanicAshConditions gml:id="uuid.6e8d7cdc-a371-4565-8bc6-44864482950f">
+      <iwxxm:phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.a55c17df-9445-4572-9c9c-3f04c96156ae">
+          <gml:timePosition>2018-05-30T21:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </iwxxm:phenomenonTime>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.b262cc74-d92f-4bcc-917f-ab7eefbdfdd4">
+          <iwxxm:ashCloudExtent nilReason="missing"/>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+    </iwxxm:VolcanicAshConditions>
+  </iwxxm:analysis>
+  <iwxxm:analysis>
+    <iwxxm:VolcanicAshConditions gml:id="uuid.a9f88113-bebf-4c13-b9f6-1464afbdc2cc">
+      <iwxxm:phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.e7f8ceec-9b70-4f94-9780-b3d5cd88bed0">
+          <gml:timePosition>2018-05-31T03:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </iwxxm:phenomenonTime>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.dc76a356-3e34-4d61-bd8a-70fe997dbce6">
+          <iwxxm:ashCloudExtent nilReason="missing"/>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+    </iwxxm:VolcanicAshConditions>
+  </iwxxm:analysis>
+  <iwxxm:analysis>
+    <iwxxm:VolcanicAshConditions gml:id="uuid.718e8e52-def5-4d2b-8f05-8d18f14063a2">
+      <iwxxm:phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.b301b8d2-ef1c-49a5-a099-646fc9f68628">
+          <gml:timePosition>2018-05-31T09:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </iwxxm:phenomenonTime>
+      <iwxxm:ashCloud>
+        <iwxxm:VolcanicAshCloud gml:id="uuid.6be0b5a3-51ef-413b-9654-dc3688b0e729">
+          <iwxxm:ashCloudExtent nilReason="missing"/>
+        </iwxxm:VolcanicAshCloud>
+      </iwxxm:ashCloud>
+    </iwxxm:VolcanicAshConditions>
+  </iwxxm:analysis>
+  <iwxxm:remarks>WEBCAM SHOWS SPORADIC WEAK EMISSIONS OF WV AND GASES WITH PSBL ASH. VA IS NOT SEEN IN STLT IMAGERY. WILL KEEP MONITORING AND ISSUE AN ADVICE IF NECESARY. ...SMN</iwxxm:remarks>
+  <iwxxm:nextAdvisoryTime nilReason="inapplicable"/>
+</iwxxm:VolcanicAshAdvisory>
