@@ -338,7 +338,7 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
   <iwxxm:remarks>EXPLOSIVE VA EM SEEN IN STLT AND RPRTD BY MULTIPLE AGENCIES. STLT SIGNATURE SUGGEST VA EJECTED TO EL AROUND FL500. NWP MDLS SUGGEST VA WILL MOVE NE AND E IN SEPARATE PLUMES. WILL UPDATE AS NEEDED. ...LEE</iwxxm:remarks>
   <iwxxm:nextAdvisoryTime>
     <gml:TimeInstant gml:id="uuid.0c68dd70-1bc6-472b-bc1e-9a76369d7e81">
-      <gml:timePosition indeterminatePosition="after">2018-06-04T01:15:00Z</gml:timePosition>
+      <gml:timePosition indeterminatePosition="before">2018-06-04T01:15:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:nextAdvisoryTime>
 </iwxxm:VolcanicAshAdvisory>
