@@ -1,0 +1,168 @@
+<!--This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative-->
+<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+<!--                                                                                      -->
+<!--TAC: TAF DAAV 131700Z 1318/1418 02011KT 9999 FEW023 SCT200
+              PROB30 TEMPO 1318/1320 FEW023TCU
+             BECMG 1320/1322 26008KT PROB30
+              TEMPO 1401/1408 2000 BR BKN010
+             BECMG 1410/1412 32012KT
+              TEMPO 1411/1418 FEW023TCU=-->
+<iwxxm:TAF gml:id="uuid.36ff2407-5321-4b52-8824-1c56927e3e64" permissibleUsage="OPERATIONAL" status="NORMAL"
+  translatedBulletinID="FTAL33DAAA131700" translatedBulletinReceptionTime="2018-08-13T17:00:29" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-14T19:09:17Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.70a87596-26a1-4951-ab7b-ceb9301176cb">
+      <gml:timePosition>2018-08-13T17:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.526dc5fb-315c-471c-8cc3-7fa0b4f309c7">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.a27ed919-c3fc-427b-9d1c-f90ce8b96f5f">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:locationIndicatorICAO>DAAV</aixm:locationIndicatorICAO>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:validTime>
+    <gml:TimePeriod gml:id="uuid.75c8b5d6-85e5-43af-8d09-16823faf8a72">
+      <gml:beginPosition>2018-08-13T18:00:00Z</gml:beginPosition>
+      <gml:endPosition>2018-08-14T18:00:00Z</gml:endPosition>
+    </gml:TimePeriod>
+  </iwxxm:validTime>
+  <iwxxm:baseForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" gml:id="uuid.09017314-df1f-484c-8f89-a6fc2b9f063f">
+      <iwxxm:phenomenonTime xlink:href="#uuid.75c8b5d6-85e5-43af-8d09-16823faf8a72"/>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">020</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">11</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.c36baf54-e885-48a0-8066-26e7f7603985">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:base uom="[ft_i]">2300</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:base uom="[ft_i]">20000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:baseForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="PROBABILITY_30_TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
+      gml:id="uuid.36635f3e-e48c-42b5-b697-81a254db1a70">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.99900c8f-c8a8-4335-a323-6fa309122495">
+          <gml:beginPosition>2018-08-13T18:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-13T20:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.0940b6f8-5ef7-4903-aae9-ba1daf786c8a">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:base uom="[ft_i]">2300</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32" xlink:title="Towering cumulus (TCU)"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
+      gml:id="uuid.a6e69075-6a5c-47b3-bad0-3b026a205262">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.a86907f9-81b7-430c-a363-f0bc59f686e6">
+          <gml:beginPosition>2018-08-13T20:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-13T22:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">260</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">08</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="PROBABILITY_30_TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
+      gml:id="uuid.49a7ec50-657a-406e-8b07-38e835ca598c">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.85d90965-cc67-4f0e-b797-e495eead7174">
+          <gml:beginPosition>2018-08-14T01:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T08:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">2000</iwxxm:prevailingVisibility>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/BR"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.ad57e859-91fb-4dcf-9d4a-e259e50c5789">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
+      gml:id="uuid.eac8e2e8-4a1d-433c-a599-fec7c2580a5c">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.7bb5d760-cd2a-43c5-8a7e-f12088236fa1">
+          <gml:beginPosition>2018-08-14T10:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T12:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">320</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">12</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
+      gml:id="uuid.af0cea8f-366f-45b7-82e1-c71c74e67f43">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.ecea92fe-d13d-4b92-aedf-942aa4d7e3cf">
+          <gml:beginPosition>2018-08-14T11:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T18:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.a947b9be-8dc5-4400-9725-5d199cc3509d">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:base uom="[ft_i]">2300</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32" xlink:title="Towering cumulus (TCU)"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+</iwxxm:TAF>

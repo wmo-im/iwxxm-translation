@@ -1,0 +1,28 @@
+<!--This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative-->
+<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+<!--                                                                                      -->
+<!--TAC: TAF DAOY 131100Z NIL-->
+<iwxxm:TAF gml:id="uuid.57e2e2d1-ff44-48e0-b147-3fd8bbc654b7" permissibleUsage="OPERATIONAL" status="MISSING"
+  translatedBulletinID="FTAL31DAAA131000" translatedBulletinReceptionTime="2018-08-13T11:00:03" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-15T18:28:24Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.63fa8850-0cb4-4cb6-8735-0dac050a3eed">
+      <gml:timePosition>2018-08-13T11:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.45db46c5-9106-4b79-9569-243073217aad">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.70834c0c-35b8-4034-af6d-e56d349732fa">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:locationIndicatorICAO>DAOY</aixm:locationIndicatorICAO>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:baseForecast nilReason="http://codes.wmo.int/common/nil/missing"/>
+</iwxxm:TAF>
