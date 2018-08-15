@@ -1,0 +1,348 @@
+<!--This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative-->
+<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+<!--                                                                                      -->
+<!--TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030 
+      TEMPO 1400/1404 12045G65KT 1/2SM +TSRA SQ BKN010CB
+     FM140400 VRB65GP99KT 1/2SM +TSRA SQ BKN010CB
+     FM140600 VRBP99KT 1/8SM +TSRA SQ BKN006CB
+     FM140800 VRB50GP99KT 1SM +TSRA SQ BKN015CB
+     FM141200 VRB35G45KT 3SM RA SQ SCT015 BKN050
+       TEMPO 1412/1416 29020G30KT P6SM NSW BKN050
+     FM141600 30015G30KT P6SM SCT050
+       PROB30 1416/1420 3SM RA BKN030
+     FM142200 27015KT P6SM SKC-->
+<iwxxm:TAF gml:id="uuid.ebaf3d6e-0cd5-4cba-ac73-8955fb8c0add" permissibleUsage="OPERATIONAL" status="NORMAL"
+  translatedBulletinID="FTUS42KTBW140000" translatedBulletinReceptionTime="2018-08-13T23:40:55" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-15T18:28:24Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.f42996a1-6de3-4a59-af9e-4d00c79cc2c3">
+      <gml:timePosition>2018-08-13T23:40:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.24c27dbc-973c-4e1a-ae72-a0611c64d651">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.4b2e76c6-1e8d-4573-b57e-969eb10927d3">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:locationIndicatorICAO>KTPA</aixm:locationIndicatorICAO>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:validTime>
+    <gml:TimePeriod gml:id="uuid.42fd9631-af3a-48f9-9c23-4b579e7bb128">
+      <gml:beginPosition>2018-08-14T00:00:00Z</gml:beginPosition>
+      <gml:endPosition>2018-08-15T00:00:00Z</gml:endPosition>
+    </gml:TimePeriod>
+  </iwxxm:validTime>
+  <iwxxm:baseForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" gml:id="uuid.0c4f7373-e6b3-4f34-b021-5771f17072bc">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.d348af61-fabe-481c-850f-dc9efcc1774e">
+          <gml:beginPosition>2018-08-13T23:40:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T04:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">4800</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">100</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">35</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">45</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RA"/>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.b41e158d-2325-4fc9-8716-3a33d36cdac9">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/4" xlink:title="Overcast"/>
+              <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:baseForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
+      gml:id="uuid.0bb46a3c-b588-4df6-b8b2-efc9a3aede5f">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.60eedb15-a083-4229-a902-d19110b280d0">
+          <gml:beginPosition>2018-08-14T00:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T04:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">800</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">120</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">45</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">65</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.286763e6-f936-4a7c-8516-9103bd6d7fa9">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.4c84165c-1e34-4561-98f0-33674e6f2d32">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.bde842d6-7e45-435e-b11d-f0b4bd95e162">
+          <gml:beginPosition>2018-08-14T04:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T06:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">800</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="true">
+          <iwxxm:meanWindSpeed uom="[kn_i]">65</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">99</iwxxm:windGustSpeed>
+          <iwxxm:windGustSpeedOperator>ABOVE</iwxxm:windGustSpeedOperator>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.d63226b7-de1c-44a7-99a5-4a1f466bb3e0">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.d9ff22ea-88c7-44bd-a259-889c19d91ad8">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.d4ccb59d-701c-4000-9f55-5f6fb58344eb">
+          <gml:beginPosition>2018-08-14T06:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T08:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">200</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="true">
+          <iwxxm:meanWindSpeed uom="[kn_i]">99</iwxxm:meanWindSpeed>
+          <iwxxm:meanWindSpeedOperator>ABOVE</iwxxm:meanWindSpeedOperator>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.540d31b3-e128-4b40-beb3-23f3ebc04c26">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">600</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.c92dab88-647b-4de7-af7f-3ff2f2b1515d">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.8e695d75-7c45-45dd-bb86-3448a9abade6">
+          <gml:beginPosition>2018-08-14T08:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T12:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">1600</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="true">
+          <iwxxm:meanWindSpeed uom="[kn_i]">50</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">99</iwxxm:windGustSpeed>
+          <iwxxm:windGustSpeedOperator>ABOVE</iwxxm:windGustSpeedOperator>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.0b01f311-d3f8-4cb6-ace5-3fd1a9ca4514">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">1500</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.cb908b57-b104-4862-8bcc-9afc7ed128b5">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.b7c9bab4-ab55-4893-9d86-d4ec989ec617">
+          <gml:beginPosition>2018-08-14T12:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T16:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">4800</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="true">
+          <iwxxm:meanWindSpeed uom="[kn_i]">35</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">45</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RA"/>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.aabdc3d0-a615-4ad1-8b87-dd4acea1efe1">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:base uom="[ft_i]">1500</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
+      gml:id="uuid.e5bb743f-eccb-4a93-8d4c-1f9c8b6717f8">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.031fc6e5-d589-4907-ba35-69b708bef960">
+          <gml:beginPosition>2018-08-14T12:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T16:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">290</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">20</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">30</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.52b25cb2-39dc-4ef9-91ba-1107c8a61d69">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.a507f07a-7285-4880-9f35-1214bf9f8898">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.a5def804-491f-4bdd-88c6-aae77665b15f">
+          <gml:beginPosition>2018-08-14T16:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T22:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">300</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">15</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">30</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.790e067f-b3d2-41c6-9210-96a97b38e0f2">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="PROBABILITY_30" cloudAndVisibilityOK="false"
+      gml:id="uuid.f9fde0a0-e551-4605-9eb7-ea917498eedd">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.54870e9c-7dde-415e-94e1-2de8d2ecd1a5">
+          <gml:beginPosition>2018-08-14T16:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-14T20:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">4800</iwxxm:prevailingVisibility>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RA"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.611f1278-a089-4f10-8c9e-3f537d57cd0c">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.d9c8fbfc-ef5f-4a56-afe5-b80d991b234b">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.7bc0e97b-0ec4-4220-891a-eb120b8e442a">
+          <gml:beginPosition>2018-08-14T22:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-08-15T00:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">270</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">15</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.4c83484e-5892-4d64-a525-93a1e9ce8aa9">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/0" xlink:title="Sky clear"/>
+              <iwxxm:base nilReason="inapplicable" uom="N/A" xsi:nil="true"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+</iwxxm:TAF>
