@@ -20,7 +20,14 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.530ac8be-b253-45e2-9382-13cb7efd3992">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>ZSPD</aixm:designator>
+          <aixm:name>SHANGHAI/PUDONG</aixm:name>
+          <aixm:locationIndicatorICAO>ZSPD</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.cf50779c-2811-4f8c-a5fb-b08ad342fb08" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>31.12 121.77 4</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

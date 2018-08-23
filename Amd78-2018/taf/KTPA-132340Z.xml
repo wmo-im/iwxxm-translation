@@ -28,7 +28,15 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.4b2e76c6-1e8d-4573-b57e-969eb10927d3">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+
+          <aixm:name>TAMPA INTL AIRPO, FL</aixm:name>
           <aixm:locationIndicatorICAO>KTPA</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.2bb853e7-c3c1-4545-860f-464a056402c6" srsDimension="3" 
+              srsName="urn:ogc:def:crs:EPSG::4979" uomLabels="deg deg m">
+              <gml:pos>27.97 -82.53 11</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

@@ -20,7 +20,14 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.aa9643d3-c55b-4e57-82c5-cc8b67700c84">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>NTAA</aixm:designator>
+          <aixm:name>TAHITI_ISLAND/FAAA</aixm:name>
+          <aixm:locationIndicatorICAO>NTAA</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.db82b39f-ee01-42da-b462-3f14d7f67e3f" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>-17.55 -149.62 2</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

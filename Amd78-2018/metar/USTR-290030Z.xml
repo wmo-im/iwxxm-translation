@@ -20,7 +20,14 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.ce668c52-25d0-43bf-a64f-7eaa26a54499">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>USTR</aixm:designator>
+          <aixm:name>ROSCHINO</aixm:name>
+          <aixm:locationIndicatorICAO>USTR</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.932f27c4-1333-4202-91b5-55ac5922d41c" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>57.18 65.32 118</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

@@ -20,7 +20,7 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.f4c3fe91-fd4b-4217-bd68-09b386ea3c49">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>FALE</aixm:designator>
+          <aixm:locationIndicatorICAO>FALE</aixm:locationIndicatorICAO>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

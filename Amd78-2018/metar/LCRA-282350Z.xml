@@ -20,7 +20,14 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.d65fc6c3-41d1-41d7-aa08-de79cdd0c870">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>LCRA</aixm:designator>
+          <aixm:name>AKROTIRI_(RAF)</aixm:name>
+          <aixm:locationIndicatorICAO>LCRA</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.5f2ead85-e3a6-4ddf-beeb-1f63780f9a35" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>34.58 32.98 23</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

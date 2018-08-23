@@ -20,7 +20,14 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.d4625e15-d88b-4399-b098-090813004e34">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>EFHK</aixm:designator>
+          <aixm:name>HELSINKI/VANTAA</aixm:name>
+          <aixm:locationIndicatorICAO>EFHK</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.80de76e4-c581-4b9f-88f2-1afa0e27ae0e" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>60.32 24.97 56</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

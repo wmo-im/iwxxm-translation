@@ -20,7 +20,7 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.f9bf2f12-9025-4fb0-a0a5-3520e73785a4">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>LTCN</aixm:designator>
+          <aixm:locationIndicatorICAO>LTCN</aixm:locationIndicatorICAO>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

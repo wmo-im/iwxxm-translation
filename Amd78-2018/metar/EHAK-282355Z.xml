@@ -20,7 +20,7 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.a23b14d2-af0c-4e94-a4ce-ba1ef538f498">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>EHAK</aixm:designator>
+          <aixm:locationIndicatorICAO>EHAK</aixm:locationIndicatorICAO>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
