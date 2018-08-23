@@ -8,7 +8,7 @@
   <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
   <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
   <!--                                                                                      -->
-  <!--TAC:SPECI EHJR 282355Z AUTO 29012KT //// // ///////// 05/02 Q1001 RE// W06/H12 W06/S3-->
+  <!--TAC:SPECI EHJR 282355Z AUTO 29012KT //// // ///////// 05/02 Q1001 RE// W06/H12-->
   <iwxxm:issueTime>
     <gml:TimeInstant gml:id="uuid.ddba43fa-956c-4745-93a2-015c0ac0568b">
       <gml:timePosition>2018-07-28T23:55:00Z</gml:timePosition>
@@ -28,7 +28,7 @@
   <iwxxm:observationTime xlink:href="#uuid.ddba43fa-956c-4745-93a2-015c0ac0568b"/>
   <iwxxm:observation>
     <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.49c63c83-194c-4d45-93d3-d17b0c214216">
-      <!--SPECI EHJR 282355Z AUTO 29012KT //// // ///////// 05/02 Q1001 RE// W06/H12 W06/S3-->
+      <!--SPECI EHJR 282355Z AUTO 29012KT //// // ///////// 05/02 Q1001 RE// W06/H12-->
       <iwxxm:airTemperature uom="Cel">5</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">2</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1001</iwxxm:qnh>
@@ -50,7 +50,6 @@
         <iwxxm:AerodromeSeaState>
           <iwxxm:seaSurfaceTemperature uom="Cel">6</iwxxm:seaSurfaceTemperature>
           <iwxxm:significantWaveHeight uom="m">1.2</iwxxm:significantWaveHeight>
-          <iwxxm:seaState xlink:href="http://codes.wmo.int/bufr4/codeflag/0-22-061/3" xlink:title="Slight"/>
         </iwxxm:AerodromeSeaState>
       </iwxxm:seaState>
     </iwxxm:MeteorologicalAerodromeObservation>

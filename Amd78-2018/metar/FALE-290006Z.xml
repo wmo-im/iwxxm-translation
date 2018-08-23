@@ -50,7 +50,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.bd29fd2c-a660-4385-bc5d-3205ed7e4b30">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:locationIndicatorICAO>24</aixm:locationIndicatorICAO>
+                  <aixm:designator>24</aixm:designator>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -66,7 +66,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.6a8e6f59-0391-47e7-a361-99c38825be50">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:locationIndicatorICAO>06</aixm:locationIndicatorICAO>
+                  <aixm:designator>06</aixm:designator>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>

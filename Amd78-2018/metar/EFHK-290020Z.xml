@@ -59,7 +59,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.ad30318c-026f-4604-983c-c7a9212bd243">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:locationIndicatorICAO>04R</aixm:locationIndicatorICAO>
+                  <aixm:designator>04R</aixm:designator>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -75,7 +75,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.384f56ef-e670-4ebd-ba1a-e3e1ae8f7d8f">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:locationIndicatorICAO>15</aixm:locationIndicatorICAO>
+                  <aixm:designator>15</aixm:designator>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -92,7 +92,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.beb8b78a-f616-4e42-baef-a0d841112906">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:locationIndicatorICAO>22L</aixm:locationIndicatorICAO>
+                  <aixm:designator>22L</aixm:designator>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -109,7 +109,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.986d2dab-f52f-4db7-ae2b-0e38cd2c6f85">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:locationIndicatorICAO>04L</aixm:locationIndicatorICAO>
+                  <aixm:designator>04L</aixm:designator>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>

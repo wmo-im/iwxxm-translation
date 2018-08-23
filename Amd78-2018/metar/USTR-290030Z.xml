@@ -60,7 +60,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.98f759d2-33d3-4aa6-ba43-c5bbf90da070">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:locationIndicatorICAO>21</aixm:locationIndicatorICAO>
+                  <aixm:designator>21</aixm:designator>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
