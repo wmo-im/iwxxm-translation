@@ -20,7 +20,7 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.8e90bb18-1097-47cb-a2aa-f86b53275ce9">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>EHJR</aixm:designator>
+          <aixm:locationIndicatorICAO>EHJR</aixm:locationIndicatorICAO>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

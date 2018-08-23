@@ -20,7 +20,7 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.f4c3fe91-fd4b-4217-bd68-09b386ea3c49">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>FALE</aixm:designator>
+          <aixm:locationIndicatorICAO>FALE</aixm:locationIndicatorICAO>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
@@ -50,7 +50,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.bd29fd2c-a660-4385-bc5d-3205ed7e4b30">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>24</aixm:designator>
+                  <aixm:locationIndicatorICAO>24</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -66,7 +66,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.6a8e6f59-0391-47e7-a361-99c38825be50">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>06</aixm:designator>
+                  <aixm:locationIndicatorICAO>06</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>

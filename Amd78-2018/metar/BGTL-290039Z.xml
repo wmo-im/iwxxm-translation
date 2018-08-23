@@ -20,8 +20,8 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.4bade059-14c1-40fc-b7f4-428bb3d0b2e1">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>BGTL</aixm:designator>
           <aixm:name>THULE_AB</aixm:name>
+          <aixm:locationIndicatorICAO>BGTL</aixm:locationIndicatorICAO>
           <aixm:ARP>
             <aixm:ElevatedPoint gml:id="uuid.091bc254-6c1e-409a-9668-f299864c3829" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
               uomLabels="deg deg m">

@@ -20,8 +20,8 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.d4625e15-d88b-4399-b098-090813004e34">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>EFHK</aixm:designator>
           <aixm:name>HELSINKI/VANTAA</aixm:name>
+          <aixm:locationIndicatorICAO>EFHK</aixm:locationIndicatorICAO>
           <aixm:ARP>
             <aixm:ElevatedPoint gml:id="uuid.80de76e4-c581-4b9f-88f2-1afa0e27ae0e" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
               uomLabels="deg deg m">
@@ -59,7 +59,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.ad30318c-026f-4604-983c-c7a9212bd243">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>04R</aixm:designator>
+                  <aixm:locationIndicatorICAO>04R</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -75,7 +75,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.384f56ef-e670-4ebd-ba1a-e3e1ae8f7d8f">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>15</aixm:designator>
+                  <aixm:locationIndicatorICAO>15</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -92,7 +92,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.beb8b78a-f616-4e42-baef-a0d841112906">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>22L</aixm:designator>
+                  <aixm:locationIndicatorICAO>22L</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -109,7 +109,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.986d2dab-f52f-4db7-ae2b-0e38cd2c6f85">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>04L</aixm:designator>
+                  <aixm:locationIndicatorICAO>04L</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>

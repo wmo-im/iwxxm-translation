@@ -20,8 +20,8 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.ce668c52-25d0-43bf-a64f-7eaa26a54499">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>USTR</aixm:designator>
           <aixm:name>ROSCHINO</aixm:name>
+          <aixm:locationIndicatorICAO>USTR</aixm:locationIndicatorICAO>
           <aixm:ARP>
             <aixm:ElevatedPoint gml:id="uuid.932f27c4-1333-4202-91b5-55ac5922d41c" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
               uomLabels="deg deg m">
@@ -60,7 +60,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.98f759d2-33d3-4aa6-ba43-c5bbf90da070">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>21</aixm:designator>
+                  <aixm:locationIndicatorICAO>21</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>

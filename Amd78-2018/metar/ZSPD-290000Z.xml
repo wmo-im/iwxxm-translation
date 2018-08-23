@@ -20,8 +20,8 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.530ac8be-b253-45e2-9382-13cb7efd3992">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:designator>ZSPD</aixm:designator>
           <aixm:name>SHANGHAI/PUDONG</aixm:name>
+          <aixm:locationIndicatorICAO>ZSPD</aixm:locationIndicatorICAO>
           <aixm:ARP>
             <aixm:ElevatedPoint gml:id="uuid.cf50779c-2811-4f8c-a5fb-b08ad342fb08" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
               uomLabels="deg deg m">
@@ -58,7 +58,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.e1604027-ca39-41b9-bdf6-c9aee449e358">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>17L</aixm:designator>
+                  <aixm:locationIndicatorICAO>17L</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -75,7 +75,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.141293ae-4d99-470a-91c1-3a0f1b657f93">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>16R</aixm:designator>
+                  <aixm:locationIndicatorICAO>16R</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -91,7 +91,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.e4670477-365d-4909-8dbb-64d6b4864116">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>17R</aixm:designator>
+                  <aixm:locationIndicatorICAO>17R</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
@@ -107,7 +107,7 @@
                 <aixm:RunwayDirectionTimeSlice gml:id="uuid.7c498f40-2501-433e-97e9-1885f3644203">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-                  <aixm:designator>16L</aixm:designator>
+                  <aixm:locationIndicatorICAO>16L</aixm:locationIndicatorICAO>
                 </aixm:RunwayDirectionTimeSlice>
               </aixm:timeSlice>
             </aixm:RunwayDirection>
