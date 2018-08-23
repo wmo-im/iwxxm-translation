@@ -1,17 +1,17 @@
-<iwxxm:TAF gml:id="uuid.aa846481-66b5-4a7b-924f-44f85cf56a86" permissibleUsage="OPERATIONAL" status="CORRECTION"
-  translatedBulletinID="FTGU31MGGT131100" translatedBulletinReceptionTime="2018-08-13T11:41:08" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-15T19:17:28Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
-  <!--This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative-->
-  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-  <!--                                                                                      -->
-  <!--TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1312Z
+<!--This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative-->
+<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
+<!--                                                                                      -->
+<!--TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1312Z
      BECMG 1314/1316 36014KT FEW018
       TEMPO 1320/1406 8000 TSRA SCT018TCU FEW025CB
      BECMG 1401/1403 36010KT BKN016 
       TEMPO 1406/1412 RADZ BKN080-->
+<iwxxm:TAF gml:id="uuid.a1c25cb3-c351-45b6-8415-0c0565cc175c" permissibleUsage="OPERATIONAL" status="CORRECTION"
+  translatedBulletinID="FTGU31MGGT131100" translatedBulletinReceptionTime="2018-08-13T11:41:19" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-08-23T13:34:09Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
   <iwxxm:issueTime>
     <gml:TimeInstant gml:id="uuid.53d121c6-ac63-4f49-80d3-e4e968ca2662">
       <gml:timePosition>2018-08-13T11:41:00Z</gml:timePosition>
@@ -23,7 +23,14 @@
         <aixm:AirportHeliportTimeSlice gml:id="uuid.3d549766-d934-40e3-982c-3c85d1b55723">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>GUATEMALA/LA_AURORA</aixm:name>
           <aixm:locationIndicatorICAO>MGGT</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.a9887ca3-86fe-4b19-b4fe-919e391ab294" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>14.58 -90.52 1489</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

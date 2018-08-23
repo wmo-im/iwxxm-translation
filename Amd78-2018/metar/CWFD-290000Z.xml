@@ -21,6 +21,13 @@
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:designator>CWFD</aixm:designator>
+          <aixm:name>CAPE DYER ARPT, NU</aixm:name>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.2c21414a-cea3-42d0-a7e0-cb88c603618d" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>66.58 -61.62 393</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

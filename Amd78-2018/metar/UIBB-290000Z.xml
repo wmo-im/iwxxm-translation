@@ -21,6 +21,13 @@
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:designator>UIBB</aixm:designator>
+          <aixm:name>BRATSK, IR</aixm:name>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.d4c7aadc-a4d6-4a45-92c2-1aa1cd740e67" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>56.07 101.83 489</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>

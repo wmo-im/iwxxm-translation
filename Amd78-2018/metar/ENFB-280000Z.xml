@@ -21,6 +21,13 @@
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:designator>ENFB</aixm:designator>
+          <aixm:name>OSLO/FORNEBU</aixm:name>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.2c65875d-ea33-45cc-b0d5-d9d7fed6467c" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
+              uomLabels="deg deg m">
+              <gml:pos>59.90 10.62 17</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
