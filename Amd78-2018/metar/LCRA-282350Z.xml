@@ -48,7 +48,7 @@
       </iwxxm:surfaceWind>
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
-          <iwxxm:prevailingVisibility uom="m">8000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibility uom="km">8</iwxxm:prevailingVisibility>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/TSRA"/>
