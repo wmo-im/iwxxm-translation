@@ -47,8 +47,7 @@
       </iwxxm:surfaceWind>
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
-          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
-          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+          <iwxxm:prevailingVisibility uom="km">10</iwxxm:prevailingVisibility>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:rvr>
