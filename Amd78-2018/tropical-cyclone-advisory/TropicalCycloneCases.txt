@@ -1,0 +1,3 @@
+FKPQ30RJTD-1800.xml - CB circle with TOP ABV FLxxx, NIL remarks
+FKNT21KNHC-1448.xml - no CB, use of BFR in next message issuance
+FKPZ23KNHC-0836.xml - CB polygon with TOP BLW Fxxx, last advisory
