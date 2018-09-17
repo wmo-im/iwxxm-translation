@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--This example of Tropical Cyclone Advisory TAC to XML translation should not be considered authorative-->
-<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-<!--                                                                                      -->
-<!--TAC: FKPZ23 KNHC 120836
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+This example of Tropical Cyclone Advisory TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: FKPZ23 KNHC 120836
 TCAPZ3
 
 POST-TROPICAL CYCLONE PAUL ICAO ADVISORY NUMBER  16
@@ -15,8 +16,6 @@ TCAC:                     KNHC
 TC:                       PAUL
 ADVISORY NR:              2018/16
 OBS PSN:                  12/0830Z N2218 W12724
-CB:                       WI N2312 W12836-N2256 W12821-N2241 W12830-
-                          N2247 W12841-N2307 W12844 TOP BLW FL350
 MOV:                      W 08KT
 C:                        1005HPA
 MAX WIND:                 030KT
@@ -34,7 +33,7 @@ RMK:                      THE FORECAST POSITION INFORMATION IN
                           0600...1200...AND 1800Z.
 NXT MSG:                  NO MSG EXP
 
-..
+$$
 -->
 <TropicalCycloneAdvisory gml:id="uuid.e42ecbcf-5e79-43dc-872f-6472688eb185" permissibleUsage="OPERATIONAL"
   translatedBulletinID="FKPZ23120836" translatedBulletinReceptionTime="2018-09-12T19:26:05Z" translationCentreDesignator="KWNO"
@@ -74,27 +73,6 @@ NXT MSG:                  NO MSG EXP
           <gml:pos>22.300 -127.400</gml:pos>
         </gml:Point>
       </tropicalCyclonePosition>
-      <cumulonimbusCloudLocation>
-        <aixm:AirspaceVolume gml:id="uuid.56ed5300-6eb6-4e84-9bd2-e7f2e2beb5a3">
-          <aixm:upperLimit nilReason="unknown" xsi:nil="true"/>
-          <aixm:upperLimitReference>STD</aixm:upperLimitReference>
-          <aixm:maximumLimit uom="FL">350</aixm:maximumLimit>
-          <aixm:horizontalProjection>
-            <aixm:Surface gml:id="uuid.38c3dee8-755e-489e-bee1-abfcb8bade4b">
-              <gml:polygonPatches>
-                <gml:PolygonPatch>
-                  <gml:exterior>
-                    <gml:LinearRing>
-                      <gml:posList count="6">23.200 -128.600 22.934 -128.350 22.683 -128.500 22.783 -128.683 23.117 -128.733 23.200
-                        -128.600</gml:posList>
-                    </gml:LinearRing>
-                  </gml:exterior>
-                </gml:PolygonPatch>
-              </gml:polygonPatches>
-            </aixm:Surface>
-          </aixm:horizontalProjection>
-        </aixm:AirspaceVolume>
-      </cumulonimbusCloudLocation>
       <movement>MOVING</movement>
       <movementDirection uom="deg">270</movementDirection>
       <movementSpeed uom="[kn_i]">8</movementSpeed>
@@ -150,13 +128,13 @@ NXT MSG:                  NO MSG EXP
   <forecast>
     <TropicalCycloneForecastConditions gml:id="uuid.b1b1fb71-2187-4c5d-a527-936b428585f9">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.92fa4ca0-a34f-4778-b124-b6380a9911a4">
-          <gml:timePosition>2018-09-12T21:00:00Z</gml:timePosition>
+        <gml:TimeInstant gml:id="uuid.ce851dd8-f44c-4893-aba4-290736f2e530">
+          <gml:timePosition>2018-09-13T09:00:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <tropicalCyclonePosition>
-        <gml:Point axisLabels="latitude longitude" gml:id="uuid.35723124-a962-46e0-b78b-4ba78775d6a0">
-          <gml:pos>22.400 -129.100</gml:pos>
+        <gml:Point axisLabels="latitude longitude" gml:id="uuid.01f26f5b-86c2-4e98-85ee-386ea50f2b22">
+          <gml:pos>22.400 -130.550</gml:pos>
         </gml:Point>
       </tropicalCyclonePosition>
       <maximumSurfaceWindSpeed uom="[kn_i]">25</maximumSurfaceWindSpeed>

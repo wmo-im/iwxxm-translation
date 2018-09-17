@@ -1,3 +1,4 @@
-FKPQ30RJTD-1800.xml - CB circle with TOP ABV FLxxx, NIL remarks
-FKNT21KNHC-1448.xml - no CB, use of BFR in next message issuance
-FKPZ23KNHC-0836.xml - CB polygon with TOP BLW Fxxx, last advisory
+FKNT23KNHC-1500.xml - Abbreviated TEST message.
+FKNT23KNHC-1501.xml - EXERCISE message, multiple CB polygon groups, TOP BLW FLxxx, TOP FLxxx, NIL remark, no future messages.
+FKPQ30RJTD-1800.xml - CB circle with TOP ABV FLxxx, NIL remark
+FKPZ23KNHC-0836.xml - Dissipating TC, no CB group.

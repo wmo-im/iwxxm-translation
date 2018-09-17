@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--This example of Tropical Cyclone Advisory TAC to XML translation should not be considered authorative-->
-<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-<!--                                                                                      -->
-<!--TAC: FKPQ30 RJTD 111800
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+This example of Tropical Cyclone Advisory TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: FKPQ30 RJTD 111800
 TC ADVISORY
 DTG:                 20180911/1800Z
 TCAC:                TOKYO
@@ -146,13 +147,13 @@ NXT MSG:             20180912/0000Z =
   <forecast>
     <TropicalCycloneForecastConditions gml:id="uuid.246e9585-0982-42ce-8323-558cee4f4741">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.33579798-4e2b-477b-a291-c9499fb3eaf0">
-          <gml:timePosition>2018-09-12T06:00:00Z</gml:timePosition>
+        <gml:TimeInstant gml:id="uuid.81d8b7b6-f371-478a-b685-97cdf1f2818a">
+          <gml:timePosition>2018-09-12T18:00:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <tropicalCyclonePosition>
-        <gml:Point axisLabels="latitude longitude" gml:id="uuid.b66c188b-829e-4521-9d5f-a619d08e3ab6">
-          <gml:pos>14.333 135.167</gml:pos>
+        <gml:Point axisLabels="latitude longitude" gml:id="uuid.ae1a7b2b-a0b4-4f6a-98d5-82a8c6540646">
+          <gml:pos>14.834 132.833</gml:pos>
         </gml:Point>
       </tropicalCyclonePosition>
       <maximumSurfaceWindSpeed uom="[kn_i]">110</maximumSurfaceWindSpeed>
