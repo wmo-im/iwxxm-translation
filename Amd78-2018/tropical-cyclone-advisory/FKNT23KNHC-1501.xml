@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+This example of Tropical Cyclone Advisory TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: 
+301 
+FKNT23 KNHC 011501
+TCANT3
+ 
+TROPICAL STORM HELENE ICAO ADVISORY NUMBER  01
+NWS NATIONAL HURRICANE CENTER MIAMI FL       AL012018
+1501 UTC FRI MAY 01 2018
+ 
+TC ADVISORY
+STATUS:                   EXER
+DTG:                      20180501/1501Z
+TCAC:                     KNHC
+TC:                       HELENE
+ADVISORY NR:              2018/01
+OBS PSN:                  01/1430Z N3254 W03618
+CB:                       WI N3332 W03620-N3406 W03641-N3404 W03456-
+                          N3325 W03617-N3332 W03620 TOP BLW FL350
+CB:                       WI N3140 W03525-N3061 W03611-N3030 W03449-
+                          N3140 W03525 TOP FL350
+MOV:                      STNR
+C:                        0988HPA
+MAX WIND:                 060KT
+FCST PSN +6 HR:           01/2100Z N3438 W03546
+FCST MAX WIND +6 HR:      060KT
+FCST PSN +12 HR:          02/0300Z N3613 W03458
+FCST MAX WIND +12 HR:     060KT
+FCST PSN +18 HR:          02/0900Z N3740 W03355
+FCST MAX WIND +18 HR:     055KT
+FCST PSN +24 HR:          02/1500Z N3858 W03233
+FCST MAX WIND +24 HR:     055KT
+RMK:                      NIL
+NXT MSG:                  NO MSG EXP
+ 
+$$
+
+-->
+<TropicalCycloneAdvisory gml:id="uuid.e3097283-f9ee-4bfc-9c53-bcaa8c2e2837" permissibleUsage="NON-OPERATIONAL"
+  permissibleUsageReason="EXERCISE" translatedBulletinID="FKNT23011501" translatedBulletinReceptionTime="2018-09-17T18:55:35Z"
+  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2018-09-17T18:55:35Z"
+  xmlns="http://icao.int/iwxxm/3.0" xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <issueTime>
+    <gml:TimeInstant gml:id="uuid.f74d9ee3-0e72-4285-a93f-587ea02c2a1b">
+      <gml:timePosition>2018-05-01T15:01:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </issueTime>
+  <issuingTropicalCycloneAdvisoryCentre>
+    <Unit gml:id="uuid.41d4a202-4aae-4b05-87b3-8217b67f1433" xmlns="http://www.aixm.aero/schema/5.1.1">
+      <timeSlice>
+        <UnitTimeSlice gml:id="uuid.54bf799e-c4ae-4c50-b8ff-113db67e6e41">
+          <gml:validTime/>
+          <interpretation>SNAPSHOT</interpretation>
+          <type>OTHER:TCAC</type>
+          <designator>KNHC</designator>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </issuingTropicalCycloneAdvisoryCentre>
+  <tropicalCycloneName>HELENE</tropicalCycloneName>
+  <advisoryNumber>2018/01</advisoryNumber>
+  <observation>
+    <TropicalCycloneObservedConditions gml:id="uuid.2a5653f4-0e02-4192-89fb-b59e03302be5">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.231543b5-d10d-46b4-b916-5288c1ddfcf4">
+          <gml:timePosition>2018-05-01T14:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point axisLabels="latitude longitude" gml:id="uuid.3724ab4d-6491-4e6e-ad4e-89c2915661cd" srsDimension="2"
+          srsName="urn:ogc:def:crs::4326">
+          <gml:pos>32.900 -36.300</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <cumulonimbusCloudLocation>
+        <aixm:AirspaceVolume gml:id="uuid.38a97654-d51a-4e8a-a08d-733a85643c8c">
+          <aixm:upperLimit nilReason="unknown" xsi:nil="true"/>
+          <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+          <aixm:maximumLimit uom="FL">350</aixm:maximumLimit>
+          <aixm:horizontalProjection>
+            <aixm:Surface gml:id="uuid.17c05fc0-2d47-45b7-b62d-3020b0d25c38">
+              <gml:polygonPatches>
+                <gml:PolygonPatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList count="5">33.533 -36.333 34.100 -36.683 34.067 -34.934 33.417 -36.283 33.533 -36.333</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </gml:PolygonPatch>
+              </gml:polygonPatches>
+            </aixm:Surface>
+          </aixm:horizontalProjection>
+        </aixm:AirspaceVolume>
+      </cumulonimbusCloudLocation>
+      <cumulonimbusCloudLocation>
+        <aixm:AirspaceVolume gml:id="uuid.15fe67b9-e972-43a5-9b93-ea79e9123bbf">
+          <aixm:upperLimit uom="FL">350</aixm:upperLimit>
+          <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+          <aixm:lowerLimit uom="FL">350</aixm:lowerLimit>
+          <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+          <aixm:horizontalProjection>
+            <aixm:Surface gml:id="uuid.a1aa2ad8-9022-4143-a6ca-a2e6b8b97e3d">
+              <gml:polygonPatches>
+                <gml:PolygonPatch>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList count="4">31.667 -35.417 31.017 -36.183 30.500 -34.817 31.667 -35.417</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </gml:PolygonPatch>
+              </gml:polygonPatches>
+            </aixm:Surface>
+          </aixm:horizontalProjection>
+        </aixm:AirspaceVolume>
+      </cumulonimbusCloudLocation>
+      <movement>STATIONARY</movement>
+      <centralPressure uom="hPa">988</centralPressure>
+      <meanMaxSurfaceWind uom="[kn_i]">60</meanMaxSurfaceWind>
+    </TropicalCycloneObservedConditions>
+  </observation>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.4abb65ca-4da7-4c21-b708-8a5afdd35307">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.c36883e7-7076-4e84-ad23-eed2f42dacc8">
+          <gml:timePosition>2018-05-01T21:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point axisLabels="latitude longitude" gml:id="uuid.dd87fcdd-9563-4dd0-91fd-f13494d21c40">
+          <gml:pos>34.633 -35.767</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <maximumSurfaceWindSpeed uom="[kn_i]">60</maximumSurfaceWindSpeed>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.ebb9f427-7f23-49fe-98a2-d7a2b2a1ac6f">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.29630f17-a430-4f71-92a1-c931b0e1abde">
+          <gml:timePosition>2018-05-02T03:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point axisLabels="latitude longitude" gml:id="uuid.b31f4308-d9d5-48c5-80fc-fcae8a13bcf3">
+          <gml:pos>36.217 -34.967</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <maximumSurfaceWindSpeed uom="[kn_i]">60</maximumSurfaceWindSpeed>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.bb85c27a-7e87-497c-8f9e-31b449ac1572">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.cc39a8ed-6a38-4c0b-bb5d-abcf8210687c">
+          <gml:timePosition>2018-05-02T09:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point axisLabels="latitude longitude" gml:id="uuid.04778a8b-a955-4ce9-b5ff-4c68e0facc13">
+          <gml:pos>37.667 -33.917</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <maximumSurfaceWindSpeed uom="[kn_i]">55</maximumSurfaceWindSpeed>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.c1af95bb-faca-466f-a280-a9faa634bf5e">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.1fd8452f-72b5-4248-9a8b-f7f9e846d059">
+          <gml:timePosition>2018-05-02T15:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point axisLabels="latitude longitude" gml:id="uuid.05dac6fe-5198-4481-8218-e2c4152f0726">
+          <gml:pos>38.967 -32.550</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <maximumSurfaceWindSpeed uom="[kn_i]">55</maximumSurfaceWindSpeed>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <remarks nilReason="http://www.opengis.net/def/nil/OGC/0/inapplicable"/>
+  <expectedNextAdvisoryTime nilReason="http://www.opengis.net/def/nil/OGC/0/inapplicable"/>
+</TropicalCycloneAdvisory>
