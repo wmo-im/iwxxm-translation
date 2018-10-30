@@ -1,40 +1,41 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="false" gml:id="uuid.235c2ea4-02d3-4287-85a9-79027127c315" permissibleUsage="OPERATIONAL" status="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
-  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
-  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-  <!--                                                                                      -->
-  <!--TAC:METAR UIBB 290000Z 25005MPS 220V280 9999 SCT033 M01/M07 Q1018 R30/811050 NOSIG-->
+<?xml version="1.0" encoding="UTF-8"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  automatedStation="false" gml:id="uuid.a8cc856b-7041-4852-9c06-c596c801c7ea" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T20:28:34Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T20:28:34Z"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <!--
+This example of METAR/SPECI TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: METAR UIBB 290000Z 25005MPS 220V280 9999 SCT033 M01/M07 Q1018 R30/811050 NOSIG-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.2783fcfd-89b6-4417-94d7-e67a2f5a2121">
-      <gml:timePosition>2018-07-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.b4c2a55a-3577-457d-a503-384ed89284d5">
+      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.4e19eb41-aa1d-4b0b-805f-9d55a61a8fd7">
+    <aixm:AirportHeliport gml:id="uuid.f4bf1c99-bea2-4ae4-8ec6-aac672f456e4">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.c75fc5fe-0b80-49cc-9a28-3571596b0370">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.687c1732-d295-496b-921b-02a019a79286">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>BRATSK, IR</aixm:name>
           <aixm:locationIndicatorICAO>UIBB</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.d4c7aadc-a4d6-4a45-92c2-1aa1cd740e67" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
-              uomLabels="deg deg m">
-              <gml:pos>56.07 101.83 489</gml:pos>
+            <aixm:ElevatedPoint gml:id="uuid.1124c7b0-2f00-4850-9fd5-25752851e5b1" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
+              uomLabels="deg deg">
+              <gml:pos>56.07 101.83</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.2783fcfd-89b6-4417-94d7-e67a2f5a2121"/>
+  <iwxxm:observationTime xlink:href="#uuid.b4c2a55a-3577-457d-a503-384ed89284d5"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.a00aad45-9fb6-4d58-96d6-50f7616393bc">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.e0107ade-57d7-4edb-a268-fe2c475a45eb">
       <!--METAR UIBB 290000Z 25005MPS 220V280 9999 SCT033 M01/M07 Q1018 R30/811050 NOSIG-->
       <iwxxm:airTemperature uom="Cel">-1</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-7</iwxxm:dewpointTemperature>
@@ -49,7 +50,7 @@
       </iwxxm:surfaceWind>
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
-          <iwxxm:prevailingVisibility uom="km">10</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>
@@ -65,9 +66,9 @@
       <iwxxm:runwayState>
         <iwxxm:AerodromeRunwayState allRunways="false">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.6d4a89c7-ec64-4996-ac9e-db4d34beb902">
+            <aixm:RunwayDirection gml:id="uuid.8ecc7591-6388-4c58-8732-f5fedfbf4844">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.da19f0cd-3ec2-4dee-9141-1db09adf762b">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.9e0368e4-38bf-4651-ba5e-d4a1e48417eb">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>30</aixm:designator>

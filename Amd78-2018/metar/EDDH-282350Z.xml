@@ -1,40 +1,41 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="false" gml:id="uuid.35c91ad4-5bc2-454d-8848-25b69d06a1b4" permissibleUsage="OPERATIONAL" status="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
-  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
-  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-  <!--                                                                                      -->
-  <!--TAC:SPECI EDDH 282350Z 07004KT 1700 -SN FEW004 BKN005 00/M00 Q0996 RESN TEMPO SN BKN004-->
+<?xml version="1.0" encoding="UTF-8"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  automatedStation="false" gml:id="uuid.c6b52f20-4ea0-4dc0-85fe-015e09ba4754" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <!--
+This example of METAR/SPECI TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: SPECI EDDH 282350Z 07004KT 1700 -SN FEW004 BKN005 00/M00 Q0996 RESN TEMPO SN BKN004-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.293928f0-8198-4413-908c-c4c10d7b1cbb">
-      <gml:timePosition>2018-07-28T23:50:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.723ad8d4-ab42-41ba-8837-889e6bad37d8">
+      <gml:timePosition>2018-10-28T23:50:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.3e62182e-656b-4f18-b788-0e230b677be4">
+    <aixm:AirportHeliport gml:id="uuid.e56d0a1d-e962-4131-a629-8c0c285ac698">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.60900aaa-16a8-4b9b-bde4-9e9cd464c178">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.8737ae25-67f8-4a06-892f-3444fc8e770b">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>HAMBURG/FUHLSBUTTEL</aixm:name>
           <aixm:locationIndicatorICAO>EDDH</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.9febb423-6f67-4d90-a5b4-58b7d3714910" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
-              uomLabels="deg deg m">
-              <gml:pos>53.63 10.00 16</gml:pos>
+            <aixm:ElevatedPoint gml:id="uuid.35065dd6-6d10-4004-83ed-14e73ed7d0dd" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
+              uomLabels="deg deg">
+              <gml:pos>53.63 10.00</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.293928f0-8198-4413-908c-c4c10d7b1cbb"/>
+  <iwxxm:observationTime xlink:href="#uuid.723ad8d4-ab42-41ba-8837-889e6bad37d8"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.cfd80cd7-6e1c-4b95-a151-2234ceb7515f">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.d6888bda-2655-40ba-9a63-cee0112b0627">
       <!--SPECI EDDH 282350Z 07004KT 1700 -SN FEW004 BKN005 00/M00 Q0996 RESN TEMPO SN BKN004-->
       <iwxxm:airTemperature uom="Cel">0</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">0</iwxxm:dewpointTemperature>
@@ -72,11 +73,11 @@
   </iwxxm:observation>
   <iwxxm:trendForecast>
     <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
-      gml:id="uuid.5554b307-06f4-4bfb-9187-377d2989f20a">
+      gml:id="uuid.b8a6d89b-6c96-4447-81ef-b3204d91e9f9">
       <iwxxm:phenomenonTime nilReason="missing"/>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SN"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.cc12be56-3b3e-414e-a2fb-58b93138f0dc">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.64a73757-0a20-4f73-a0cc-fa741562cc00">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>

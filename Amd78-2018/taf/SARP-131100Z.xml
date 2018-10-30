@@ -1,39 +1,41 @@
-<!--This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative-->
-<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-<!--                                                                                      -->
-<!--TAC: TAF SARP 131100Z 1312/1412 05005KT CAVOK TX28/1318Z TN15/1410Z
-              PROB30 1407/1411 5000 BR NSC-->
-<iwxxm:TAF gml:id="uuid.ca7eb39b-c39f-4bb0-a287-3d63caab316c" permissibleUsage="OPERATIONAL" status="NORMAL"
-  translatedBulletinID="FTAG05SABM131200" translatedBulletinReceptionTime="2018-08-13T11:00:21" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-15T18:28:24Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+<?xml version="1.0"?>
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="uuid.e1444311-b043-47c3-8231-e383b31a64e0" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" translatedBulletinID="TTAACCCC291927" translatedBulletinReceptionTime="2018-10-29T19:27:56Z" translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2018-10-29T19:27:56Z" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <!--
+This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: TAF SARP 131100Z 1312/1412 05005KT CAVOK TX28/1318Z TN15/1410Z
+PROB30 1407/1411 5000 BR NSC=-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.8a43aa5e-51f7-47c6-91a3-9b829e997801">
-      <gml:timePosition>2018-08-13T11:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.13da9493-4e8c-4f0e-9729-32a65906ba72">
+      <gml:timePosition>2018-10-13T11:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.4158abaf-b78b-41e5-9760-d8f627fa252f">
+    <aixm:AirportHeliport gml:id="uuid.d12bc1c8-1e69-4f5c-b0c1-4c6426383b82">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.a9ab0bbf-d128-49e3-8d62-6a63deaf64cd">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.6d8f20aa-5c46-4109-a13f-1b1183e5b5a3">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:locationIndicatorICAO>SARP</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint gml:id="uuid.49c0af0a-11a9-48b7-b79c-2977f7438b2d" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" uomLabels="deg deg">
+              <gml:pos>-27.37 -55.97</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:validTime>
-    <gml:TimePeriod gml:id="uuid.661cfd46-a9f8-45a8-b249-8e9704be9e93">
-      <gml:beginPosition>2018-08-13T12:00:00Z</gml:beginPosition>
-      <gml:endPosition>2018-08-14T12:00:00Z</gml:endPosition>
+  <iwxxm:validPeriod>
+    <gml:TimePeriod gml:id="uuid.4dcc336c-b980-47d5-86ad-8d1ca5759ad1">
+      <gml:beginPosition>2018-10-13T12:00:00Z</gml:beginPosition>
+      <gml:endPosition>2018-10-14T12:00:00Z</gml:endPosition>
     </gml:TimePeriod>
-  </iwxxm:validTime>
+  </iwxxm:validPeriod>
   <iwxxm:baseForecast>
-    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="true" gml:id="uuid.431cec8e-4116-4e7f-9366-c5e13441965a">
-      <iwxxm:phenomenonTime xlink:href="#uuid.661cfd46-a9f8-45a8-b249-8e9704be9e93"/>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="true" gml:id="uuid.2e0b4b65-1b65-4209-b03a-59d061f4dcba">
+      <iwxxm:phenomenonTime xlink:href="#uuid.4dcc336c-b980-47d5-86ad-8d1ca5759ad1"/>
       <iwxxm:surfaceWind>
         <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
           <iwxxm:meanWindDirection uom="deg">050</iwxxm:meanWindDirection>
@@ -44,14 +46,14 @@
         <iwxxm:AerodromeAirTemperatureForecast>
           <iwxxm:maximumAirTemperature uom="Cel">28</iwxxm:maximumAirTemperature>
           <iwxxm:maximumAirTemperatureTime>
-            <gml:TimeInstant gml:id="uuid.a54c6f2c-ea0b-444b-9562-e67a9649064b">
-              <gml:timePosition>2018-08-13T18:00:00Z</gml:timePosition>
+            <gml:TimeInstant gml:id="uuid.05356ce5-8696-4557-9c5f-6f1ff0a560cf">
+              <gml:timePosition>2018-10-13T18:00:00Z</gml:timePosition>
             </gml:TimeInstant>
           </iwxxm:maximumAirTemperatureTime>
           <iwxxm:minimumAirTemperature uom="Cel">15</iwxxm:minimumAirTemperature>
           <iwxxm:minimumAirTemperatureTime>
-            <gml:TimeInstant gml:id="uuid.cec1db2f-4baf-45c2-87c7-d64970dd62a7">
-              <gml:timePosition>2018-08-14T10:00:00Z</gml:timePosition>
+            <gml:TimeInstant gml:id="uuid.2e775c8f-f0e7-48a2-bc3e-68b2e935cb89">
+              <gml:timePosition>2018-10-14T10:00:00Z</gml:timePosition>
             </gml:TimeInstant>
           </iwxxm:minimumAirTemperatureTime>
         </iwxxm:AerodromeAirTemperatureForecast>
@@ -59,12 +61,11 @@
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:baseForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="PROBABILITY_30" cloudAndVisibilityOK="false"
-      gml:id="uuid.a26cab58-303c-40b1-8e64-4757c336da36">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="PROBABILITY_30" cloudAndVisibilityOK="false" gml:id="uuid.0bf96f64-a02e-4ffe-96bb-795580db9c6a">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.88ed47b9-3edd-4f98-b511-7d817b970302">
-          <gml:beginPosition>2018-08-14T07:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-08-14T11:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.85b7c155-1b7a-499b-afea-1b0b34f6d051">
+          <gml:beginPosition>2018-10-14T07:00:00Z</gml:beginPosition>
+          <gml:endPosition>2018-10-14T11:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">5000</iwxxm:prevailingVisibility>

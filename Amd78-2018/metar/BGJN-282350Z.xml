@@ -1,40 +1,41 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="false" gml:id="uuid.a2df265d-37aa-477c-95ba-e001722221e9" permissibleUsage="OPERATIONAL" status="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
-  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
-  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-  <!--                                                                                      -->
-  <!--TAC:SPECI BGJN 282350Z 14035GP50KT 9999 SCT180 M19/M26 Q1024-->
+<?xml version="1.0" encoding="UTF-8"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  automatedStation="false" gml:id="uuid.b2e16c2c-3f20-4698-980c-607625d9a3b8" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <!--
+This example of METAR/SPECI TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: SPECI BGJN 282350Z 14035GP50KT 9999 SCT180 M19/M26 Q1024-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.66204c00-a156-4e45-8427-750f32e6a79b">
-      <gml:timePosition>2018-07-28T23:50:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.6eeb0bc6-4b0d-4ced-804e-57f93c9e25ed">
+      <gml:timePosition>2018-10-28T23:50:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.d2b6c2e1-e924-4fc7-ac9b-7d798e0493ed">
+    <aixm:AirportHeliport gml:id="uuid.7231780c-13eb-4641-9d9a-2ca00fed6b9f">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.09971baa-d42f-4fac-8420-3acb49e87982">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.87115eef-e7ca-417c-89b8-cedf3fa9c8d3">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>JAKOBSHAVN_(PORT)</aixm:name>
           <aixm:locationIndicatorICAO>BGJN</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.bd8a9161-caf6-4600-8645-9c5e22dbedb8" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
-              uomLabels="deg deg m">
-              <gml:pos>69.25 -51.07 25</gml:pos>
+            <aixm:ElevatedPoint gml:id="uuid.94cb588a-4774-480d-a6fc-c90ce076f4c1" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
+              uomLabels="deg deg">
+              <gml:pos>69.25 -51.07</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.66204c00-a156-4e45-8427-750f32e6a79b"/>
+  <iwxxm:observationTime xlink:href="#uuid.6eeb0bc6-4b0d-4ced-804e-57f93c9e25ed"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.8991b0a9-21b8-4081-953e-3e554c034dd1">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.476302aa-7780-4c67-a6fb-b4b467d6f17d">
       <!--SPECI BGJN 282350Z 14035GP50KT 9999 SCT180 M19/M26 Q1024-->
       <iwxxm:airTemperature uom="Cel">-19</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-26</iwxxm:dewpointTemperature>
@@ -49,7 +50,7 @@
       </iwxxm:surfaceWind>
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
-          <iwxxm:prevailingVisibility uom="km">10</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>
