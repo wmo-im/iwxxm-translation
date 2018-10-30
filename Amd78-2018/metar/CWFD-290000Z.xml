@@ -1,40 +1,41 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="true" gml:id="uuid.5ad9bc16-541d-46de-ae12-7bcb6f0e0e8a" permissibleUsage="OPERATIONAL" status="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
-  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
-  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-  <!--                                                                                      -->
-  <!--TAC:METAR CWFD 290000Z AUTO 20022KT ////SM // BKN003 BKN008 ///// A////-->
+<?xml version="1.0" encoding="UTF-8"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  automatedStation="true" gml:id="uuid.e59ed78c-eb65-477f-b9e7-31e91fea408d" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <!--
+This example of METAR/SPECI TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: METAR CWFD 290000Z AUTO 20022KT ////SM // BKN003 BKN008 ///// A////-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.9080b2c9-fbd4-423a-a1ce-0dad0334733c">
-      <gml:timePosition>2018-07-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.4ee0664b-bd24-459f-a9c7-1c8abc9b4a91">
+      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.d7c87597-aeae-4959-ba3a-617f3adb380e">
+    <aixm:AirportHeliport gml:id="uuid.6e1b292d-5d33-4102-a1ea-6be564a5dff1">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.f9771faa-93d3-4876-8d54-108e868b83b9">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.13727cc2-f725-4c4d-8672-68f12799e96e">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>CAPE DYER ARPT, NU</aixm:name>
           <aixm:locationIndicatorICAO>CWFD</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.2c21414a-cea3-42d0-a7e0-cb88c603618d" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
-              uomLabels="deg deg m">
-              <gml:pos>66.58 -61.62 393</gml:pos>
+            <aixm:ElevatedPoint gml:id="uuid.b9a8a300-86a2-41d3-8efb-6f7536275c7b" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
+              uomLabels="deg deg">
+              <gml:pos>66.58 -61.62</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.9080b2c9-fbd4-423a-a1ce-0dad0334733c"/>
+  <iwxxm:observationTime xlink:href="#uuid.4ee0664b-bd24-459f-a9c7-1c8abc9b4a91"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.aea1589e-420e-41de-bdcc-e6cb8d73ba69">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.77b8cd3f-3cc3-4abb-a7d2-777c33731eff">
       <!--METAR CWFD 290000Z AUTO 20022KT ////SM // BKN003 BKN008 ///// A////-->
       <iwxxm:airTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
       <iwxxm:dewpointTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>

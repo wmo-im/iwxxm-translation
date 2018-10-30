@@ -1,40 +1,41 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="false" gml:id="uuid.825bee10-da3c-4cad-9a17-ca5671cbc88a" permissibleUsage="OPERATIONAL" status="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
-  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
-  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-  <!--                                                                                      -->
-  <!--TAC:METAR ZSPD 290000Z 13003MPS 0800 R17L/P2000 R16R/0600N R17R/1600U R16L/0900U FG BKN002 13/13 Q1018 BECMG TL0130 3000 BR SCT004 BKN020-->
+<?xml version="1.0" encoding="UTF-8"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  automatedStation="false" gml:id="uuid.0871ab3f-70dd-42da-b50d-04ba66d2716c" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <!--
+This example of METAR/SPECI TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: METAR ZSPD 290000Z 13003MPS 0800 R17L/P2000 R16R/0600N R17R/1600U R16L/0900U FG BKN002 13/13 Q1018 BECMG TL0130 3000 BR SCT004 BKN020-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.86036785-5953-4d8f-af46-f9f8600d7c1e">
-      <gml:timePosition>2018-07-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.63c869a8-77ea-4fef-a4d9-7fb45266d6bb">
+      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.ac04a9d2-715b-4583-9fae-a968a7fb0d85">
+    <aixm:AirportHeliport gml:id="uuid.3dba7d82-37e0-4d7f-a10d-a7870194bc74">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.530ac8be-b253-45e2-9382-13cb7efd3992">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.b381e468-ae60-4cad-a149-3ffb8451cd5d">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>SHANGHAI/PUDONG</aixm:name>
           <aixm:locationIndicatorICAO>ZSPD</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.cf50779c-2811-4f8c-a5fb-b08ad342fb08" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
-              uomLabels="deg deg m">
-              <gml:pos>31.12 121.77 4</gml:pos>
+            <aixm:ElevatedPoint gml:id="uuid.8b1c4820-5505-447d-a75e-1a94df220ffd" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
+              uomLabels="deg deg">
+              <gml:pos>31.12 121.77</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.86036785-5953-4d8f-af46-f9f8600d7c1e"/>
+  <iwxxm:observationTime xlink:href="#uuid.63c869a8-77ea-4fef-a4d9-7fb45266d6bb"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.b5bac0f9-638c-46cc-a070-a231515c088b">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.c3bcc503-ef40-4124-8f54-7bccf32a4456">
       <!--METAR ZSPD 290000Z 13003MPS 0800 R17L/P2000 R16R/0600N R17R/1600U R16L/0900U FG BKN002 13/13 Q1018 BECMG TL0130 3000 BR SCT004 BKN020-->
       <iwxxm:airTemperature uom="Cel">13</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">13</iwxxm:dewpointTemperature>
@@ -53,9 +54,9 @@
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="MISSING_VALUE">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.88e618d6-eeac-4fa4-bc9e-5252fd636213">
+            <aixm:RunwayDirection gml:id="uuid.d456c402-4c60-431c-b5a2-7e9b275115de">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.e1604027-ca39-41b9-bdf6-c9aee449e358">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.4fe73c66-ff15-4cd8-b03f-3ddae4f621b2">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>17L</aixm:designator>
@@ -70,9 +71,9 @@
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.7fc5e508-2352-413e-88fc-d008aa295925">
+            <aixm:RunwayDirection gml:id="uuid.5dd5828b-b126-4d24-8771-d77a77b9a580">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.141293ae-4d99-470a-91c1-3a0f1b657f93">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.9a3a598f-1dd2-4bab-817c-c100437b4b71">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>16R</aixm:designator>
@@ -86,9 +87,9 @@
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="UPWARD">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.1d9488f0-4d10-47be-9c60-9ac1337a686d">
+            <aixm:RunwayDirection gml:id="uuid.4e97d7ad-51b4-4e9d-8f37-520a3c30394b">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.e4670477-365d-4909-8dbb-64d6b4864116">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.ad60c0e7-d39f-4ca7-9ce8-29aba3b9fc2f">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>17R</aixm:designator>
@@ -102,9 +103,9 @@
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="UPWARD">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.18b53385-13c8-47ba-a967-4ae1929535b8">
+            <aixm:RunwayDirection gml:id="uuid.fb14bdbb-62a4-49b7-8a7b-160724a82a68">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.7c498f40-2501-433e-97e9-1885f3644203">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.50195475-da63-44f4-9550-e69a81c2c4d3">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>16L</aixm:designator>
@@ -130,17 +131,17 @@
   </iwxxm:observation>
   <iwxxm:trendForecast>
     <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
-      gml:id="uuid.3fca77a2-dea0-4cf9-81b3-a59121e13217">
+      gml:id="uuid.2e22e241-3ae5-433d-b07e-aa718299f1e3">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.0dfbea3a-c670-4c60-972e-09a9f0bf92a5">
-          <gml:beginPosition indeterminatePosition="before">2018-07-29T01:30:00Z</gml:beginPosition>
-          <gml:endPosition>2018-07-29T01:30:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.ed0543c8-ad5e-4a88-b052-98df441055c3">
+          <gml:beginPosition indeterminatePosition="before">2018-10-29T01:30:00Z</gml:beginPosition>
+          <gml:endPosition>2018-10-29T01:30:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">3000</iwxxm:prevailingVisibility>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/BR"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.4c261f92-0b36-4d65-8635-4c2d38ac8eba">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.1de1338f-7358-4dfd-8c13-2a7a0c3968f4">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>

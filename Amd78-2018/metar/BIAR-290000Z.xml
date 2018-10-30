@@ -1,40 +1,41 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="false" gml:id="uuid.c236cdb6-7f91-433e-89b5-b4c613fd32a2" permissibleUsage="OPERATIONAL" status="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-08-06T14:34:48Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-06T14:34:48Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
-  <!--This example of METAR/SPECI TAC to XML translation should not be considered authorative-->
-  <!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-  <!--                                                                                      -->
-  <!--TAC:METAR BIAR 290000Z 33003KT 280V010 9999 OVC032 04/M00 Q////-->
+<?xml version="1.0" encoding="UTF-8"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  automatedStation="false" gml:id="uuid.42eaee28-0bb5-45cd-b5e3-29d14dd97849" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <!--
+This example of METAR/SPECI TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: METAR BIAR 290000Z 33003KT 280V010 9999 OVC032 04/M00 Q////-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.97ccdc32-b716-4cfd-9d09-d6b1e95dfa53">
-      <gml:timePosition>2018-07-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.0656a590-9652-4c4d-9877-28ba166fb21d">
+      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.67a8642e-b977-46ae-badd-89a15b1da6ed">
+    <aixm:AirportHeliport gml:id="uuid.8c930cb0-75c0-433b-b082-ccecd347c0d1">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.81cdde87-3911-42c0-a01e-8784f32eecba">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.455475d2-ccff-4d62-a78b-4b0b4ccd0e32">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>AKUREYRI</aixm:name>
           <aixm:locationIndicatorICAO>BIAR</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.057f7991-dde2-4c83-906b-f22abffcac5b" srsDimension="3" srsName="urn:ogc:def:crs:EPSG::4979"
-              uomLabels="deg deg m">
-              <gml:pos>65.68 -18.08 27</gml:pos>
+            <aixm:ElevatedPoint gml:id="uuid.d1167019-cd8c-4330-ae91-332dc2f346c8" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
+              uomLabels="deg deg">
+              <gml:pos>65.68 -18.08</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.97ccdc32-b716-4cfd-9d09-d6b1e95dfa53"/>
+  <iwxxm:observationTime xlink:href="#uuid.0656a590-9652-4c4d-9877-28ba166fb21d"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.5b94ea28-3ac4-4c08-8be6-b1a57bfd30af">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.c891c2d6-9e1a-46f2-9fe6-2a7dba51c7ed">
       <!--METAR BIAR 290000Z 33003KT 280V010 9999 OVC032 04/M00 Q////-->
       <iwxxm:airTemperature uom="Cel">4</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">0</iwxxm:dewpointTemperature>
@@ -49,7 +50,7 @@
       </iwxxm:surfaceWind>
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
-          <iwxxm:prevailingVisibility uom="km">10</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>

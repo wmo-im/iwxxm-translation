@@ -1,5 +1,11 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<TropicalCycloneAdvisory xmlns="http://icao.int/iwxxm/3.0" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="uuid.138e0246-e8d7-429d-9619-58346b381b7a"
+  permissibleUsage="NON-OPERATIONAL" permissibleUsageReason="TEST" reportStatus="NORMAL" translatedBulletinID="FKNT23011500"
+  translatedBulletinReceptionTime="2018-10-29T12:31:06Z" translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations"
+  translationTime="2018-10-29T12:31:06Z" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  <!--
 This example of Tropical Cyclone Advisory TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
@@ -8,7 +14,7 @@ TAC:
 FKNT23 KNHC 011500
 TCANT3
  
-TROPICAL STORM GILBERT ICAO ADVISORY NUMBER  01
+TROPICAL STORM UNNAMED ICAO ADVISORY NUMBER  01
 NWS NATIONAL HURRICANE CENTER MIAMI FL       AL012018
 1500 UTC FRI MAY 01 2018
  
@@ -16,21 +22,15 @@ TC ADVISORY
 STATUS:                   TEST
 $$
 -->
-<TropicalCycloneAdvisory gml:id="uuid.03a95bb1-fc05-428d-b6c8-3bf23fc594e7" permissibleUsage="NON-OPERATIONAL" permissibleUsageReason="TEST"
-  translatedBulletinID="FKNT23011500" translatedBulletinReceptionTime="2018-09-17T18:14:23Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-09-17T18:14:23Z" xmlns="http://icao.int/iwxxm/3.0"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
   <issueTime>
-    <gml:TimeInstant gml:id="uuid.e1d40009-584b-4ed6-86de-f92cbe794b2e">
-      <gml:timePosition>2018-09-01T15:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.3dde3efe-4601-4ab5-9ec6-9bb61e8023b0">
+      <gml:timePosition>2018-11-01T15:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </issueTime>
   <issuingTropicalCycloneAdvisoryCentre>
-    <Unit gml:id="uuid.3d0b26f2-c535-49a5-aca6-8658a23ddc9e" xmlns="http://www.aixm.aero/schema/5.1.1">
+    <Unit xmlns="http://www.aixm.aero/schema/5.1.1" gml:id="uuid.8588be3d-1240-49ee-88ff-852c68758ee6">
       <timeSlice>
-        <UnitTimeSlice gml:id="uuid.2464342e-fae9-45b0-b91f-4e4edfee1a4b">
+        <UnitTimeSlice gml:id="uuid.a23627e2-38a4-4e1c-ad53-7ba634093f40">
           <gml:validTime/>
           <interpretation>SNAPSHOT</interpretation>
           <type>OTHER:TCAC</type>
@@ -47,5 +47,5 @@ $$
   <forecast nilReason="http://codes.wmo.int/common/nil/missing"/>
   <forecast nilReason="http://codes.wmo.int/common/nil/missing"/>
   <remarks nilReason="http://codes.wmo.int/common/nil/missing"/>
-  <expectedNextAdvisoryTime nilReason="http://codes.wmo.int/common/nil/missing"/>
+  <nextAdvisoryTime nilReason="http://codes.wmo.int/common/nil/missing"/>
 </TropicalCycloneAdvisory>
