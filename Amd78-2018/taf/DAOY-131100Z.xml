@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="uuid.8bc387de-f49e-44d3-ad99-f9bc278babac" isNilReport="true" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" translatedBulletinID="TTAACCCC291927" translatedBulletinReceptionTime="2018-10-29T19:27:56Z" translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2018-10-29T19:27:56Z" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  gml:id="uuid.8bc387de-f49e-44d3-ad99-f9bc278babac" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="TTAACCCC291927" translatedBulletinReceptionTime="2018-10-29T19:27:56Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T19:27:56Z"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
   <!--
 This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
@@ -18,7 +23,8 @@ TAC: TAF DAOY 131100Z NIL=-->
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:locationIndicatorICAO>DAOY</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.8caaf6ec-4b63-45b5-a19d-f80c42b7eda8" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" uomLabels="deg deg">
+            <aixm:ElevatedPoint gml:id="uuid.8caaf6ec-4b63-45b5-a19d-f80c42b7eda8" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
+              uomLabels="deg deg">
               <gml:pos>33.72 1.09</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
