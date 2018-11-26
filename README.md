@@ -22,7 +22,7 @@ AND CONTINUES HERE UNTIL THE END OF THE XML COMMENT BLOCK
 -->
 <iwxxm:Report />
 ```
-The comments in these XML documents are for illustrating how TAC forms (or portions thereof) are translated into IWXXM XML. There should
+The comments in these XML documents are for illustrating how TAC forms (or portions thereof) are realized in IWXXM XML. There should
 be no expectation that such comments will appear in operational IWXXM XML products produced by member states.
 
 # TAC Guidelines
