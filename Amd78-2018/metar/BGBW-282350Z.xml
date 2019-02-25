@@ -44,6 +44,7 @@ TAC: SPECI BGBW 282350Z AUTO /////KT 9999NDV BKN190/// M03/M12 Q1023-->
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
           <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>

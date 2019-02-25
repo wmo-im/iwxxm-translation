@@ -51,6 +51,7 @@ TAC: SPECI BGJN 282350Z 14035GP50KT 9999 SCT180 M19/M26 Q1024-->
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
           <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>

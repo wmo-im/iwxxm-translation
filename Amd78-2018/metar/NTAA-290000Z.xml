@@ -49,6 +49,7 @@ TAC: METAR NTAA 290000Z 25005KT 9999 FEW026 SCT043 32/24 Q1012 WS R04 NOSIG-->
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
           <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>

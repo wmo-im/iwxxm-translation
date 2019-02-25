@@ -49,6 +49,7 @@ TAC: SPECI EETN 290020Z 24006KT 9999 FEW019 M05/M07 Q1015 R08/0///95 NOSIG-->
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
           <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>

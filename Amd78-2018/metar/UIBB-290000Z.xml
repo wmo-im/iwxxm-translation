@@ -51,6 +51,7 @@ TAC: METAR UIBB 290000Z 25005MPS 220V280 9999 SCT033 M01/M07 Q1018 R30/811050 NO
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
           <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>
