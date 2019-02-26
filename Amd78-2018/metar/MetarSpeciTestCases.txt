@@ -25,6 +25,8 @@ LCRA-282350Z.xml - Thunderstorm
 LTCN-282350Z.xml - Varible wind direction, trend no signficant weather
 NTAA-290000Z.xml - Wind shear on runway
 NTAA-290015Z.xml - Wind shear on all runways
+SBBR-250000Z.xml - Missing amount and base on cumulonimbus cloud layer
+SCCH-250000Z.xml - Missing cloud amount and base on cloud layer from automated station
 UAAA-290000Z.xml - Runway cleared with friction report
 UBBB-290000Z.xml - Runway cleared with missing friction report
 UIBB-290000Z.xml - 
