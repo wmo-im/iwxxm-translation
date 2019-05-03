@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="false" gml:id="uuid.800cfce6-0b8f-4182-b5db-df3f2f6ec5be" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T20:28:34Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T20:28:34Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:METAR automatedStation="false" gml:id="uuid.6af68c33-1071-4813-a8c2-c07729716506" permissibleUsage="OPERATIONAL"
+  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:55Z"
+  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:55Z"
+  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
 TAC: METAR UKHH 290000Z 07005MPS CAVOK M03/M06 Q1015 R07/0///66 NOSIG-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.56e8084b-5d0d-4707-a8bd-d625861c45d6">
-      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.49435802-49c0-4ba8-b898-805651609040">
+      <gml:timePosition>2019-04-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.dc9a7f30-fa11-4555-8a79-349d329e1d3f">
+    <aixm:AirportHeliport gml:id="uuid.0788e492-ee94-4c53-ae93-99ac7b8812c8">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.202b23c3-2898-4ca6-99d2-73543a2ac25c">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.247ead28-765d-4568-aca0-a308da0e2e14">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>KHARKIV</aixm:name>
           <aixm:locationIndicatorICAO>UKHH</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.8146553f-5aac-4e1d-a43e-839cb1f5d220" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.0c59c2ed-c45a-41d8-85bc-7d605e0b9039" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>49.97 36.13</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -33,9 +33,9 @@ TAC: METAR UKHH 290000Z 07005MPS CAVOK M03/M06 Q1015 R07/0///66 NOSIG-->
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.56e8084b-5d0d-4707-a8bd-d625861c45d6"/>
+  <iwxxm:observationTime xlink:href="#uuid.49435802-49c0-4ba8-b898-805651609040"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="true" gml:id="uuid.2790b02a-cc29-4d46-ae43-3edacfe83670">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="true" gml:id="uuid.e8799521-8f95-4ad5-b181-d498b8ab3905">
       <!--METAR UKHH 290000Z 07005MPS CAVOK M03/M06 Q1015 R07/0///66 NOSIG-->
       <iwxxm:airTemperature uom="Cel">-3</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-6</iwxxm:dewpointTemperature>
@@ -49,9 +49,9 @@ TAC: METAR UKHH 290000Z 07005MPS CAVOK M03/M06 Q1015 R07/0///66 NOSIG-->
       <iwxxm:runwayState>
         <iwxxm:AerodromeRunwayState allRunways="false">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.ec383896-14cd-497c-984c-bcc7b4accc41">
+            <aixm:RunwayDirection gml:id="uuid.6da0b3b1-3e74-4240-9c67-eed3bd47d51e">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.2778b4f3-7f68-47f6-9b0e-9da66e8bace5">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.8431f743-23df-48e2-bbb6-85a81209922c">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>07</aixm:designator>
@@ -59,10 +59,9 @@ TAC: METAR UKHH 290000Z 07005MPS CAVOK M03/M06 Q1015 R07/0///66 NOSIG-->
               </aixm:timeSlice>
             </aixm:RunwayDirection>
           </iwxxm:runway>
-          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/0" xlink:title="Clear and dry"/>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/0"/>
           <iwxxm:depthOfDeposit nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
-          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/66"
-            xlink:title="Friction coefficient: 0.66"/>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/66"/>
         </iwxxm:AerodromeRunwayState>
       </iwxxm:runwayState>
     </iwxxm:MeteorologicalAerodromeObservation>

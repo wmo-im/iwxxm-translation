@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="false" gml:id="uuid.756aff43-c909-4abe-8d7f-757810a6dc5e" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-30T12:35:39Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2018-10-30T12:35:37Z"
+<iwxxm:METAR automatedStation="false" gml:id="uuid.fbe28012-de8c-4052-900a-0efa64d08deb" permissibleUsage="OPERATIONAL"
+  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:55Z"
+  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:55Z"
   xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
 TAC: METAR UBBB 290000Z 35009KT 9999 SCT004 OVC200 07/06 Q1014 R88/CLRD// NOSIG-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.bb4519a6-7c65-4d95-a7b4-f369b4ae3595">
-      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.22b94712-3090-423c-845d-6c396e4f5885">
+      <gml:timePosition>2019-04-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.bf2d89ed-61f0-4f1d-a80e-a9d8101af072">
+    <aixm:AirportHeliport gml:id="uuid.182690a8-593f-44c4-b6b6-e419b4157cab">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.a21394a7-2cc8-4c90-9c6c-e2e1a6ab0c22">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.87726eeb-4716-4df9-86b2-49a8db25e87f">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>BAKU/BINE ARPT, TB</aixm:name>
           <aixm:locationIndicatorICAO>UBBB</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.81a85c13-f6c5-4861-9181-aa360f1bbe8b" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.6880e240-b7cb-4772-9c94-287ebca3c626" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>40.45 50.07</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -33,9 +33,9 @@ TAC: METAR UBBB 290000Z 35009KT 9999 SCT004 OVC200 07/06 Q1014 R88/CLRD// NOSIG-
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.bb4519a6-7c65-4d95-a7b4-f369b4ae3595"/>
+  <iwxxm:observationTime xlink:href="#uuid.22b94712-3090-423c-845d-6c396e4f5885"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.ceb2dc6e-4c76-4453-afa4-2d33ec4abf6c">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.5a0346ad-53d5-45a6-af0b-cbe31d11efdb">
       <!--METAR UBBB 290000Z 35009KT 9999 SCT004 OVC200 07/06 Q1014 R88/CLRD// NOSIG-->
       <iwxxm:airTemperature uom="Cel">7</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">6</iwxxm:dewpointTemperature>
@@ -56,13 +56,13 @@ TAC: METAR UBBB 290000Z 35009KT 9999 SCT004 OVC200 07/06 Q1014 R88/CLRD// NOSIG-
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
               <iwxxm:base uom="[ft_i]">400</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/4" xlink:title="Overcast"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/4"/>
               <iwxxm:base uom="[ft_i]">20000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

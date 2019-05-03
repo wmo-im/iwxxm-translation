@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="true" gml:id="uuid.c8aac342-1701-4e62-9004-7a8d0d9f2886" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:SPECI automatedStation="true" gml:id="uuid.94811c8f-39fb-4813-98f4-7b6c53c0245c" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
 TAC: SPECI BGBW 282350Z AUTO /////KT 9999NDV BKN190/// M03/M12 Q1023-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.f1712df6-4101-4f9e-91a6-26f98820a3de">
-      <gml:timePosition>2018-10-28T23:50:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.194a7efd-b23c-45ef-8b4b-3ea9fbd1e9a1">
+      <gml:timePosition>2019-04-28T23:50:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.f1ff3686-0a60-40f8-893c-0a505583e41d">
+    <aixm:AirportHeliport gml:id="uuid.3725b2d6-7f64-43ee-b647-e3583c7ffe1a">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.b19f8fde-01dc-4c27-b7b2-f930e23157cb">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.e654555b-f476-4a0d-827c-7dfb35b71810">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>NARSSARSSUAQ</aixm:name>
           <aixm:locationIndicatorICAO>BGBW</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.0d3ed6a7-2dfe-4d6e-a5ba-ba11aed06fed" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.bd66ab51-1f97-44b9-a6db-2fb0a75a2161" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>61.18 -45.42</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -33,9 +33,9 @@ TAC: SPECI BGBW 282350Z AUTO /////KT 9999NDV BKN190/// M03/M12 Q1023-->
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.f1712df6-4101-4f9e-91a6-26f98820a3de"/>
+  <iwxxm:observationTime xlink:href="#uuid.194a7efd-b23c-45ef-8b4b-3ea9fbd1e9a1"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.0efb6f3b-1f04-4d2b-aca0-213fb04e285a">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.dfd5c768-172d-45bd-8fc4-32a70c338f0f">
       <!--SPECI BGBW 282350Z AUTO /////KT 9999NDV BKN190/// M03/M12 Q1023-->
       <iwxxm:airTemperature uom="Cel">-3</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-12</iwxxm:dewpointTemperature>
@@ -51,7 +51,7 @@ TAC: SPECI BGBW 282350Z AUTO /////KT 9999NDV BKN190/// M03/M12 Q1023-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">19000</iwxxm:base>
               <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
             </iwxxm:CloudLayer>

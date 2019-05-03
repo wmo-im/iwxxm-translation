@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<VolcanicAshAdvisory gml:id="uuid.96362edc-bcb8-411c-ab7b-ea85b2e5367d" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+<VolcanicAshAdvisory gml:id="uuid.cbd825bc-fd67-4e8e-8c38-ffd8c6345d5a" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
   translatedBulletinID="FVXX23KNES031922" translatedBulletinReceptionTime="2018-06-03T19:22:00Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-30T11:47:36Z" xmlns="http://icao.int/iwxxm/3.0"
+  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T09:28:34Z" xmlns="http://icao.int/iwxxm/3.0"
   xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of Volcanic Ash Advisory TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
@@ -64,14 +64,14 @@ UPDATE AS NEEDED. ...LEE
 
 NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
   <issueTime>
-    <gml:TimeInstant gml:id="uuid.477772e7-e37e-4791-b163-b5c4fbf78ade">
+    <gml:TimeInstant gml:id="uuid.7fae3784-91d6-4e64-9f42-49e1b76c7a0d">
       <gml:timePosition>2018-06-03T19:22:00Z</gml:timePosition>
     </gml:TimeInstant>
   </issueTime>
   <issuingVolcanicAshAdvisoryCentre>
-    <Unit gml:id="uuid.d6722fe5-5719-4610-be91-7c386cf176e5" xmlns="http://www.aixm.aero/schema/5.1.1">
+    <Unit gml:id="uuid.32b76725-4ab0-4eb8-b1ac-2c50ec22732a" xmlns="http://www.aixm.aero/schema/5.1.1">
       <timeSlice>
-        <UnitTimeSlice gml:id="uuid.de6cc384-ba16-4f35-862f-1cde95ffc098">
+        <UnitTimeSlice gml:id="uuid.1e691522-a016-4e97-b142-8307dff7b9b3">
           <gml:validTime/>
           <interpretation>SNAPSHOT</interpretation>
           <name>WASHINGTON</name>
@@ -81,38 +81,40 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
     </Unit>
   </issuingVolcanicAshAdvisoryCentre>
   <volcano>
-    <EruptingVolcano gml:id="uuid.bb9780b9-8af8-4070-b02e-f86a10953807" xmlns="http://def.wmo.int/metce/2013">
-      <gml:description>NEW EXPLOSIVE VA EM.</gml:description>
+    <EruptingVolcano gml:id="uuid.b78f7eca-4c79-4145-b2da-6b4b8edf24cd" xmlns="http://def.wmo.int/metce/2013">
       <name>FUEGO 342090</name>
       <position>
-        <gml:Point axisLabels="Latitude Longitude SummitHeight" gml:id="uuid.3370a9e2-7e86-40d2-a7aa-885bdc05b413"
-          srsName="urn:ogc:def:crs:EPSG::4979" uomLabels="deg deg m">
-          <gml:pos>14.467 -90.867 3763</gml:pos>
+        <gml:Point axisLabels="Lat Long" gml:id="uuid.a2a1be69-61bf-428c-9201-01403379289e" srsDimension="2"
+          srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+          <gml:pos>14.467 -90.867</gml:pos>
         </gml:Point>
       </position>
       <eruptionDate>2018-06-03T19:22:00Z</eruptionDate>
     </EruptingVolcano>
   </volcano>
+  <stateOrRegion>GUATEMALA</stateOrRegion>
+  <summitElevation uom="[ft_i]">12346</summitElevation>
   <advisoryNumber>2018/425</advisoryNumber>
   <informationSource>GOES-EAST. NWP MODELS. HYSPLIT. INSIVUMEH.</informationSource>
+  <eruptionDetails>NEW EXPLOSIVE VA EM.</eruptionDetails>
   <observation>
-    <VolcanicAshObservedOrEstimatedConditions gml:id="uuid.9c283e5e-c1e3-4d30-8fe9-911be59164fc" isEstimated="false" status="IDENTIFIABLE">
+    <VolcanicAshObservedOrEstimatedConditions gml:id="uuid.250aea25-5798-41b3-99ec-e8cd27f650f6" isEstimated="false" status="IDENTIFIABLE">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.089ad948-a568-462f-a126-7e3106310d2c">
+        <gml:TimeInstant gml:id="uuid.0952fa75-f756-4fa9-9a6c-b57155c93194">
           <gml:timePosition>2018-06-03T17:30:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.9973198e-f379-45c5-9789-df46e22ac814">
+        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.e6df3297-b103-4e50-9353-13e7e7384d2c">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.02e0f7e1-949a-4d84-81d0-55a3c93060c7">
+            <aixm:AirspaceVolume gml:id="uuid.52409750-5163-4e92-bdac-930b2e9c8f32">
               <aixm:upperLimit uom="FL">300</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface axisLabels="Latitude Longitude" gml:id="uuid.c0eed866-04b7-4d5f-89c4-4d43b035f30c"
-                  srsName="urn:ogc:def:crs:EPSG::4326" uomLabels="deg deg">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.b543c8e9-b02f-4fdc-b04b-c9d07b3df050" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -131,15 +133,16 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
         </VolcanicAshCloudObservedOrEstimated>
       </ashCloud>
       <ashCloud>
-        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.0b3ffad4-0f31-40db-9154-5028b0526ad2">
+        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.653bb11e-a324-497f-bad9-f03b9c626911">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.30fac0ad-8935-4bb0-a771-2d7f07e57d48">
+            <aixm:AirspaceVolume gml:id="uuid.608dd8d8-39e1-42e1-8ca4-c6a480af1d24">
               <aixm:upperLimit uom="FL">500</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.b416b99f-8d14-47f8-aa2d-726f055dc02c">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.e3c295b8-2d4b-45ce-96eb-4b0829da2ba5" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -160,22 +163,23 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
     </VolcanicAshObservedOrEstimatedConditions>
   </observation>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.4fcc97b5-8bad-4c24-85f5-7a4e5d4e7a05" status="PROVIDED">
+    <VolcanicAshForecastConditions gml:id="uuid.56f34eba-02e6-4845-bbfa-cdd91cd7dfca" status="PROVIDED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.6edd2155-68b4-4fe8-bfdd-4390f9032c85">
+        <gml:TimeInstant gml:id="uuid.30cd9246-371c-4e26-bfcf-f8b1f680c388">
           <gml:timePosition>2018-06-03T23:30:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.cb37e5e9-e56e-46c4-8d7c-345523e0c9b6">
+        <VolcanicAshCloudForecast gml:id="uuid.abb6431d-1802-41a4-bb4a-6f64906f2333">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.ec2312a2-a5c5-46ab-8ffa-2cf758cd468c">
+            <aixm:AirspaceVolume gml:id="uuid.d2499ac0-ed37-458f-a7a8-569cd2c99c31">
               <aixm:upperLimit uom="FL">300</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.78ddd30c-afb6-4ba2-a8a9-628ef01009bb">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.c4f3b7f8-7375-41fd-acb3-0dde316e22fb" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -192,15 +196,16 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
         </VolcanicAshCloudForecast>
       </ashCloud>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.4abeb370-5f65-4e93-9075-282d36ecb710">
+        <VolcanicAshCloudForecast gml:id="uuid.97a285c1-8efe-455b-802f-aad08409e6ab">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.67e5a220-1f4c-425d-a3ca-45dd4192416d">
+            <aixm:AirspaceVolume gml:id="uuid.d78518c1-d08f-4f29-9769-8a2e7a71bd06">
               <aixm:upperLimit uom="FL">500</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.b768dcb6-2fe0-46a5-a7e1-dc70f1a2ddda">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.06d68ee1-f883-44e7-9f06-bfd6a252e4e1" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -219,22 +224,23 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
     </VolcanicAshForecastConditions>
   </forecast>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.c88f5dd0-28be-4247-aac9-251150881fa4" status="PROVIDED">
+    <VolcanicAshForecastConditions gml:id="uuid.2ce44326-1f91-4a1d-bc4c-6036c0074c2b" status="PROVIDED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.bd4db71b-dd08-4a77-a964-40dca1937330">
+        <gml:TimeInstant gml:id="uuid.865ed8e5-8e6f-4134-87f8-7c09fcaf21f4">
           <gml:timePosition>2018-06-04T05:30:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.f206d9bb-4434-42e9-8e23-3dd4bdba2017">
+        <VolcanicAshCloudForecast gml:id="uuid.78a7acfe-3765-400f-b6ab-af4ebf6df2de">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.476249a5-e01b-43c9-b9ba-d4534803df1b">
+            <aixm:AirspaceVolume gml:id="uuid.610def7e-12a4-4413-b737-824ee2caf423">
               <aixm:upperLimit uom="FL">300</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.b811ed3b-27f4-40b7-a2d2-f5e8fb161dd3">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.72971aec-f7f6-46a8-b5ad-58deba55a30e" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -251,15 +257,16 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
         </VolcanicAshCloudForecast>
       </ashCloud>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.d5b18c17-a34e-4731-bff2-8f2a599b1db5">
+        <VolcanicAshCloudForecast gml:id="uuid.d45c171b-ad1f-44ac-bea4-7bb3b42313f2">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.22111a1a-e87b-41b2-8a0c-d74b1380f950">
+            <aixm:AirspaceVolume gml:id="uuid.89110a07-875f-41ff-83bf-800a42768fad">
               <aixm:upperLimit uom="FL">500</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.b4cf617a-4a5b-4b78-af07-c6d233f922c0">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.765e006b-a379-4fb8-ada1-79f8db4c5e93" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -278,22 +285,23 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
     </VolcanicAshForecastConditions>
   </forecast>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.e0953b20-8182-46b6-bc49-d45db0532f1a" status="PROVIDED">
+    <VolcanicAshForecastConditions gml:id="uuid.7412bb8b-10b6-476e-a07f-8f4bd8967fcf" status="PROVIDED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.b0b79cbd-78c3-46d4-9a66-fe21c8982bac">
+        <gml:TimeInstant gml:id="uuid.2299069f-ee30-45d1-b69e-ffd0bdec94e2">
           <gml:timePosition>2018-06-04T11:30:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.b489ac51-a40c-49cb-bfe9-810c3f54d4e4">
+        <VolcanicAshCloudForecast gml:id="uuid.4d8afb48-a83a-404c-a874-d3c5a087c3a6">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.95703c00-f7fa-49fb-82a1-e088781cb235">
+            <aixm:AirspaceVolume gml:id="uuid.e3df82cf-482d-4110-8b43-4b40cec9318a">
               <aixm:upperLimit uom="FL">300</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.7f5cfa97-6a8f-4712-9322-8fd77199718c">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.7703a4ba-b95e-45d4-ad78-d680cf53021c" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -310,15 +318,16 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
         </VolcanicAshCloudForecast>
       </ashCloud>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.955c373f-7899-4df1-9cd5-f03c25373e97">
+        <VolcanicAshCloudForecast gml:id="uuid.28da4695-b745-4806-866c-d73415ed1b24">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.aeab9c25-f6b1-48c5-860b-a81f93fc5115">
+            <aixm:AirspaceVolume gml:id="uuid.e931a3c8-706d-4caa-ab40-44e0a3a98b86">
               <aixm:upperLimit uom="FL">500</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.6a1fe7ef-aa6c-429a-b4e8-b0b5fb607a08">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.0f545567-323a-4155-9165-2db548da1138" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -338,7 +347,7 @@ NXT ADVISORY: WILL BE ISSUED BY 20180604/0115Z-->
   </forecast>
   <remarks>EXPLOSIVE VA EM SEEN IN STLT AND RPRTD BY MULTIPLE AGENCIES. STLT SIGNATURE SUGGEST VA EJECTED TO EL AROUND FL500. NWP MDLS SUGGEST VA WILL MOVE NE AND E IN SEPARATE PLUMES. WILL UPDATE AS NEEDED. ...LEE</remarks>
   <nextAdvisoryTime>
-    <gml:TimeInstant gml:id="uuid.aebaa8a6-fa36-4ee2-9280-93dfc253603d">
+    <gml:TimeInstant gml:id="uuid.6dab749d-9d13-401c-9feb-aed97b41c3ab">
       <gml:timePosition indeterminatePosition="before">2018-06-04T01:15:00Z</gml:timePosition>
     </gml:TimeInstant>
   </nextAdvisoryTime>

@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="false" gml:id="uuid.06d0922b-1dee-4d86-83c4-7dde4e044096" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:SPECI automatedStation="false" gml:id="uuid.6dbdee3f-adc5-47ce-9beb-df9e0d4dc42c" permissibleUsage="OPERATIONAL"
+  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z"
+  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z"
+  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
 TAC: SPECI EDDP 290020Z 21008KT 180V240 9999 FEW028 BKN060 07/06 Q0996 BECMG 25015G25KT-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.7417ae6f-a7d1-4362-bc45-12c985d68978">
-      <gml:timePosition>2018-10-29T00:20:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.dc8c8534-72b9-405e-aa3c-e81d6db1ebeb">
+      <gml:timePosition>2019-04-29T00:20:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.bb0f8e6f-4386-4d5f-a62a-204f4481b7bd">
+    <aixm:AirportHeliport gml:id="uuid.35dab5b9-0354-4faf-96c8-5ba7af280d82">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.040a38f4-5966-43a6-933b-1ffe6f48c161">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.0a4c4833-c5f7-4913-b0c0-a3de5e8e8f20">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>LEIPZIG/SCHKEUDITZ</aixm:name>
           <aixm:locationIndicatorICAO>EDDP</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.33c667fd-86bc-49db-bc89-be9daf9e23a2" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.b0ba3dca-336c-4035-af2b-b80b0e2ee126" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>51.42 12.23</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -33,9 +33,9 @@ TAC: SPECI EDDP 290020Z 21008KT 180V240 9999 FEW028 BKN060 07/06 Q0996 BECMG 250
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.7417ae6f-a7d1-4362-bc45-12c985d68978"/>
+  <iwxxm:observationTime xlink:href="#uuid.dc8c8534-72b9-405e-aa3c-e81d6db1ebeb"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.519d0f1c-adb7-43b4-b1c3-c0338f416b97">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.a1ad7b80-6d34-4960-bc38-66fb514caad6">
       <!--SPECI EDDP 290020Z 21008KT 180V240 9999 FEW028 BKN060 07/06 Q0996 BECMG 25015G25KT-->
       <iwxxm:airTemperature uom="Cel">7</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">6</iwxxm:dewpointTemperature>
@@ -58,13 +58,13 @@ TAC: SPECI EDDP 290020Z 21008KT 180V240 9999 FEW028 BKN060 07/06 Q0996 BECMG 250
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
               <iwxxm:base uom="[ft_i]">2800</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">6000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -74,8 +74,8 @@ TAC: SPECI EDDP 290020Z 21008KT 180V240 9999 FEW028 BKN060 07/06 Q0996 BECMG 250
   </iwxxm:observation>
   <iwxxm:trendForecast>
     <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
-      gml:id="uuid.276b4fa8-464b-4609-88fd-d7bc70f70e7d">
-      <iwxxm:phenomenonTime nilReason="missing"/>
+      gml:id="uuid.b7fd2edf-41ae-4b2b-a7d0-43bfe5196298">
+      <iwxxm:phenomenonTime nilReason="http://codes.wmo.int/common/nil/missing"/>
       <iwxxm:surfaceWind>
         <iwxxm:AerodromeSurfaceWindTrendForecast>
           <iwxxm:meanWindDirection uom="deg">250</iwxxm:meanWindDirection>

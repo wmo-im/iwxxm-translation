@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="false" gml:id="uuid.6fb2e45b-1262-4f6b-ab80-1c1b3782c5e3" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T20:28:33Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T20:28:33Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:SPECI automatedStation="false" gml:id="uuid.55ee1178-93d5-4fc5-a4fa-382a4170f4ff" permissibleUsage="OPERATIONAL"
+  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z"
+  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z"
+  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
 TAC: SPECI EKCH 282350Z 09018G28KT CAVOK 01/M03 Q1005 R04L/710166 R04R/710169 R12/710177 NOSIG-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.e0de86f4-4016-4ac8-b10f-e9156ed5d93f">
-      <gml:timePosition>2018-10-28T23:50:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.9f346949-2bba-4c48-92ff-2cb2997e130c">
+      <gml:timePosition>2019-04-28T23:50:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.88a64385-852c-498d-9ee6-980d61b4438a">
+    <aixm:AirportHeliport gml:id="uuid.4d295691-dd33-495a-be4c-37b29cee8f06">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.a1c4008b-f9fa-4f47-affb-4bc5b0ed1f67">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.821cee37-96fc-47be-8824-260ba4c91649">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>COPENHAGEN/KASTRUP</aixm:name>
           <aixm:locationIndicatorICAO>EKCH</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.9b538b19-41db-4c68-b2ff-1ad34367bbb2" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.4593e342-d3bf-44f0-aaff-2cc1a59bcc4e" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>55.63 12.67</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -33,9 +33,9 @@ TAC: SPECI EKCH 282350Z 09018G28KT CAVOK 01/M03 Q1005 R04L/710166 R04R/710169 R1
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.e0de86f4-4016-4ac8-b10f-e9156ed5d93f"/>
+  <iwxxm:observationTime xlink:href="#uuid.9f346949-2bba-4c48-92ff-2cb2997e130c"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="true" gml:id="uuid.0111f339-7fb0-4e12-b4b6-949cfaa3ff31">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="true" gml:id="uuid.37ba5fbd-4b96-4821-9e30-bc1543ce4c8f">
       <!--SPECI EKCH 282350Z 09018G28KT CAVOK 01/M03 Q1005 R04L/710166 R04R/710169 R12/710177 NOSIG-->
       <iwxxm:airTemperature uom="Cel">1</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-3</iwxxm:dewpointTemperature>
@@ -50,9 +50,9 @@ TAC: SPECI EKCH 282350Z 09018G28KT CAVOK 01/M03 Q1005 R04L/710166 R04R/710169 R1
       <iwxxm:runwayState>
         <iwxxm:AerodromeRunwayState allRunways="false">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.f26a1cce-3fd5-4ea2-a0f9-74737ab30cfe">
+            <aixm:RunwayDirection gml:id="uuid.42ad384a-ac8f-43e8-8595-398ab751d79f">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.0034c201-5949-47e1-a4d4-dd2e7510b4a3">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.5a2169be-7957-412a-a1d1-2a5090767fa5">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>04L</aixm:designator>
@@ -60,19 +60,18 @@ TAC: SPECI EKCH 282350Z 09018G28KT CAVOK 01/M03 Q1005 R04L/710166 R04R/710169 R1
               </aixm:timeSlice>
             </aixm:RunwayDirection>
           </iwxxm:runway>
-          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/7" xlink:title="Ice"/>
-          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1" xlink:title="Less than 10% of runway covered"/>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/7"/>
+          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1"/>
           <iwxxm:depthOfDeposit uom="mm">01</iwxxm:depthOfDeposit>
-          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/66"
-            xlink:title="Friction coefficient: 0.66"/>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/66"/>
         </iwxxm:AerodromeRunwayState>
       </iwxxm:runwayState>
       <iwxxm:runwayState>
         <iwxxm:AerodromeRunwayState allRunways="false">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.64d40342-8cbf-4546-b8b7-0928aa3f58d8">
+            <aixm:RunwayDirection gml:id="uuid.e9e7ba36-a2c5-40ce-be67-18badb2773dc">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.86113ce9-88d0-4407-a606-ac8690f23dae">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.ec5a74dc-b9d9-4379-ab2a-2ad3aee001b3">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>04R</aixm:designator>
@@ -80,19 +79,18 @@ TAC: SPECI EKCH 282350Z 09018G28KT CAVOK 01/M03 Q1005 R04L/710166 R04R/710169 R1
               </aixm:timeSlice>
             </aixm:RunwayDirection>
           </iwxxm:runway>
-          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/7" xlink:title="Ice"/>
-          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1" xlink:title="Less than 10% of runway covered"/>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/7"/>
+          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1"/>
           <iwxxm:depthOfDeposit uom="mm">01</iwxxm:depthOfDeposit>
-          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/69"
-            xlink:title="Friction coefficient: 0.69"/>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/69"/>
         </iwxxm:AerodromeRunwayState>
       </iwxxm:runwayState>
       <iwxxm:runwayState>
         <iwxxm:AerodromeRunwayState allRunways="false">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.ea606e8f-c0af-45d0-9266-7347b60bade0">
+            <aixm:RunwayDirection gml:id="uuid.6ccb032b-dc44-4696-a3c0-e637a915cdd0">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.e12c3bb1-c6b6-4d30-a662-bfddac01899c">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.e9508995-15ea-4a24-8fe2-513b40d8324a">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>12</aixm:designator>
@@ -100,11 +98,10 @@ TAC: SPECI EKCH 282350Z 09018G28KT CAVOK 01/M03 Q1005 R04L/710166 R04R/710169 R1
               </aixm:timeSlice>
             </aixm:RunwayDirection>
           </iwxxm:runway>
-          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/7" xlink:title="Ice"/>
-          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1" xlink:title="Less than 10% of runway covered"/>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/7"/>
+          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1"/>
           <iwxxm:depthOfDeposit uom="mm">01</iwxxm:depthOfDeposit>
-          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/77"
-            xlink:title="Friction coefficient: 0.77"/>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/77"/>
         </iwxxm:AerodromeRunwayState>
       </iwxxm:runwayState>
     </iwxxm:MeteorologicalAerodromeObservation>

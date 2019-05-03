@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<VolcanicAshAdvisory gml:id="uuid.f0ba3385-5855-433e-86ce-de0a4a8e78fc" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+<VolcanicAshAdvisory gml:id="uuid.b3d0e8f9-54b7-40fb-9cf2-12d7e9cfa85a" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
   translatedBulletinID="FVAG01SABM301600" translatedBulletinReceptionTime="2018-05-30T16:00:00Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-30T11:47:36Z" xmlns="http://icao.int/iwxxm/3.0"
+  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T09:28:34Z" xmlns="http://icao.int/iwxxm/3.0"
   xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of Volcanic Ash Advisory TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
@@ -36,14 +36,14 @@ IMAGERY. WILL KEEP MONITORING AND ISSUE AN ADVICE
 IF NECESARY. ...SMN
 NXT ADVISORY: NO FURTHER ADVISORIES=-->
   <issueTime>
-    <gml:TimeInstant gml:id="uuid.459f5dfb-1155-4eea-9985-417b9ea5e8f5">
+    <gml:TimeInstant gml:id="uuid.f678411a-208e-45d1-9695-a4cb9fbbc1d3">
       <gml:timePosition>2018-05-30T16:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </issueTime>
   <issuingVolcanicAshAdvisoryCentre>
-    <Unit gml:id="uuid.1a9c2d08-dc2a-4029-adf5-e2de13d3e06c" xmlns="http://www.aixm.aero/schema/5.1.1">
+    <Unit gml:id="uuid.b77c104b-cffa-4d7f-b14a-a8ff7e6d40b5" xmlns="http://www.aixm.aero/schema/5.1.1">
       <timeSlice>
-        <UnitTimeSlice gml:id="uuid.bac5bd8e-85e0-4a0b-84b9-1f8bf756d1cc">
+        <UnitTimeSlice gml:id="uuid.9318f941-cedd-47bf-9040-6b86d9f40a79">
           <gml:validTime/>
           <interpretation>SNAPSHOT</interpretation>
           <name>BUENOS AIRES</name>
@@ -53,33 +53,35 @@ NXT ADVISORY: NO FURTHER ADVISORIES=-->
     </Unit>
   </issuingVolcanicAshAdvisoryCentre>
   <volcano>
-    <EruptingVolcano gml:id="uuid.7572083c-420c-4889-9d14-46572798be9b" xmlns="http://def.wmo.int/metce/2013">
-      <gml:description>WEAK EMISSIONS OF STEAM AND PSBL VA</gml:description>
+    <EruptingVolcano gml:id="uuid.50c50376-901f-4801-94ef-4ae004af22a6" xmlns="http://def.wmo.int/metce/2013">
       <name>NEVADO DE CHILLAN 357070</name>
       <position>
-        <gml:Point axisLabels="Latitude Longitude SummitHeight" gml:id="uuid.56405b46-dd3b-4f7d-be84-4b5d61f252d3"
-          srsName="urn:ogc:def:crs:EPSG::4979" uomLabels="deg deg m">
-          <gml:pos>-36.850 -71.367 3212</gml:pos>
+        <gml:Point axisLabels="Lat Long" gml:id="uuid.fb4de8b4-f597-4185-acf7-4195761ef3c7" srsDimension="2"
+          srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+          <gml:pos>-36.850 -71.367</gml:pos>
         </gml:Point>
       </position>
       <eruptionDate>2018-05-30T16:00:00Z</eruptionDate>
     </EruptingVolcano>
   </volcano>
+  <stateOrRegion>CHILE</stateOrRegion>
+  <summitElevation uom="[ft_i]">10538</summitElevation>
   <advisoryNumber>2018/030</advisoryNumber>
   <informationSource>GOES-E. GFS WINDS. VOLCANO WEB CAMERA.</informationSource>
-  <colourCode nilReason="withheld"/>
+  <colourCode nilReason="http://codes.wmo.int/common/nil/withheld"/>
+  <eruptionDetails>WEAK EMISSIONS OF STEAM AND PSBL VA</eruptionDetails>
   <observation>
-    <VolcanicAshObservedOrEstimatedConditions gml:id="uuid.d58a87a0-43fe-4389-9044-bf8ee6648636" isEstimated="false"
+    <VolcanicAshObservedOrEstimatedConditions gml:id="uuid.8ff7bd94-af5a-464e-b714-105ebd5014c8" isEstimated="false"
       status="NOT_IDENTIFIABLE">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.e1e631bf-ddd6-4356-a0da-0ee69ec3a880">
+        <gml:TimeInstant gml:id="uuid.608e5793-e731-41a6-a280-b27b991b6e68">
           <gml:timePosition>2018-05-30T15:15:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <wind>
-        <WindObservedOrEstimated gml:id="uuid.53d335a2-7da4-41b9-8562-a8aa895e334e" variableWindDirection="false">
+        <WindObservedOrEstimated gml:id="uuid.553cad80-b94b-427f-ad2b-14a4e49bec8a" variableWindDirection="false">
           <verticalLayer>
-            <aixm:AirspaceLayer gml:id="uuid.433ff87b-7f90-473f-8397-e7d8e8bd6559">
+            <aixm:AirspaceLayer gml:id="uuid.50d48c60-ddb4-4675-a854-fb589f198817">
               <aixm:upperLimit uom="FL">100</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit uom="FL">100</aixm:lowerLimit>
@@ -91,9 +93,9 @@ NXT ADVISORY: NO FURTHER ADVISORIES=-->
         </WindObservedOrEstimated>
       </wind>
       <wind>
-        <WindObservedOrEstimated gml:id="uuid.aeb0947e-3882-48fe-a1ed-0d14261b12f1" variableWindDirection="false">
+        <WindObservedOrEstimated gml:id="uuid.99abbda0-0369-43b4-b5d6-588f9b7b90ab" variableWindDirection="false">
           <verticalLayer>
-            <aixm:AirspaceLayer gml:id="uuid.63d1427a-cbf4-41b2-9ee2-725a92a4fad6">
+            <aixm:AirspaceLayer gml:id="uuid.105c754b-d5d0-462a-94d9-412dc5f3bb13">
               <aixm:upperLimit uom="FL">140</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit uom="FL">140</aixm:lowerLimit>
@@ -105,9 +107,9 @@ NXT ADVISORY: NO FURTHER ADVISORIES=-->
         </WindObservedOrEstimated>
       </wind>
       <wind>
-        <WindObservedOrEstimated gml:id="uuid.71923617-3a06-432a-bf4e-268823866b92" variableWindDirection="false">
+        <WindObservedOrEstimated gml:id="uuid.0f8c954f-e413-439a-b070-3c9c0d7aa5e0" variableWindDirection="false">
           <verticalLayer>
-            <aixm:AirspaceLayer gml:id="uuid.70b8ab74-fea3-4358-a7a5-a3202b5d5655">
+            <aixm:AirspaceLayer gml:id="uuid.5315a139-4fb0-463d-9c0a-6c8558efef12">
               <aixm:upperLimit uom="FL">180</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit uom="FL">180</aixm:lowerLimit>
@@ -121,32 +123,32 @@ NXT ADVISORY: NO FURTHER ADVISORIES=-->
     </VolcanicAshObservedOrEstimatedConditions>
   </observation>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.ab3e655a-c015-44f2-92c0-70de97d92338" status="NOT_AVAILABLE">
+    <VolcanicAshForecastConditions gml:id="uuid.0dcb8e97-f3f7-411f-a45a-4aefa249fe64" status="NOT_AVAILABLE">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.a0a25fae-5617-44c7-8027-89c78715e17b">
+        <gml:TimeInstant gml:id="uuid.370a969c-9adb-444a-aba7-aae2e4cee940">
           <gml:timePosition>2018-05-30T21:30:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
     </VolcanicAshForecastConditions>
   </forecast>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.f0585b3d-f896-4746-ac2e-46baac2b9219" status="NOT_AVAILABLE">
+    <VolcanicAshForecastConditions gml:id="uuid.576d1314-f38b-446b-b627-63b2e15317ac" status="NOT_AVAILABLE">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.9189e411-5c9d-480a-b1ab-b0c6f5f34701">
+        <gml:TimeInstant gml:id="uuid.1cb8e06e-9ee9-4e2e-aba7-c3a059b524ba">
           <gml:timePosition>2018-05-31T03:30:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
     </VolcanicAshForecastConditions>
   </forecast>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.c02573de-e8ae-46d7-8382-917d9cb85eae" status="NOT_AVAILABLE">
+    <VolcanicAshForecastConditions gml:id="uuid.e8febc6f-599d-43e5-9ded-fa02b44e33a7" status="NOT_AVAILABLE">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.15bfbba7-8df0-4386-80f0-dc501caa09b5">
+        <gml:TimeInstant gml:id="uuid.8dd89ff8-e204-41e6-8672-663ef33e3046">
           <gml:timePosition>2018-05-31T09:30:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
     </VolcanicAshForecastConditions>
   </forecast>
   <remarks>WEBCAM SHOWS SPORADIC WEAK EMISSIONS OF WV AND GASES WITH PSBL ASH. VA IS NOT SEEN IN STLT IMAGERY. WILL KEEP MONITORING AND ISSUE AN ADVICE IF NECESARY. ...SMN</remarks>
-  <nextAdvisoryTime nilReason="inapplicable"/>
+  <nextAdvisoryTime nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
 </VolcanicAshAdvisory>

@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="false" gml:id="uuid.97822345-5df4-452d-8343-b2dd9ba5bd4c" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:SPECI automatedStation="false" gml:id="uuid.f517b10d-baca-4b2c-be54-41eb508513c1" permissibleUsage="OPERATIONAL"
+  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:55Z"
+  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:55Z"
+  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
 TAC: SPECI NTAA 290015Z 25004KT 9999 FEW026 SCT043 32/24 Q1012 WS ALL RWY NOSIG-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.217354cd-8509-4fd0-bfb5-4f4d9a73abc0">
-      <gml:timePosition>2018-10-29T00:15:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.156b747e-1fb1-4263-acbb-af5cc91d2b97">
+      <gml:timePosition>2019-04-29T00:15:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.a39f85ca-1ca4-4b14-87a8-ad604c86e45d">
+    <aixm:AirportHeliport gml:id="uuid.7fbdb6f8-f030-4b02-acf7-271403d910c2">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.d2181e57-0124-48ae-9f0e-90f2042623c3">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.faf2ba2c-ac80-455f-ac1e-a937094442c6">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>TAHITI_ISLAND/FAAA</aixm:name>
           <aixm:locationIndicatorICAO>NTAA</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.45185cff-2300-4fe7-811c-6a4b47063dac" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.d71e90e7-1447-4b4f-93b5-905a461ce833" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>-17.55 -149.62</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -33,9 +33,9 @@ TAC: SPECI NTAA 290015Z 25004KT 9999 FEW026 SCT043 32/24 Q1012 WS ALL RWY NOSIG-
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.217354cd-8509-4fd0-bfb5-4f4d9a73abc0"/>
+  <iwxxm:observationTime xlink:href="#uuid.156b747e-1fb1-4263-acbb-af5cc91d2b97"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.8dd0626c-8437-423d-9a34-4d6fe5bd66b2">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.a7eddd8d-45a0-4b2e-a6a2-b0bf20d8e7f2">
       <!--SPECI NTAA 290015Z 25004KT 9999 FEW026 SCT043 32/24 Q1012 WS ALL RWY NOSIG-->
       <iwxxm:airTemperature uom="Cel">32</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">24</iwxxm:dewpointTemperature>
@@ -56,13 +56,13 @@ TAC: SPECI NTAA 290015Z 25004KT 9999 FEW026 SCT043 32/24 Q1012 WS ALL RWY NOSIG-
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
               <iwxxm:base uom="[ft_i]">2600</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
               <iwxxm:base uom="[ft_i]">4300</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="false" gml:id="uuid.a67712fa-20cb-4df3-9982-6bf00b46f72d" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:METAR automatedStation="false" gml:id="uuid.71c38fe2-853c-49a4-8438-2aadc307505d" permissibleUsage="OPERATIONAL"
+  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:55Z"
+  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:55Z"
+  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
 TAC: METAR WSSS 290000Z VRB02KT 7000 FEW018TCU BKN150 27/26 Q1011 TEMPO FM0130 4500 RA-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.ef376b61-33df-4fa0-a38b-419e9ba15f87">
-      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.2f1bae87-1684-49cf-a884-6ffb3c8f3ff6">
+      <gml:timePosition>2019-04-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.058be154-b4d8-49e9-b055-d7a60766cbfd">
+    <aixm:AirportHeliport gml:id="uuid.fece1164-676a-4a5d-ba77-93d7c1d55369">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.bf74cbf3-78ae-4afc-940a-c6db86d02c67">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.9aab9a78-dd76-404c-9e46-9906636ec11e">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>SINGAPORE / CHANGI AIRPORT</aixm:name>
           <aixm:locationIndicatorICAO>WSSS</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.400d8de8-0568-4361-9c5e-599b678d6b1f" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.33ee0ef0-23fe-4345-b358-54552f24fa0a" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>1.37 103.99</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -33,9 +33,9 @@ TAC: METAR WSSS 290000Z VRB02KT 7000 FEW018TCU BKN150 27/26 Q1011 TEMPO FM0130 4
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.ef376b61-33df-4fa0-a38b-419e9ba15f87"/>
+  <iwxxm:observationTime xlink:href="#uuid.2f1bae87-1684-49cf-a884-6ffb3c8f3ff6"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.9d4f5117-80b5-407b-a2b0-3d03ed5ae289">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.28c6b10e-eda4-4284-b986-ec62548e8f50">
       <!--METAR WSSS 290000Z VRB02KT 7000 FEW018TCU BKN150 27/26 Q1011 TEMPO FM0130 4500 RA-->
       <iwxxm:airTemperature uom="Cel">27</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">26</iwxxm:dewpointTemperature>
@@ -54,14 +54,14 @@ TAC: METAR WSSS 290000Z VRB02KT 7000 FEW018TCU BKN150 27/26 Q1011 TEMPO FM0130 4
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
               <iwxxm:base uom="[ft_i]">1800</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32" xlink:title="Towering Cumulus (TCU)"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">15000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -71,11 +71,11 @@ TAC: METAR WSSS 290000Z VRB02KT 7000 FEW018TCU BKN150 27/26 Q1011 TEMPO FM0130 4
   </iwxxm:observation>
   <iwxxm:trendForecast>
     <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
-      gml:id="uuid.a567b853-2c72-4358-98cd-5ae233932a3c">
+      gml:id="uuid.b8540bcd-9c06-4c02-9cd1-324e1d270035">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.cb7bd403-cdd9-4052-879e-2d1853084587">
-          <gml:beginPosition>2018-10-29T01:30:00Z</gml:beginPosition>
-          <gml:endPosition indeterminatePosition="after">2018-10-29T01:30:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.1ee94973-0174-47f5-9881-471ae34fd5b2">
+          <gml:beginPosition>2019-04-29T01:30:00Z</gml:beginPosition>
+          <gml:endPosition indeterminatePosition="after">2019-04-29T01:30:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">4500</iwxxm:prevailingVisibility>
