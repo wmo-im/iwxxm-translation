@@ -1,5 +1,9 @@
-<?xml version="1.0"?>
-<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="uuid.9ca1e4c2-4e7d-4f1c-827b-2843ae0d0687" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" translatedBulletinID="TTAACCCC291927" translatedBulletinReceptionTime="2018-10-29T19:27:56Z" translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2018-10-29T19:27:56Z" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<iwxxm:TAF gml:id="uuid.59a62d3d-d123-4bfa-a0d8-ace3b9acb18c" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="FTUS42KTBW132300" translatedBulletinReceptionTime="2019-05-03T12:35:37Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T12:35:37Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
@@ -15,19 +19,21 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
        PROB30 1416/1420 3SM RA BKN030
      FM142200 27015KT P6SM SKC=-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.92794815-4d01-4b9b-a41a-5f85c3c935c4">
-      <gml:timePosition>2018-10-13T23:40:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.fc2fb08b-953c-4622-9fcd-0a7e10e4ef5d">
+      <gml:timePosition>2019-04-13T23:40:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.337d9f7b-507d-4b42-aa92-aad3a1ce4b1a">
+    <aixm:AirportHeliport gml:id="uuid.c81c79e4-7421-46d1-9cad-ce2d23167228">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.ac146079-32c1-498e-bdb6-7cde7004c719">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.9b7c57bb-f990-49eb-b8ef-70866f1c2cc8">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>TAMPA INTL AIRPO, FL</aixm:name>
           <aixm:locationIndicatorICAO>KTPA</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.69f89dab-1024-4195-9a0d-b4be14571687" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326" uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.ff8ae735-3056-4806-b1b0-f5f62f4395fe" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>27.97 -82.53</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -36,17 +42,17 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
   <iwxxm:validPeriod>
-    <gml:TimePeriod gml:id="uuid.e3a53e7a-5672-42e0-8a85-83b4bb1ca33b">
-      <gml:beginPosition>2018-10-14T00:00:00Z</gml:beginPosition>
-      <gml:endPosition>2018-10-15T00:00:00Z</gml:endPosition>
+    <gml:TimePeriod gml:id="uuid.64f4359e-34a2-4a6f-ba19-aa0117539ac8">
+      <gml:beginPosition>2019-04-14T00:00:00Z</gml:beginPosition>
+      <gml:endPosition>2019-04-15T00:00:00Z</gml:endPosition>
     </gml:TimePeriod>
   </iwxxm:validPeriod>
   <iwxxm:baseForecast>
-    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" gml:id="uuid.2331a205-963f-4233-b0c5-b5d38becf383">
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" gml:id="uuid.7da959f9-88bd-4f1e-aadd-048280c436b2">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.98ca8c6f-3e40-4ef6-a176-ea134dd0d450">
-          <gml:beginPosition>2018-10-13T23:40:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T04:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.769ffc9f-2194-46ab-89c9-7ae9c15ef961">
+          <gml:beginPosition>2019-04-13T23:40:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T04:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">4800</iwxxm:prevailingVisibility>
@@ -60,10 +66,10 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RA"/>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.b602dddd-249a-42c2-a5bd-67acf4f2c473">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.b252b23c-f8d2-4ac1-bb31-44a07165129e">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/4" xlink:title="Overcast"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/4"/>
               <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -72,11 +78,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:baseForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false" gml:id="uuid.b8bcf43e-bffe-47fe-8b12-cbe1563a8f12">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
+      gml:id="uuid.be0b6501-fe05-4ed8-b1e1-f1481b21745d">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.ffc5d823-2b1c-401f-ac9f-a42c32f46bfc">
-          <gml:beginPosition>2018-10-14T00:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T04:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.f9f2793e-6d94-4d66-bc0a-56701945d4c4">
+          <gml:beginPosition>2019-04-14T00:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T04:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">800</iwxxm:prevailingVisibility>
@@ -90,12 +97,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.d4252ad1-1db4-4b82-9295-6ddf46e60077">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.08a14d24-945e-4e1f-a78e-14687a02849d">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>
@@ -103,11 +110,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false" gml:id="uuid.fc31572d-b7c6-469b-9cc8-43658a9afc7e">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.aa9ee1ee-133f-49ac-81b7-52fb90eb0577">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.0558c64b-e058-4503-8488-6b67d4eba9bf">
-          <gml:beginPosition>2018-10-14T04:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T06:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.d6c6ce30-550d-48fd-a35a-9704069eabea">
+          <gml:beginPosition>2019-04-14T04:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T06:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">800</iwxxm:prevailingVisibility>
@@ -121,12 +129,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.6a189e1a-e97d-4ce1-8c28-cd862e9838e8">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.b8862cff-eaf8-49d0-9f0e-411f5d2c3474">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>
@@ -134,11 +142,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false" gml:id="uuid.75c88317-ad0f-44d3-8a32-12b2f472f4aa">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.d05bf991-82ea-4a2a-af0d-032c9443bd8b">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.46a842be-2702-4104-8702-dd2b7c85ea85">
-          <gml:beginPosition>2018-10-14T06:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T08:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.549fdc5f-089a-4806-b245-1963346efeae">
+          <gml:beginPosition>2019-04-14T06:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T08:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:surfaceWind>
@@ -150,12 +159,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.13d92949-4439-4ced-89f2-84008e5ebe8d">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.4cf3548c-8286-46a5-8b4a-1dbfee414e47">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">600</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>
@@ -163,11 +172,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false" gml:id="uuid.9491cd14-c267-410f-b0e5-12c495f12867">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.af76b515-9436-4c6f-80a8-c12a1396d1a0">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.3262cf13-a9ee-4927-95a0-7cf5076ca3e6">
-          <gml:beginPosition>2018-10-14T08:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T12:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.7f5fe4ad-9deb-4e82-8c9d-ba9fead44ad2">
+          <gml:beginPosition>2019-04-14T08:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T12:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">1600</iwxxm:prevailingVisibility>
@@ -181,12 +191,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.65e4827a-e7f6-4f95-b619-b2b2669e05b6">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.e5f786ce-ec4a-4ce1-83a3-7b1f10043d72">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">1500</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>
@@ -194,11 +204,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false" gml:id="uuid.0288c6d5-0881-4026-a863-76d1dfaa5372">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.7e7f8039-ca09-4397-a84b-ca0d2e845ff1">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.8c46715c-4dd5-4ddf-b404-cecc746bb6b3">
-          <gml:beginPosition>2018-10-14T12:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T16:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.a2eae1f1-b87e-44a3-b96f-e4c3eb3a611d">
+          <gml:beginPosition>2019-04-14T12:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T16:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">4800</iwxxm:prevailingVisibility>
@@ -211,16 +222,16 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RA"/>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SQ"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.6b26c932-6513-49d9-aeab-94f0f187abd5">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.7669dc05-55a0-4ba9-aa83-3029ef0311ec">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
               <iwxxm:base uom="[ft_i]">1500</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -229,11 +240,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false" gml:id="uuid.6e724879-f4a7-4b89-8802-851db5a12a4d">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
+      gml:id="uuid.ac7703a6-bb37-42b4-9e05-8bc4aebd1197">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.fbbe019c-bb2d-4dbd-a8a0-9d0c116a78b1">
-          <gml:beginPosition>2018-10-14T12:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T16:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.2803b969-882c-493a-b533-ea4e2ea88f7d">
+          <gml:beginPosition>2019-04-14T12:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T16:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
@@ -247,10 +259,10 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
       </iwxxm:surfaceWind>
       <iwxxm:weather nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.b82c7f5e-3999-4410-88c5-e7dd215e644d">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.c6133a6f-096c-4db3-8eab-64b291e154d3">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -259,11 +271,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false" gml:id="uuid.eabf17f4-6d6c-4154-95de-7352deef0515">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.db7fa9e8-0fd4-48bb-a35d-c26efb89c917">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.5987760f-fb84-4e0c-b4ac-a394ab744459">
-          <gml:beginPosition>2018-10-14T16:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T22:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.5479ac49-479d-448f-80c3-6362204ec958">
+          <gml:beginPosition>2019-04-14T16:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T22:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
@@ -276,10 +289,10 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         </iwxxm:AerodromeSurfaceWindForecast>
       </iwxxm:surfaceWind>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.8cf025cb-0b45-443f-b176-1c45589dcf9c">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.5f0a538f-3bbd-455a-91ef-3e013e9e22bf">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
               <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -288,20 +301,21 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="PROBABILITY_30" cloudAndVisibilityOK="false" gml:id="uuid.3cf25803-7957-4679-a60d-6010f165ab29">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="PROBABILITY_30" cloudAndVisibilityOK="false"
+      gml:id="uuid.8389699d-ead3-4e01-9e0f-37ec88de3444">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.fb25e928-b4a9-4b0c-8b5e-9186aaa42ff8">
-          <gml:beginPosition>2018-10-14T16:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-14T20:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.8f66e354-5deb-4a4c-853f-e300d16f8219">
+          <gml:beginPosition>2019-04-14T16:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-14T20:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">4800</iwxxm:prevailingVisibility>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RA"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.37996bef-b50c-4153-8953-c3ca473089d7">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.79fd15e9-9802-4222-90b7-1af06bfb712b">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
               <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -310,11 +324,12 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false" gml:id="uuid.a5d80ce1-97e7-4884-a618-6535d8069a2f">
+    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="FROM" cloudAndVisibilityOK="false"
+      gml:id="uuid.4ec3c2df-f5e0-464f-bcb4-6ecc1a4fee6b">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.47150e07-9da2-4c01-a478-d7a0a7f110c1">
-          <gml:beginPosition>2018-10-14T22:00:00Z</gml:beginPosition>
-          <gml:endPosition>2018-10-15T00:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.16bb8e03-f6ed-4216-ba0f-63c591e729b8">
+          <gml:beginPosition>2019-04-14T22:00:00Z</gml:beginPosition>
+          <gml:endPosition>2019-04-15T00:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
@@ -326,11 +341,11 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         </iwxxm:AerodromeSurfaceWindForecast>
       </iwxxm:surfaceWind>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.251d02a0-4b04-4958-92e6-8abe8e242dda">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.ea9eb352-dbbf-49b6-9f59-87e72ce000d4">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/0" xlink:title="Sky clear"/>
-              <iwxxm:base nilReason="inapplicable" uom="N/A" xsi:nil="true"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/0"/>
+              <iwxxm:base nilReason="http://codes.wmo.int/common/nil/inapplicable" uom="N/A" xsi:nil="true"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>

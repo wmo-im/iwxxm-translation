@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="false" gml:id="uuid.8db9f218-65e2-4373-99c6-2008fd539ef5" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<iwxxm:METAR automatedStation="false" gml:id="uuid.605e49af-5f1e-40d7-80d9-7c6f606453ac" permissibleUsage="OPERATIONAL"
+  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z"
+  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z"
+  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
 TAC: METAR CYUX 290000Z 08027G33KT 1/8SM -SN +BLSN VV001 M13/M15 A2954-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.9674c7f7-0713-461f-ae4a-bec03d21a148">
-      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.653b2b77-4cc2-4b66-81a6-dbc384fdd073">
+      <gml:timePosition>2019-04-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.8b6eff96-bf8d-48c9-84cb-914f87d9f436">
+    <aixm:AirportHeliport gml:id="uuid.18a7d088-817a-419e-8c84-90625c7e4e3d">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.ba89708e-8f77-429c-98ba-865e077cb013">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.5cfe69cb-ed6a-400a-8eb6-1ec14f1fcb1e">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
           <aixm:name>HALL BEACH ARPT, NU</aixm:name>
           <aixm:locationIndicatorICAO>CYUX</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.08b6604c-a09f-434c-9159-953f31564cfd" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.da68a4af-d2fc-40cd-8b14-fd5ab9af27de" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>68.79 -81.25</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>
@@ -33,9 +33,9 @@ TAC: METAR CYUX 290000Z 08027G33KT 1/8SM -SN +BLSN VV001 M13/M15 A2954-->
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.9674c7f7-0713-461f-ae4a-bec03d21a148"/>
+  <iwxxm:observationTime xlink:href="#uuid.653b2b77-4cc2-4b66-81a6-dbc384fdd073"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.0e3ff7ff-7a33-48a9-8d1c-ccc941b17f98">
+    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.3d6e2f50-c4ee-4bb3-98d9-48b74d45e557">
       <!--METAR CYUX 290000Z 08027G33KT 1/8SM -SN +BLSN VV001 M13/M15 A2954-->
       <iwxxm:airTemperature uom="Cel">-13</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-15</iwxxm:dewpointTemperature>

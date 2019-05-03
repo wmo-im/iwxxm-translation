@@ -1,41 +1,41 @@
-<!--This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative-->
-<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-<!--                                                                                      -->
-<!--TAC: TAF EHLW 131400Z 1309/1321 CNL-->
-<iwxxm:TAF gml:id="uuid.28ab9c43-7cbd-40f4-96c3-573e5c720601" permissibleUsage="OPERATIONAL" status="CANCELLATION"
-  translatedBulletinID="FTNL31KWBC131442" translatedBulletinReceptionTime="2018-08-13T14:00:37" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-15T18:28:24Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+<iwxxm:TAF gml:id="uuid.acc4d27e-3ba3-4126-bcb0-f75e9c1362c1" isCancelReport="true" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="FTNL31KWBC131442" translatedBulletinReceptionTime="2019-05-03T12:35:37Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T12:35:37Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
   xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC1/iwxxm.xsd">
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
+  <!--
+This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: TAF EHLW 131400Z 1309/1321 CNL=-->
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.f1d08699-1f28-4515-aa55-3dc68cacc931">
-      <gml:timePosition>2018-08-13T14:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.a41ccfe5-8d2d-4f50-b4e0-d2d0ce4a2dff">
+      <gml:timePosition>2019-04-13T14:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.32880375-78e6-4efb-8313-4c3679702527">
+    <aixm:AirportHeliport gml:id="uuid.a10d6ebc-6ca5-4296-bd11-72c3731ebddf">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.97016d96-4fab-4735-adf6-1822977a0058">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.47951e6d-92a6-4b78-8fad-af4c5163e383">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>LEEUWARDEN_RNLAFB</aixm:name>
           <aixm:locationIndicatorICAO>EHLW</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.4bce2ecd-e455-40c0-917f-98c575971942" srsDimension="2"
+              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:pos>53.22 5.75</gml:pos>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:validTime>
-    <gml:TimePeriod gml:id="uuid.c1bb0ada-39ac-4951-9d18-a9d5c478a0a6">
-      <gml:beginPosition>2018-08-13T14:00:00Z</gml:beginPosition>
-      <gml:endPosition>2018-08-13T21:00:00Z</gml:endPosition>
+  <iwxxm:cancelledReportValidPeriod>
+    <gml:TimePeriod gml:id="uuid.6ca96a24-0f6a-40c8-a550-986e05e00e6f">
+      <gml:beginPosition>2019-04-13T14:00:00Z</gml:beginPosition>
+      <gml:endPosition>2019-04-13T21:00:00Z</gml:endPosition>
     </gml:TimePeriod>
-  </iwxxm:validTime>
-  <iwxxm:baseForecast nilReason="http://codes.wmo.int/common/nil/missing"/>
-  <iwxxm:previousReportAerodrome xlink:href="#uuid.32880375-78e6-4efb-8313-4c3679702527"/>
-  <iwxxm:previousReportValidPeriod>
-    <gml:TimePeriod gml:id="uuid.e9e729e7-052c-4f4f-ac97-fb4b503a317b">
-      <gml:beginPosition>2018-08-13T09:00:00Z</gml:beginPosition>
-      <gml:endPosition>2018-08-13T21:00:00Z</gml:endPosition>
-    </gml:TimePeriod>
-  </iwxxm:previousReportValidPeriod>
+  </iwxxm:cancelledReportValidPeriod>
 </iwxxm:TAF>

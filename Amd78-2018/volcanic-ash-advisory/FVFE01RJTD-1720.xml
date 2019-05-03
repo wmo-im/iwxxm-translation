@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<VolcanicAshAdvisory gml:id="uuid.d0872cfb-366b-4e51-a532-1691f2f850f1" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+<VolcanicAshAdvisory gml:id="uuid.3df36586-f578-4db3-aa6a-840391e38e35" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
   translatedBulletinID="FVFE01RJTD011720" translatedBulletinReceptionTime="2018-06-01T17:20:00Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-30T11:47:36Z" xmlns="http://icao.int/iwxxm/3.0"
+  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T09:28:34Z" xmlns="http://icao.int/iwxxm/3.0"
   xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of Volcanic Ash Advisory TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
@@ -35,14 +35,14 @@ FCST VA CLD +18 HR: NO VA EXP
 RMK: NIL
 NXT ADVISORY: 20180601/2100Z=-->
   <issueTime>
-    <gml:TimeInstant gml:id="uuid.56c38dc6-2117-4c45-ae3f-23614eccd8a0">
+    <gml:TimeInstant gml:id="uuid.0be8eb05-e984-4ebc-9dbd-046f4dbfd3d7">
       <gml:timePosition>2018-06-01T17:20:00Z</gml:timePosition>
     </gml:TimeInstant>
   </issueTime>
   <issuingVolcanicAshAdvisoryCentre>
-    <Unit gml:id="uuid.2ea5a5ba-5e77-42fc-ad7e-7d4b713e972d" xmlns="http://www.aixm.aero/schema/5.1.1">
+    <Unit gml:id="uuid.3a18cc10-a1d6-4957-a6e6-2fddcb37a7e9" xmlns="http://www.aixm.aero/schema/5.1.1">
       <timeSlice>
-        <UnitTimeSlice gml:id="uuid.a0da1af2-07c0-487e-acc9-b10f75b8255c">
+        <UnitTimeSlice gml:id="uuid.dce4efee-2e57-49d9-8cbc-0c1b131a0011">
           <gml:validTime/>
           <interpretation>SNAPSHOT</interpretation>
           <name>TOKYO</name>
@@ -52,39 +52,41 @@ NXT ADVISORY: 20180601/2100Z=-->
     </Unit>
   </issuingVolcanicAshAdvisoryCentre>
   <volcano>
-    <EruptingVolcano gml:id="uuid.fa6e46a2-810e-4adf-87a9-4aa48059a539" xmlns="http://def.wmo.int/metce/2013">
-      <gml:description>EXPLODED AT 20180601/1609Z FL080 EXTD SW</gml:description>
+    <EruptingVolcano gml:id="uuid.6b4d01cb-46d9-467a-8cbf-b686b05facab" xmlns="http://def.wmo.int/metce/2013">
       <name>SAKURAJIMA (AIRA CALDERA) 282080</name>
       <position>
-        <gml:Point axisLabels="Latitude Longitude SummitHeight" gml:id="uuid.e4f79067-99c6-4b86-8d8d-33caf24aea56"
-          srsName="urn:ogc:def:crs:EPSG::4979" uomLabels="deg deg m">
-          <gml:pos>31.600 130.650 1117</gml:pos>
+        <gml:Point axisLabels="Lat Long" gml:id="uuid.94af4012-0933-48fd-b318-281c162df113" srsDimension="2"
+          srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+          <gml:pos>31.600 130.650</gml:pos>
         </gml:Point>
       </position>
       <eruptionDate>2018-06-01T17:20:00Z</eruptionDate>
     </EruptingVolcano>
   </volcano>
+  <stateOrRegion>JAPAN</stateOrRegion>
+  <summitElevation uom="m">1117</summitElevation>
   <advisoryNumber>2018/474</advisoryNumber>
   <informationSource>HIMAWARI-8 JMA</informationSource>
-  <colourCode nilReason="missing"/>
+  <colourCode nilReason="http://codes.wmo.int/common/nil/missing"/>
+  <eruptionDetails>EXPLODED AT 20180601/1609Z FL080 EXTD SW</eruptionDetails>
   <observation>
-    <VolcanicAshObservedOrEstimatedConditions gml:id="uuid.110dc0f4-91fe-4019-8a23-4bfbbe5b17cd" isEstimated="false" status="IDENTIFIABLE">
+    <VolcanicAshObservedOrEstimatedConditions gml:id="uuid.4e30942b-b1bc-4cdd-b0ed-a601e3d20b1d" isEstimated="false" status="IDENTIFIABLE">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.44e37070-d2b3-48c6-bb32-c13a50d6d778">
+        <gml:TimeInstant gml:id="uuid.eb8477b6-d38f-4572-8978-6d64f1567e71">
           <gml:timePosition>2018-06-01T16:50:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.e5aa19e0-868a-44f3-abdd-91b08499bfdf">
+        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.57894b6b-cae5-4dfe-99ed-0da0efa62b59">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.0ed95bb8-ee1c-4b39-a12b-9298a2348fbb">
+            <aixm:AirspaceVolume gml:id="uuid.7badf1f8-4ff3-443c-a4c3-b8b274f8b0b2">
               <aixm:upperLimit uom="FL">080</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface axisLabels="Latitude Longitude" gml:id="uuid.18cd34ea-5d4d-41a5-9cf0-f4eed424da52"
-                  srsName="urn:ogc:def:crs:EPSG::4326" uomLabels="deg deg">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.b0686f50-a752-427a-b835-811ae7df7453" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -105,22 +107,23 @@ NXT ADVISORY: 20180601/2100Z=-->
     </VolcanicAshObservedOrEstimatedConditions>
   </observation>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.819f61d8-53c6-4efa-8268-2077d966a881" status="PROVIDED">
+    <VolcanicAshForecastConditions gml:id="uuid.c77fd780-97df-47e3-ba43-8c0c870c124b" status="PROVIDED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.9756f9ba-46ed-4253-b2a6-9e0ec6dc99fd">
+        <gml:TimeInstant gml:id="uuid.1bf6806d-bc58-4b03-9fc5-8dd68bd12066">
           <gml:timePosition>2018-06-01T22:50:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.344cb7fe-bdf0-46b9-904d-6df7668f4488">
+        <VolcanicAshCloudForecast gml:id="uuid.a75f99c4-85d0-4e22-9735-9f0c31fc76fb">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.997b0690-77c4-4232-897f-6691cc292bd1">
+            <aixm:AirspaceVolume gml:id="uuid.d48897c4-288f-4427-9edb-add5840ac9b6">
               <aixm:upperLimit uom="FL">080</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.b314b6d4-182b-4c91-a00a-67470cbc9ce4">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.dbfbffa4-3bd2-4972-8fc4-e8d12ae7b0c0" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -139,22 +142,23 @@ NXT ADVISORY: 20180601/2100Z=-->
     </VolcanicAshForecastConditions>
   </forecast>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.f5edee10-838f-4ff7-84b8-3c1e8d9430f7" status="PROVIDED">
+    <VolcanicAshForecastConditions gml:id="uuid.cea466fa-5005-4661-8db1-60676bef65aa" status="PROVIDED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.c10c9fc0-0e39-43af-b99e-2385eaf8b368">
+        <gml:TimeInstant gml:id="uuid.aca80fdb-e542-42ad-b185-e7b191d6d718">
           <gml:timePosition>2018-06-02T04:50:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.f02461f3-bd86-4dee-a0ad-546ff89e1ffb">
+        <VolcanicAshCloudForecast gml:id="uuid.f1a17ec8-656b-4a03-9c8d-b90f3e3db0d3">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.8122c525-cce3-4a74-b9c6-06da2a61f0e7">
+            <aixm:AirspaceVolume gml:id="uuid.91c7bb82-65f3-4c18-ae5d-cc9b4e939939">
               <aixm:upperLimit uom="FL">070</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface gml:id="uuid.475ca210-8250-4baa-ae79-2b6782744fb4">
+                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.8700eac8-5c06-4b3c-b9ba-4534bc43f117" srsDimension="2"
+                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
@@ -173,17 +177,17 @@ NXT ADVISORY: 20180601/2100Z=-->
     </VolcanicAshForecastConditions>
   </forecast>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.a9bca882-e547-47f8-9274-2cd33cc462a4" status="NO_VOLCANIC_ASH_EXPECTED">
+    <VolcanicAshForecastConditions gml:id="uuid.bfc696ac-ef26-47e6-955d-2002740b2b4d" status="NO_VOLCANIC_ASH_EXPECTED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.ee496092-685c-4e87-bd01-30557be888e0">
+        <gml:TimeInstant gml:id="uuid.18a4f898-f419-418a-84a4-e03e3e1d1d31">
           <gml:timePosition>2018-06-02T22:50:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
     </VolcanicAshForecastConditions>
   </forecast>
-  <remarks nilReason="inapplicable"/>
+  <remarks nilReason="http://codes.wmo.int/common/nil/missing"/>
   <nextAdvisoryTime>
-    <gml:TimeInstant gml:id="uuid.4a2883d5-4e86-432c-93ae-0f7d84a0366e">
+    <gml:TimeInstant gml:id="uuid.ee83d730-2ddb-4a1b-9565-d9a6ebf57400">
       <gml:timePosition>2018-06-01T21:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </nextAdvisoryTime>

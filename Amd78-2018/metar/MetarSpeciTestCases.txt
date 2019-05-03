@@ -1,3 +1,8 @@
+All METAR/SPECI IWXXM examples listed here have their root attribute "translatedBulletinID"
+set to "TTAAiiCCCCYYGGgg". This is artifact of this set of observations used. In operational
+practice, and if a IWXXM METAR document was generated from the traditional alphanumeric code
+form of the METAR, "translatedBulletinID" should be set to the actual WMO AHL values.
+
 BGBW-282350Z.xml - Missing wind, no directional visibility
 BGGH-282350Z.xml - Wind speed exceeds measurement
 BGJN-282350Z.xml - Wind gust exceeds measurement
