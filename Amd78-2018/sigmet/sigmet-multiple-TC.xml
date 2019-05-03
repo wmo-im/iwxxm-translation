@@ -3,7 +3,7 @@
     An example on two seperate TCs.  Original SIGMET from Paragraph 9 of
     Appendix B to ICAO APAC Regional SIGMET Guide (6th Editiion - May 2017):
 
-    YUDD SIGMET 2 VALID 101200/101800 YUSO–
+    YUDD SIGMET 2 VALID 101200/101800 YUSO-
     YUDD SHANLON FIR TC GLORIA PSN N2100 W06200 CB OBS AT 1200Z WI 20NM
     OF TC CENTRE TOP FL500 WKN FCST AT 1800Z TC CENTRE N2230 W06330 AND
     TC HARRIET PSN N2215 W06100 CB FCST AT 1200Z WI 20NM OF CENTRE TOP
@@ -15,8 +15,10 @@
     xmlns:gml="http://www.opengis.net/gml/3.2" 
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd"
-    gml:id="uuid.f12194be-0d82-49ad-ad97-41e46f724dec" permissibleUsage="OPERATIONAL" reportStatus="NORMAL">
+    xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd"
+    gml:id="uuid.f12194be-0d82-49ad-ad97-41e46f724dec" 
+    reportStatus="NORMAL" 
+    permissibleUsage="OPERATIONAL">
 
     <iwxxm:issueTime>
         <gml:TimeInstant gml:id="uuid.f598d1e0-8e2d-4af1-a4ee-83d04b37f19e">
@@ -97,7 +99,7 @@
                             <aixm:upperLimit uom="FL">500</aixm:upperLimit>
                             <aixm:upperLimitReference>STD</aixm:upperLimitReference>
                             <aixm:horizontalProjection>
-                                <aixm:Surface gml:id="uuid.62695824-f234-4618-b459-90bb795cde9a" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                                <aixm:Surface gml:id="uuid.62695824-f234-4618-b459-90bb795cde9a" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                                     <gml:polygonPatches>
                                         <gml:PolygonPatch>
                                             <gml:exterior>
@@ -123,7 +125,7 @@
                 </iwxxm:SIGMETEvolvingCondition>
             </iwxxm:member>
             <iwxxm:tropicalCyclonePosition>
-                <gml:Point gml:id="uuid.e84be2a6-cb1e-4905-b70a-6958c3cea1e3">
+                <gml:Point gml:id="uuid.e84be2a6-cb1e-4905-b70a-6958c3cea1e3" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                     <gml:pos>21.00 -62.00</gml:pos>
                 </gml:Point>
             </iwxxm:tropicalCyclonePosition>
@@ -146,7 +148,7 @@
                             <aixm:upperLimit uom="FL">400</aixm:upperLimit>
                             <aixm:upperLimitReference>STD</aixm:upperLimitReference>
                             <aixm:horizontalProjection>
-                                <aixm:Surface gml:id="uuid.674c55ba-0dfe-400c-93b0-6be72d9290e1" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                                <aixm:Surface gml:id="uuid.674c55ba-0dfe-400c-93b0-6be72d9290e1" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                                     <gml:polygonPatches>
                                         <gml:PolygonPatch>
                                             <gml:exterior>
@@ -172,7 +174,7 @@
                 </iwxxm:SIGMETEvolvingCondition>
             </iwxxm:member>
             <iwxxm:tropicalCyclonePosition>
-                <gml:Point gml:id="uuid.93e4a77f-aab6-4ce2-846d-0a4e5255b3d8">
+                <gml:Point gml:id="uuid.93e4a77f-aab6-4ce2-846d-0a4e5255b3d8" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                     <gml:pos>22.25 -61.00</gml:pos>
                 </gml:Point>
             </iwxxm:tropicalCyclonePosition>
@@ -195,7 +197,7 @@
                 </iwxxm:SIGMETPosition>
             </iwxxm:member>
             <iwxxm:tropicalCyclonePosition>
-                <gml:Point gml:id="uuid.1e0ca159-77e7-4d85-8ace-44aadf52f9af">
+                <gml:Point gml:id="uuid.1e0ca159-77e7-4d85-8ace-44aadf52f9af" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                     <gml:pos>23.50 -63.50</gml:pos>
                 </gml:Point>
             </iwxxm:tropicalCyclonePosition>
@@ -218,7 +220,7 @@
                 </iwxxm:SIGMETPosition>
             </iwxxm:member>
             <iwxxm:tropicalCyclonePosition>
-                <gml:Point gml:id="uuid.83c7cb2a-62f9-4392-be80-59f0b04152c5">
+                <gml:Point gml:id="uuid.83c7cb2a-62f9-4392-be80-59f0b04152c5" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                     <gml:pos>23.75 -62.50</gml:pos>
                 </gml:Point>
             </iwxxm:tropicalCyclonePosition>

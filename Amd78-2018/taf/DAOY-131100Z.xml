@@ -1,10 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <iwxxm:TAF gml:id="uuid.f872a2bf-519a-43ba-b834-631af1c4911f" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
   translatedBulletinID="FTAL31DAAA131100" translatedBulletinReceptionTime="2019-05-03T12:35:37Z" translationCentreDesignator="KWNO"
   translationCentreName="NCEP Central Operations" translationTime="2019-05-03T12:35:37Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
   xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
+<!--
 This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
 
