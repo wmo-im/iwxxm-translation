@@ -58,7 +58,7 @@ TAC: METAR BIAR 290000Z 33003KT 280V010 9999 OVC032 04/M00 Q////-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/4"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/OVC"/>
               <iwxxm:base uom="[ft_i]">3200</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

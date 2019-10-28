@@ -58,13 +58,13 @@ TAC: TAF DAAV 131700Z 1318/1418 02011KT 9999 FEW023 SCT200
         <iwxxm:AerodromeCloudForecast gml:id="uuid.dc378c58-b6f0-4483-b66e-c9008abe01ed">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">2300</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">20000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -85,9 +85,9 @@ TAC: TAF DAAV 131700Z 1318/1418 02011KT 9999 FEW023 SCT200
         <iwxxm:AerodromeCloudForecast gml:id="uuid.8285dc0d-fa2b-4270-a3a4-b7ec6e82073d">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">2300</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/TCU"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>
@@ -126,7 +126,7 @@ TAC: TAF DAAV 131700Z 1318/1418 02011KT 9999 FEW023 SCT200
         <iwxxm:AerodromeCloudForecast gml:id="uuid.48580c4f-ad4d-437f-9d4c-8f62ccfd5330">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -164,9 +164,9 @@ TAC: TAF DAAV 131700Z 1318/1418 02011KT 9999 FEW023 SCT200
         <iwxxm:AerodromeCloudForecast gml:id="uuid.9db966a2-5c85-406c-bd9e-6d285c44c9ce">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">2300</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/TCU"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>

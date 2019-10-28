@@ -56,7 +56,7 @@ TAC: METAR CYLK 290000Z 26005KT 25SM SKC M29/M35 A3041-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/0"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SKC"/>
               <iwxxm:base nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

@@ -54,14 +54,14 @@ TAC: METAR WSSS 290000Z VRB02KT 7000 FEW018TCU BKN150 27/26 Q1011 TEMPO FM0130 4
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">1800</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/TCU"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">15000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

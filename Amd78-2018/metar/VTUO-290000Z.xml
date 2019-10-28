@@ -51,7 +51,7 @@ TAC: METAR VTUO 290000Z 22003KT 190V360 2000 BR FEW035 25/25 Q1011 A2987 BECMG F
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">3500</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

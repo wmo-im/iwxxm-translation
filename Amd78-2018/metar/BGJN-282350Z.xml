@@ -58,7 +58,7 @@ TAC: SPECI BGJN 282350Z 14035GP50KT 9999 SCT180 M19/M26 Q1024-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">18000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

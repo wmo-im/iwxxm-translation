@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TropicalCycloneAdvisory gml:id="uuid.60866ee2-4c12-49e8-a218-0aeec5733dc2" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
+  translatedBulletinID="FKNT23KNHC231500" translatedBulletinReceptionTime="2019-07-23T15:00:00Z" translationCentreDesignator="KWNO"
+  translationCentreName="NCEP Central Operations" translationTime="2019-10-28T19:23:05Z" xmlns="http://icao.int/iwxxm/3.0"
+  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
+  <!--
+This example of Tropical Cyclone Advisory TAC to XML translation should not be considered authorative
+but is provided for your review and consideration. Comments and feedback are welcomed.
+
+TAC: FKNT23 KNHC 231458
+TCANT3
+ 
+REMNANTS OF THREE ICAO ADVISORY NUMBER   4
+NWS NATIONAL HURRICANE CENTER MIAMI FL       AL032019
+1500 UTC TUE JUL 23 2019
+ 
+TC ADVISORY
+DTG:                      20190723/1500Z
+TCAC:                     KNHC
+TC:                       THREE
+NR:                       004
+PSN:                      N2900 W08000
+MOV:                      N 15KT
+C:                        1014HPA
+MAX WIND:                 030KT
+FCST PSN +6 HR:           23/2100Z N//// W/////
+FCST MAX WIND +6 HR:      ///KT
+FCST PSN +12 HR:          24/0300Z N//// W/////
+FCST MAX WIND +12 HR:     ///KT
+FCST PSN +18 HR:          24/0900Z N//// W/////
+FCST MAX WIND +18 HR:     ///KT
+FCST PSN +24 HR:          24/1500Z N//// W/////
+FCST MAX WIND +24 HR:     ///KT
+RMK:                      THE FORECAST POSITION INFORMATION IN
+                          THIS PRODUCT IS INTERPOLATED FROM
+                          OFFICIAL FORECAST DATA VALID AT 0000...
+                          0600...1200...AND 1800Z.
+NXT MSG:                  NO MSG EXP
+ 
+$$
+-->
+  <issueTime>
+    <gml:TimeInstant gml:id="uuid.e1c41dcc-536a-4caa-87ab-24a8fb2a709b">
+      <gml:timePosition>2019-07-23T15:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </issueTime>
+  <issuingTropicalCycloneAdvisoryCentre>
+    <aixm:Unit gml:id="uuid.f5ebfa6e-f06e-4e31-85af-9bd6435b7fc2">
+      <aixm:timeSlice>
+        <aixm:UnitTimeSlice gml:id="uuid.13082186-e83a-4359-93a1-8bf8b0f013be">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:type>OTHER:TCAC</aixm:type>
+          <aixm:designator>KNHC</aixm:designator>
+        </aixm:UnitTimeSlice>
+      </aixm:timeSlice>
+    </aixm:Unit>
+  </issuingTropicalCycloneAdvisoryCentre>
+  <tropicalCycloneName>
+    <TropicalCyclone gml:id="uuid.62ea0c8a-a3ba-4bc0-a67a-2769bdb1cd76" xmlns="http://def.wmo.int/metce/2013">
+      <name>THREE</name>
+    </TropicalCyclone>
+  </tropicalCycloneName>
+  <advisoryNumber>004</advisoryNumber>
+  <observation>
+    <TropicalCycloneObservedConditions gml:id="uuid.334e9c90-4574-46f4-94e4-4fea957be6f6">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.4ed59586-26dc-44ef-a0e1-a327a19109ca">
+          <gml:timePosition>2019-07-23T15:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point axisLabels="Lat Long" gml:id="uuid.7fe7e90a-ffad-49a6-a031-34378ded72c4" srsDimension="2"
+          srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+          <gml:pos>29.000 -80.000</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <movement>MOVING</movement>
+      <movementDirection uom="deg">360</movementDirection>
+      <movementSpeed uom="[kn_i]">15</movementSpeed>
+      <centralPressure uom="hPa">1014</centralPressure>
+      <maximumSurfaceWindSpeed uom="[kn_i]">30</maximumSurfaceWindSpeed>
+    </TropicalCycloneObservedConditions>
+  </observation>
+  <forecast nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+  <forecast nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+  <forecast nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+  <forecast nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+  <remarks>THE FORECAST POSITION INFORMATION IN THIS PRODUCT IS INTERPOLATED FROM OFFICIAL FORECAST DATA VALID AT 0000... 0600...1200...AND 1800Z.</remarks>
+  <nextAdvisoryTime nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
+</TropicalCycloneAdvisory>

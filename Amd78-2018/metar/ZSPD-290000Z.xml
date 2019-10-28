@@ -121,7 +121,7 @@ TAC: METAR ZSPD 290000Z 13003MPS 0800 R17L/P2000 R16R/0600N R17R/1600U R16L/0900
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">200</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -144,13 +144,13 @@ TAC: METAR ZSPD 290000Z 13003MPS 0800 R17L/P2000 R16R/0600N R17R/1600U R16L/0900
         <iwxxm:AerodromeCloudForecast gml:id="uuid.e219cab3-6610-4cbe-829c-aae9800c041f">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">400</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">2000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
