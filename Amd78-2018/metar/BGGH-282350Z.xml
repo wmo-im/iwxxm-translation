@@ -57,13 +57,13 @@ TAC: SPECI BGGH 282350Z 100P50KT 9999 SCT110 BKN130 M07/M11 Q1021-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">11000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">13000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

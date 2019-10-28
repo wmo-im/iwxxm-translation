@@ -51,7 +51,7 @@ TAC: SPECI BGTL 282356Z AUTO 13008KT //// CLR M23/M25 A3032-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/0"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SKC"/>
               <iwxxm:base nilReason="http://codes.wmo.int/common/nil/inapplicable" uom="N/A" xsi:nil="true"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

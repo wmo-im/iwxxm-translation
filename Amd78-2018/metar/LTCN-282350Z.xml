@@ -52,13 +52,13 @@ TAC: SPECI LTCN 282350Z 11007KT 080V140 4500 SHRA BR SCT030 BKN090 13/11 Q1009 B
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">9000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

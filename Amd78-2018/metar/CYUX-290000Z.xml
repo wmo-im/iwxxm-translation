@@ -52,6 +52,7 @@ TAC: METAR CYUX 290000Z 08027G33KT 1/8SM -SN +BLSN VV001 M13/M15 A2954-->
           <iwxxm:prevailingVisibility uom="m">150</iwxxm:prevailingVisibility>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
+      <iwxxm:rvr nilReason="http://codes.wmo.int/common/nil/missing" xsi:nil="true"/>
       <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/-SN"/>
       <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/UP" xlink:title="Unidentified precipitation: +BLSN"/>
       <iwxxm:cloud>

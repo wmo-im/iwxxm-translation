@@ -53,6 +53,7 @@ TAC: METAR CYEK 290000Z AUTO 29020G28KT M1/4SM +SN VV006 M24/M26 A2962-->
           <iwxxm:prevailingVisibilityOperator>BELOW</iwxxm:prevailingVisibilityOperator>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
+      <iwxxm:rvr nilReason="http://codes.wmo.int/common/nil/missing" xsi:nil="true"/>      
       <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/+SN"/>
       <iwxxm:cloud>
         <iwxxm:AerodromeCloud>

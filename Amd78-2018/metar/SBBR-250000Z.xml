@@ -61,7 +61,7 @@ TAC: METAR SBBR 250000Z 32003KT 290V350 9999 VCTS //////CB 20/19 Q1017-->
             <iwxxm:CloudLayer>
               <iwxxm:amount nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
               <iwxxm:base nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true" uom="N/A"/>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloud>

@@ -57,20 +57,20 @@ TAC: SPECI LCRA 282350Z 28026G41KT 8000 TSRA FEW018 BKN030CB BKN060 14/// Q1001 
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">1800</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">6000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -88,9 +88,9 @@ TAC: SPECI LCRA 282350Z 28026G41KT 8000 TSRA FEW018 BKN030CB BKN060 14/// Q1001 
         <iwxxm:AerodromeCloudForecast gml:id="uuid.ef98c15e-6acd-4403-b145-970c2b275bcd">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">2500</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>

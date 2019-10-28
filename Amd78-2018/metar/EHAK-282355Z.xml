@@ -50,21 +50,21 @@ TAC: SPECI EHAK 282355Z AUTO 33009KT 9999 DZ FEW006/// SCT011/// BKN025/// 04/02
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">600</iwxxm:base>
               <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">1100</iwxxm:base>
               <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">2500</iwxxm:base>
               <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
             </iwxxm:CloudLayer>

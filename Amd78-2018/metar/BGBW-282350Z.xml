@@ -51,7 +51,7 @@ TAC: SPECI BGBW 282350Z AUTO /////KT 9999NDV BKN190/// M03/M12 Q1023-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">19000</iwxxm:base>
               <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
             </iwxxm:CloudLayer>

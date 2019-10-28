@@ -74,20 +74,20 @@ TAC: TAF OIZC 131130Z 1312/1418 11004MPS 4000 HZ NSC
         <iwxxm:AerodromeCloudForecast gml:id="uuid.09773841-e58a-408d-973e-1c70a4eb1c3b">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">2000</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/32"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/TCU"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">2500</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">7000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
