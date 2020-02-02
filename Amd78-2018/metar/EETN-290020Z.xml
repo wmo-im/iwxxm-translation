@@ -56,7 +56,7 @@ TAC: SPECI EETN 290020Z 24006KT 9999 FEW019 M05/M07 Q1015 R08/0///95 NOSIG-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">1900</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

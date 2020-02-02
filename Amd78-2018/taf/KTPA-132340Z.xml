@@ -69,7 +69,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.b252b23c-f8d2-4ac1-bb31-44a07165129e">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/OVC"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/OVC"/>
               <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -100,7 +100,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.08a14d24-945e-4e1f-a78e-14687a02849d">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
               <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
@@ -132,7 +132,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.b8862cff-eaf8-49d0-9f0e-411f5d2c3474">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
               <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
@@ -162,7 +162,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.4cf3548c-8286-46a5-8b4a-1dbfee414e47">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">600</iwxxm:base>
               <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
@@ -194,7 +194,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.e5f786ce-ec4a-4ce1-83a3-7b1f10043d72">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">1500</iwxxm:base>
               <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
@@ -225,13 +225,13 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.7669dc05-55a0-4ba9-aa83-3029ef0311ec">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">1500</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -262,7 +262,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.c6133a6f-096c-4db3-8eab-64b291e154d3">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -292,7 +292,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.5f0a538f-3bbd-455a-91ef-3e013e9e22bf">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">5000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -315,7 +315,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.79fd15e9-9802-4222-90b7-1af06bfb712b">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -344,7 +344,7 @@ TAC: TAF KTPA 132340Z 1400/1424 10035G45KT 3SM RA SQ OVC030
         <iwxxm:AerodromeCloudForecast gml:id="uuid.ea9eb352-dbbf-49b6-9f59-87e72ce000d4">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SKC"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SKC"/>
               <iwxxm:base nilReason="http://codes.wmo.int/common/nil/inapplicable" uom="N/A" xsi:nil="true"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

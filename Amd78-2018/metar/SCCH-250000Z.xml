@@ -4,7 +4,7 @@
   translationCentreName="NCEP Central Operations" translationTime="2019-02-25T16:22:34Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
   xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
   <!--
 This example of METAR/SPECI TAC to XML translation should not be considered authorative
 but is provided for your review and consideration. Comments and feedback are welcomed.
@@ -25,7 +25,7 @@ TAC: METAR SCCH 250000Z AUTO 19009KT 9999 ///////// 20/04 Q1014-->
           <aixm:locationIndicatorICAO>SCCH</aixm:locationIndicatorICAO>
           <aixm:ARP>
             <aixm:ElevatedPoint gml:id="uuid.7d7c57b0-30b0-43c9-a6d1-46adfaba6f74" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+              axisLabels="Lat Long">
               <gml:pos>-36.57 -72.03</gml:pos>
             </aixm:ElevatedPoint>
           </aixm:ARP>

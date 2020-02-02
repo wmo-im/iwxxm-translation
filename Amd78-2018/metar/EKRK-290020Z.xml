@@ -57,7 +57,7 @@ TAC: SPECI EKRK 290020Z AUTO 09017G27KT 9999NDV OVC100/// 00/M03 Q1004 R99/21006
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/OVC"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/OVC"/>
               <iwxxm:base uom="[ft_i]">10000</iwxxm:base>
               <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
             </iwxxm:CloudLayer>
