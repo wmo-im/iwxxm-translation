@@ -56,13 +56,13 @@ TAC: SPECI EDDH 282350Z 07004KT 1700 -SN FEW004 BKN005 00/M00 Q0996 RESN TEMPO S
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/FEW"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">400</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">500</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -80,7 +80,7 @@ TAC: SPECI EDDH 282350Z 07004KT 1700 -SN FEW004 BKN005 00/M00 Q0996 RESN TEMPO S
         <iwxxm:AerodromeCloudForecast gml:id="uuid.94fe8f4c-78bb-442c-bf64-5f8f1f87b5b8">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/BKN"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">400</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

@@ -96,7 +96,7 @@ TAC: METAR URMT 290000Z 09006MPS 0400 0350NE R07/1000D FG VV004 05/05 Q1010 R07/
         <iwxxm:AerodromeCloudForecast gml:id="uuid.2e79e110-4b51-42cc-a6be-f5c9d9855251">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/OVC"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/OVC"/>
               <iwxxm:base uom="[ft_i]">100</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

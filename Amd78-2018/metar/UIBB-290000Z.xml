@@ -58,7 +58,7 @@ TAC: METAR UIBB 290000Z 25005MPS 220V280 9999 SCT033 M01/M07 Q1018 R30/811050 NO
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmount/ReportedAtAerodrome/SCT"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">3300</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
