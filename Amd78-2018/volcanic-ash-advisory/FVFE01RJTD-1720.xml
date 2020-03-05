@@ -185,7 +185,7 @@ NXT ADVISORY: 20180601/2100Z=-->
       </phenomenonTime>
     </VolcanicAshForecastConditions>
   </forecast>
-  <remarks nilReason="http://codes.wmo.int/common/nil/missing"/>
+  <remarks nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
   <nextAdvisoryTime>
     <gml:TimeInstant gml:id="uuid.ee83d730-2ddb-4a1b-9565-d9a6ebf57400">
       <gml:timePosition>2018-06-01T21:00:00Z</gml:timePosition>
