@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="false" gml:id="uuid.728f2cce-00b5-4bef-aad8-6746cae8cd20" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI EFHK 290020Z 32003KT 9999 R04R/0800N R15/P1500N R22L/P1500N R04L/P1500N MIFG NSC M08/M09 Q1015 NOSIG-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.042094a6-0720-493d-b8f6-223535da927d">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.0a8fd0ad-766e-4a6c-a5c5-e9449b51ee9f">
-      <gml:timePosition>2019-04-29T00:20:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.6e755244-626e-4a51-8b2f-f652653ef922">
+      <gml:timePosition>2020-04-29T00:20:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.37db49ed-cb3d-43c5-909e-18d13ee43a0c">
+    <aixm:AirportHeliport gml:id="uuid.9fb387b6-7fd5-4cc4-9837-a52146db693c">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.97351931-9281-45bf-ad22-a483fcb449d8">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.8ff6fa38-2962-4406-9749-b17c2b86c96e">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>EFHK</aixm:designator>
           <aixm:name>HELSINKI/VANTAA</aixm:name>
           <aixm:locationIndicatorICAO>EFHK</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.ecc7dec8-8b50-49e6-ab8a-cea63c2dba69" srsDimension="2"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.0794d3ea-9ccb-4810-8a60-5af7c8195575">
               <gml:pos>60.32 24.97</gml:pos>
+              <aixm:elevation uom="M">56</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.0a8fd0ad-766e-4a6c-a5c5-e9449b51ee9f"/>
+  <iwxxm:observationTime xlink:href="#uuid.6e755244-626e-4a51-8b2f-f652653ef922"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.bf6c4b37-f728-494b-a43d-7e07665dabbc">
-      <!--SPECI EFHK 290020Z 32003KT 9999 R04R/0800N R15/P1500N R22L/P1500N R04L/P1500N MIFG NSC M08/M09 Q1015 NOSIG-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.2c48929d-8ac9-4e11-ba67-53fb89ce2cb2" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">-8</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-9</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1015</iwxxm:qnh>
@@ -55,9 +46,9 @@ TAC: SPECI EFHK 290020Z 32003KT 9999 R04R/0800N R15/P1500N R22L/P1500N R04L/P150
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.5544cae0-bdeb-4767-813d-cbf82d74ec7e">
+            <aixm:RunwayDirection gml:id="uuid.149b3697-d48b-4487-9d3a-f0d5fc601564">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.a32d9d9d-3b48-4e89-93b6-876b14db0510">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.8552e7de-5622-4cff-97d6-6816dab981e3">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>04R</aixm:designator>
@@ -71,9 +62,9 @@ TAC: SPECI EFHK 290020Z 32003KT 9999 R04R/0800N R15/P1500N R22L/P1500N R04L/P150
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.d0e4e0ba-826e-41db-808d-3114ac813fb5">
+            <aixm:RunwayDirection gml:id="uuid.09f6f600-41e8-4424-999b-57e99c1427cc">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.395dbb90-fbf2-4995-8888-c87d6ec3d029">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.c964ba0e-54ed-4c66-8f6b-57fcc1ec2e09">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>15</aixm:designator>
@@ -88,9 +79,9 @@ TAC: SPECI EFHK 290020Z 32003KT 9999 R04R/0800N R15/P1500N R22L/P1500N R04L/P150
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.c21465b1-557a-4b26-93be-f3855d50d14b">
+            <aixm:RunwayDirection gml:id="uuid.0604f78f-c4a5-47be-8e15-b5260bafed2c">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.ac1a8a30-d438-4a0b-97e1-55d8f12593df">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.6c8974c4-3ff0-4e33-a818-7327f559377b">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>22L</aixm:designator>
@@ -105,9 +96,9 @@ TAC: SPECI EFHK 290020Z 32003KT 9999 R04R/0800N R15/P1500N R22L/P1500N R04L/P150
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.de4c81d6-7e69-41c2-a075-57cb6d9c1f6f">
+            <aixm:RunwayDirection gml:id="uuid.11535c5a-1ef9-49a6-9eec-09d651f2903c">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.bdb16f8d-d327-46df-a644-90c84cd1014a">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.c9e2f367-4c31-4712-8a6d-6ed47dbcdf31">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>04L</aixm:designator>
@@ -123,5 +114,5 @@ TAC: SPECI EFHK 290020Z 32003KT 9999 R04R/0800N R15/P1500N R22L/P1500N R04L/P150
       <iwxxm:cloud nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
     </iwxxm:MeteorologicalAerodromeObservation>
   </iwxxm:observation>
-  <iwxxm:trendForecast nilReason="http://codes.wmo.int/common/nil/noSignificantChange" xsi:nil="true"/>
+  <iwxxm:trendForecast xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/noSignificantChange"/>
 </iwxxm:SPECI>

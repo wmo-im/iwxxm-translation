@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="false" gml:id="uuid.15cf9c0c-4c78-4390-b3ac-ae8890f99893" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI BGJN 282350Z 14035GP50KT 9999 SCT180 M19/M26 Q1024-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.39d1782c-950c-4f40-a3b9-f05360ee8abd">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.5dec22d4-3273-4a64-b88d-5d37a7590354">
-      <gml:timePosition>2019-04-28T23:50:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.1b3a9f4e-89cb-44ce-b388-068893bafa9b">
+      <gml:timePosition>2020-04-28T23:50:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.46093cd8-d0a3-4c5a-879f-30ec32fe9eed">
+    <aixm:AirportHeliport gml:id="uuid.1c519b89-39db-47a8-a0de-0d510520d28b">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.69dc0917-3e4a-4e62-952a-24c63cdbae60">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.4fd8696a-a5fe-4065-b00b-d494c1cb3b72">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>JAKOBSHAVN_(PORT)</aixm:name>
+          <aixm:designator>BGJN</aixm:designator>
+          <aixm:name>JAKOBSHAVN (PORT</aixm:name>
           <aixm:locationIndicatorICAO>BGJN</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.17b40359-9f0e-440b-a8fc-d3ecab5eb0af" srsDimension="2"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.ec7b2e41-4a1d-4120-adfd-bfc511311fc7">
               <gml:pos>69.25 -51.07</gml:pos>
+              <aixm:elevation uom="M">25</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.5dec22d4-3273-4a64-b88d-5d37a7590354"/>
+  <iwxxm:observationTime xlink:href="#uuid.1b3a9f4e-89cb-44ce-b388-068893bafa9b"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.fafd1254-cf27-4a70-9125-c1383e35187a">
-      <!--SPECI BGJN 282350Z 14035GP50KT 9999 SCT180 M19/M26 Q1024-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.6e716f8f-4efc-43bd-baf5-2694dd0cd089" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">-19</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-26</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1024</iwxxm:qnh>

@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="true" gml:id="uuid.8fe7e534-bcd1-4dca-abc9-eb629562a9f9" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2019-02-25T16:23:32Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2019-02-25T16:22:34Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: METAR SCCH 250000Z AUTO 19009KT 9999 ///////// 20/04 Q1014-->
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:40Z" translatedBulletinReceptionTime="2020-05-26T12:26:40Z" translatedBulletinID="SAXX99XXXX260000" gml:id="uuid.ddd79a13-3376-420e-b073-4b92097f08fe">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.7dfef9ad-449b-4e41-84f3-135f6cf8a5bf">
-      <gml:timePosition>2019-02-25T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.f2f4950f-024a-412c-b0dd-0bfe6948fb31">
+      <gml:timePosition>2020-05-25T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.20949ad8-e4f9-445a-82c9-7c70929437ac">
+    <aixm:AirportHeliport gml:id="uuid.cb6845f0-9ccc-4a45-a0c6-9d987beeafe3">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.a0d21b80-0447-4617-badd-899e5f57da02">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.d28a1b79-3c71-43cf-8f16-c42232e21102">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>CHILLAN/GEN_BERNARD</aixm:name>
+          <aixm:designator>SCCH</aixm:designator>
+          <aixm:name>CHILLAN/GEN BERN</aixm:name>
           <aixm:locationIndicatorICAO>SCCH</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.7d7c57b0-30b0-43c9-a6d1-46adfaba6f74" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              axisLabels="Lat Long">
-              <gml:pos>-36.57 -72.03</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.453f8e01-dc9d-4d65-a1c7-cb4f8af73607">
+              <gml:pos>-36.57 -72.02</gml:pos>
+              <aixm:elevation uom="M">148</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.7dfef9ad-449b-4e41-84f3-135f6cf8a5bf"/>
+  <iwxxm:observationTime xlink:href="#uuid.f2f4950f-024a-412c-b0dd-0bfe6948fb31"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.e20e0284-3587-47b8-95af-6c8fcd7f119c">
-      <!--METAR SCCH 250000Z AUTO 19009KT 9999 ///////// 20/04 Q1014-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.bc9c3d95-e945-4bd3-8e53-cf1c96d320a8" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">20</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">4</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1014</iwxxm:qnh>
@@ -54,7 +45,13 @@ TAC: METAR SCCH 250000Z AUTO 19009KT 9999 ///////// 20/04 Q1014-->
       </iwxxm:visibility>
       <iwxxm:cloud>
         <iwxxm:AerodromeCloud>
-          <iwxxm:layer nilReason="http://codes.wmo.int/common/nil/notDetectedByAutoSystem" xsi:nil="true"/>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/notDetectedByAutoSystem"/>
+              <iwxxm:base nilReason="http://codes.wmo.int/common/nil/notDetectedByAutoSystem" xsi:nil="true" uom="N/A"/>
+              <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
         </iwxxm:AerodromeCloud>
       </iwxxm:cloud>
     </iwxxm:MeteorologicalAerodromeObservation>

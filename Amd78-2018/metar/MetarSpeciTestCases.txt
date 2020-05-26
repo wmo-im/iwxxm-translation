@@ -1,18 +1,16 @@
 All METAR/SPECI IWXXM examples listed here have their root attribute "translatedBulletinID"
-set to "TTAAiiCCCCYYGGgg". This is artifact of this set of observations used. In operational
+set to "S[A|P]XX99XXXX260000". This is artifact of this set of observations used. In operational
 practice, and if a IWXXM METAR document was generated from the traditional alphanumeric code
 form of the METAR, "translatedBulletinID" should be set to the actual WMO AHL values.
 
 BGBW-282350Z.xml - Missing wind, no directional visibility
 BGGH-282350Z.xml - Wind speed exceeds measurement
 BGJN-282350Z.xml - Wind gust exceeds measurement
-BGTL-282356Z.xml - Missing visibility, Clear Sky by automated station
 BGTL-290039Z.xml - Missing temperatures
 BIAR-290000Z.xml - Variable wind direction, missing altimeter
 CWFD-290000Z.xml - Missing visibility, current weather, cloud layer and altimeter
-CYEK-290000Z.xml - Prevailing visibility exceeds measurement (Note: accompanied by METAR_SPECI.MeteorologicalAerodromeObservation-2 "RVR not present" violation)
-CYLK-290000Z.xml - Clear sky by observer, visibility capped by Annex 3 limits, see Appendix 3 para. 4.2.4.1 & Table A3-4
-CYUX-290000Z.xml - Missing weather code in Code registry (Note: accompanied by METAR_SPECI.MeteorologicalAerodromeObservation-2 "RVR not present" violation)
+CYEK-290000Z.xml - Prevailing visibility exceeds measurement
+CYUX-290000Z.xml - Missing weather code in Code registry
 EDDH-282350Z.xml - Recent weather, TEMPO trend forecast 
 EDDH-290020Z.xml - No significant weather in TEMPO forecast
 EDDP-290020Z.xml - Trend forecast with BECMG
