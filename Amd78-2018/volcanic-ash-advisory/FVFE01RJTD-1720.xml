@@ -1,48 +1,14 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<VolcanicAshAdvisory gml:id="uuid.3df36586-f578-4db3-aa6a-840391e38e35" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="FVFE01RJTD011720" translatedBulletinReceptionTime="2018-06-01T17:20:00Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T09:28:34Z" xmlns="http://icao.int/iwxxm/3.0"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of Volcanic Ash Advisory TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: 237 
-FVFE01 RJTD 011720
-
-VA ADVISORY
-DTG: 20180601/1720Z
-VAAC: TOKYO
-VOLCANO: SAKURAJIMA (AIRA CALDERA) 282080
-PSN: N3136 E13039
-AREA: JAPAN
-SUMMIT ELEV: 1117M
-ADVISORY NR: 2018/474
-INFO SOURCE: HIMAWARI-8 JMA
-AVIATION COLOUR CODE: NIL
-ERUPTION DETAILS: EXPLODED AT 20180601/1609Z FL080 EXTD SW
-OBS VA DTG: 01/1650Z
-OBS VA CLD: SFC/FL080 N3134 E13041 - N3130 E13031 - N3135 E13029 - 
-N3138 E13039 MOV SW 10KT
-FCST VA CLD +6 HR: 01/2250Z SFC/FL080 N3124 E13002 - N3049 E12924 - 
-N3049 E12859 - N3123 E12941
-FCST VA CLD +12 HR: 02/0450Z SFC/FL070 N3125 E12926 - N3038 E12811 - 
-
-N3046 E12712 - N3131 E12904
-FCST VA CLD +18 HR: NO VA EXP
-RMK: NIL
-NXT ADVISORY: 20180601/2100Z=-->
+<?xml version="1.0"?>
+<VolcanicAshAdvisory xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T15:33:26Z" translatedBulletinReceptionTime="2020-05-26T15:33:26Z" translatedBulletinID="FVFE01RJTD011720" gml:id="uuid.b043bec3-e98e-47b6-909b-92219b36d14f">
   <issueTime>
-    <gml:TimeInstant gml:id="uuid.0be8eb05-e984-4ebc-9dbd-046f4dbfd3d7">
+    <gml:TimeInstant gml:id="uuid.27c9a56b-3261-4109-b6df-121d66854ef6">
       <gml:timePosition>2018-06-01T17:20:00Z</gml:timePosition>
     </gml:TimeInstant>
   </issueTime>
   <issuingVolcanicAshAdvisoryCentre>
-    <Unit gml:id="uuid.3a18cc10-a1d6-4957-a6e6-2fddcb37a7e9" xmlns="http://www.aixm.aero/schema/5.1.1">
+    <Unit xmlns="http://www.aixm.aero/schema/5.1.1" gml:id="uuid.1402975e-7fbf-4465-91da-864fc69672a1">
       <timeSlice>
-        <UnitTimeSlice gml:id="uuid.dce4efee-2e57-49d9-8cbc-0c1b131a0011">
+        <UnitTimeSlice gml:id="uuid.219ac409-f86e-41cb-b3cd-331d45a3aad6">
           <gml:validTime/>
           <interpretation>SNAPSHOT</interpretation>
           <name>TOKYO</name>
@@ -52,15 +18,14 @@ NXT ADVISORY: 20180601/2100Z=-->
     </Unit>
   </issuingVolcanicAshAdvisoryCentre>
   <volcano>
-    <EruptingVolcano gml:id="uuid.6b4d01cb-46d9-467a-8cbf-b686b05facab" xmlns="http://def.wmo.int/metce/2013">
+    <EruptingVolcano xmlns="http://def.wmo.int/metce/2013" gml:id="uuid.a9be3f6a-1b31-4dd4-a0bc-d1f3fc74c337">
       <name>SAKURAJIMA (AIRA CALDERA) 282080</name>
       <position>
-        <gml:Point axisLabels="Lat Long" gml:id="uuid.94af4012-0933-48fd-b318-281c162df113" srsDimension="2"
-          srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+        <gml:Point axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2" gml:id="uuid.f83d41f0-aab9-4f04-a5d2-a9e862b5c320">
           <gml:pos>31.600 130.650</gml:pos>
         </gml:Point>
       </position>
-      <eruptionDate>2018-06-01T17:20:00Z</eruptionDate>
+      <eruptionDate>2018-07-01T16:09:00Z</eruptionDate>
     </EruptingVolcano>
   </volcano>
   <stateOrRegion>JAPAN</stateOrRegion>
@@ -70,28 +35,27 @@ NXT ADVISORY: 20180601/2100Z=-->
   <colourCode nilReason="http://codes.wmo.int/common/nil/missing"/>
   <eruptionDetails>EXPLODED AT 20180601/1609Z FL080 EXTD SW</eruptionDetails>
   <observation>
-    <VolcanicAshObservedOrEstimatedConditions gml:id="uuid.4e30942b-b1bc-4cdd-b0ed-a601e3d20b1d" isEstimated="false" status="IDENTIFIABLE">
+    <VolcanicAshObservedOrEstimatedConditions status="IDENTIFIABLE" isEstimated="false" gml:id="uuid.28baa321-6ff8-4b65-bf19-68dc2a63da38">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.eb8477b6-d38f-4572-8978-6d64f1567e71">
-          <gml:timePosition>2018-06-01T16:50:00Z</gml:timePosition>
+        <gml:TimeInstant gml:id="uuid.7783cdff-9324-42aa-94de-3543dbdbd09a">
+          <gml:timePosition>2018-07-01T16:50:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.57894b6b-cae5-4dfe-99ed-0da0efa62b59">
+        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.c4ce0c59-877f-4581-bf6c-bef2eed72d41">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.7badf1f8-4ff3-443c-a4c3-b8b274f8b0b2">
+            <aixm:AirspaceVolume gml:id="uuid.c05b42d1-cd39-4e35-9711-c38fe654892d">
               <aixm:upperLimit uom="FL">080</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.b0686f50-a752-427a-b835-811ae7df7453" srsDimension="2"
-                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                <aixm:Surface gml:id="uuid.791525b8-8cd3-4e6c-8d76-d815b14891ba" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
                         <gml:LinearRing>
-                          <gml:posList count="5">31.567 130.683 31.500 130.517 31.583 130.483 31.633 130.650 31.567 130.683</gml:posList>
+                          <gml:posList count="5">31.567 130.683 31.633 130.650 31.583 130.483 31.500 130.517 31.567 130.683</gml:posList>
                         </gml:LinearRing>
                       </gml:exterior>
                     </gml:PolygonPatch>
@@ -107,28 +71,27 @@ NXT ADVISORY: 20180601/2100Z=-->
     </VolcanicAshObservedOrEstimatedConditions>
   </observation>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.c77fd780-97df-47e3-ba43-8c0c870c124b" status="PROVIDED">
+    <VolcanicAshForecastConditions gml:id="uuid.7597ff28-765a-4745-aa49-2db304a0eec5" status="PROVIDED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.1bf6806d-bc58-4b03-9fc5-8dd68bd12066">
-          <gml:timePosition>2018-06-01T22:50:00Z</gml:timePosition>
+        <gml:TimeInstant gml:id="uuid.0d4b96ba-7bff-44ae-b038-4c3c3fbe03ce">
+          <gml:timePosition>2018-07-01T22:50:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.a75f99c4-85d0-4e22-9735-9f0c31fc76fb">
+        <VolcanicAshCloudForecast gml:id="uuid.7be2ccfc-9037-4061-8aae-ea602ef5f8f8">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.d48897c4-288f-4427-9edb-add5840ac9b6">
+            <aixm:AirspaceVolume gml:id="uuid.53271d6d-9b87-4619-84a3-8e3c6dc0944a">
               <aixm:upperLimit uom="FL">080</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.dbfbffa4-3bd2-4972-8fc4-e8d12ae7b0c0" srsDimension="2"
-                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                <aixm:Surface gml:id="uuid.5cbd33ac-773b-45c4-9c82-90da5e9da2aa" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
                         <gml:LinearRing>
-                          <gml:posList count="5">31.400 130.033 30.817 129.400 30.817 128.984 31.383 129.683 31.400 130.033</gml:posList>
+                          <gml:posList count="5">31.400 130.033 31.383 129.683 30.817 128.984 30.817 129.400 31.400 130.033</gml:posList>
                         </gml:LinearRing>
                       </gml:exterior>
                     </gml:PolygonPatch>
@@ -142,28 +105,27 @@ NXT ADVISORY: 20180601/2100Z=-->
     </VolcanicAshForecastConditions>
   </forecast>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.cea466fa-5005-4661-8db1-60676bef65aa" status="PROVIDED">
+    <VolcanicAshForecastConditions gml:id="uuid.c529003e-ef7c-4cc5-b1cb-5fb2e7fe8668" status="PROVIDED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.aca80fdb-e542-42ad-b185-e7b191d6d718">
-          <gml:timePosition>2018-06-02T04:50:00Z</gml:timePosition>
+        <gml:TimeInstant gml:id="uuid.038f9e11-326d-4d21-86f1-06c00b62c16e">
+          <gml:timePosition>2018-07-02T04:50:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <ashCloud>
-        <VolcanicAshCloudForecast gml:id="uuid.f1a17ec8-656b-4a03-9c8d-b90f3e3db0d3">
+        <VolcanicAshCloudForecast gml:id="uuid.ddbb5cc4-f525-4ce3-b261-41b6f81ff227">
           <ashCloudExtent>
-            <aixm:AirspaceVolume gml:id="uuid.91c7bb82-65f3-4c18-ae5d-cc9b4e939939">
+            <aixm:AirspaceVolume gml:id="uuid.88824f3b-f76a-46fc-884b-f2ddf33a50d8">
               <aixm:upperLimit uom="FL">070</aixm:upperLimit>
               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
               <aixm:lowerLimit>GND</aixm:lowerLimit>
               <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
               <aixm:horizontalProjection>
-                <aixm:Surface axisLabels="Lat Long" gml:id="uuid.8700eac8-5c06-4b3c-b9ba-4534bc43f117" srsDimension="2"
-                  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                <aixm:Surface gml:id="uuid.d6e71886-d3c8-44f4-bc38-33be03afe0b0" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
                   <gml:patches>
                     <gml:PolygonPatch>
                       <gml:exterior>
                         <gml:LinearRing>
-                          <gml:posList count="5">31.417 129.433 30.633 128.183 30.767 127.200 31.517 129.067 31.417 129.433</gml:posList>
+                          <gml:posList count="5">31.417 129.433 31.517 129.067 30.767 127.200 30.633 128.183 31.417 129.433</gml:posList>
                         </gml:LinearRing>
                       </gml:exterior>
                     </gml:PolygonPatch>
@@ -177,17 +139,17 @@ NXT ADVISORY: 20180601/2100Z=-->
     </VolcanicAshForecastConditions>
   </forecast>
   <forecast>
-    <VolcanicAshForecastConditions gml:id="uuid.bfc696ac-ef26-47e6-955d-2002740b2b4d" status="NO_VOLCANIC_ASH_EXPECTED">
+    <VolcanicAshForecastConditions gml:id="uuid.621b8a9f-d54a-4e2f-a766-10856b8e5658" status="NO_VOLCANIC_ASH_EXPECTED">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.18a4f898-f419-418a-84a4-e03e3e1d1d31">
-          <gml:timePosition>2018-06-02T22:50:00Z</gml:timePosition>
+        <gml:TimeInstant gml:id="uuid.6461e471-802d-4b47-9c60-02a7c070cfb7">
+          <gml:timePosition>2018-07-02T10:50:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
     </VolcanicAshForecastConditions>
   </forecast>
   <remarks nilReason="http://codes.wmo.int/common/nil/missing"/>
   <nextAdvisoryTime>
-    <gml:TimeInstant gml:id="uuid.ee83d730-2ddb-4a1b-9565-d9a6ebf57400">
+    <gml:TimeInstant gml:id="uuid.1a666f45-d1c8-478e-85d4-ed3553e272e0">
       <gml:timePosition>2018-06-01T21:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </nextAdvisoryTime>

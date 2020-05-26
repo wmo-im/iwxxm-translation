@@ -1,4 +1,4 @@
-FVAG01SABM-1554.xml - VA NOT IDENTIFABLE, NOT GIVEN colour code, NOT AVBL VA forecasts, NO FURTHER ADVISORIES
+FVAG01SABM-1600.xml - VA NOT IDENTIFABLE, NOT GIVEN colour code, NOT AVBL VA forecasts, NO FURTHER ADVISORIES
 FVAU03ADRM-0424.xml - Colour Code provided, many VA clouds per forecast, NO VA EXP forecast, "no later than"
 FVFE01RJTD-1720.xml - NO VA EXP, NIL colour code and remarks, Japanese punctuality on next advisory
-FVXX23KNES-1925.xml - Multiple ash clouds per forecast period, no colour code provided, "will be issued by"
+FVXX23KNES-1922.xml - Multiple ash clouds per forecast period, no colour code provided, "will be issued by"
