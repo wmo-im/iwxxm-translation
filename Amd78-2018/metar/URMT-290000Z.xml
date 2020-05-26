@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="false" gml:id="uuid.e173f362-463c-43c5-b830-32167031c6e5" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:55Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:55Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: METAR URMT 290000Z 09006MPS 0400 0350NE R07/1000D FG VV004 05/05 Q1010 R07/010070 TEMPO 0200 FG OVC001-->
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:40Z" translatedBulletinReceptionTime="2020-05-26T12:26:40Z" translatedBulletinID="SAXX99XXXX260000" gml:id="uuid.7c9a26e7-a369-4741-86e7-878016a4e79d">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.40df5bb5-5539-4f1c-ae11-dcf808ab52a6">
-      <gml:timePosition>2019-04-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.6fb06621-49ca-4d36-978e-229206d943a5">
+      <gml:timePosition>2020-04-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.47b442c2-93d4-4c21-bc98-27ee04578013">
+    <aixm:AirportHeliport gml:id="uuid.d20d739a-2cd6-4324-950d-20245c56794d">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.07bdde11-29d8-473a-8458-f81f0d3a6f51">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.27e57a8a-2e9b-44c3-90f9-c669c197a2e7">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>STAVROPOL/SHPAKOVSKOYE</aixm:name>
+          <aixm:designator>URMT</aixm:designator>
+          <aixm:name>STAVROPOL/SHPAKO</aixm:name>
           <aixm:locationIndicatorICAO>URMT</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.bd276f2c-3231-4d12-812d-19858db9048a" srsDimension="2"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-              <gml:pos>45.12 42.08</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.f436cc17-8c16-4ec6-baf7-086ca745962f">
+              <gml:pos>45.12 42.12</gml:pos>
+              <aixm:elevation uom="M">453</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.40df5bb5-5539-4f1c-ae11-dcf808ab52a6"/>
+  <iwxxm:observationTime xlink:href="#uuid.6fb06621-49ca-4d36-978e-229206d943a5"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.fe0d1784-ba56-4ea2-84a7-e28d917ff07d">
-      <!--METAR URMT 290000Z 09006MPS 0400 0350NE R07/1000D FG VV004 05/05 Q1010 R07/010070 TEMPO 0200 FG OVC001-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.b9524e9a-f122-42d5-ad13-adfed62fcb4a" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">5</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">5</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1010</iwxxm:qnh>
@@ -56,9 +47,9 @@ TAC: METAR URMT 290000Z 09006MPS 0400 0350NE R07/1000D FG VV004 05/05 Q1010 R07/
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="DOWNWARD">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.0b2aa0a9-2e83-439f-b4a4-88e4045a7326">
+            <aixm:RunwayDirection gml:id="uuid.721abccf-b887-49ba-8002-27d8692afde3">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.455c18d7-84ae-4249-8821-680ded27f9b4">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.c4726457-c424-4e9f-91e0-22b343a6069d">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>07</aixm:designator>
@@ -77,7 +68,7 @@ TAC: METAR URMT 290000Z 09006MPS 0400 0350NE R07/1000D FG VV004 05/05 Q1010 R07/
       </iwxxm:cloud>
       <iwxxm:runwayState>
         <iwxxm:AerodromeRunwayState allRunways="false">
-          <iwxxm:runway xlink:href="#uuid.0b2aa0a9-2e83-439f-b4a4-88e4045a7326"/>
+          <iwxxm:runway xlink:href="#uuid.721abccf-b887-49ba-8002-27d8692afde3"/>
           <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/0"/>
           <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1"/>
           <iwxxm:depthOfDeposit uom="mm">00</iwxxm:depthOfDeposit>
@@ -87,13 +78,12 @@ TAC: METAR URMT 290000Z 09006MPS 0400 0350NE R07/1000D FG VV004 05/05 Q1010 R07/
     </iwxxm:MeteorologicalAerodromeObservation>
   </iwxxm:observation>
   <iwxxm:trendForecast>
-    <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
-      gml:id="uuid.5482e720-16c1-4680-a646-5e0ba33d2bce">
+    <iwxxm:MeteorologicalAerodromeTrendForecast gml:id="uuid.51031636-4390-4493-94bd-1c1338df8af5" changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false">
       <iwxxm:phenomenonTime nilReason="http://codes.wmo.int/common/nil/missing"/>
       <iwxxm:prevailingVisibility uom="m">200</iwxxm:prevailingVisibility>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/FG"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.2e79e110-4b51-42cc-a6be-f5c9d9855251">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.ca0e323f-d0f7-43d6-86f2-c7b362dacd70">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/OVC"/>

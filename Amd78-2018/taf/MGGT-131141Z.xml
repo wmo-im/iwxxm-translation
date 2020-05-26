@@ -1,35 +1,24 @@
-<iwxxm:TAF gml:id="uuid.ef43c0ee-3886-4341-8608-a876c171d181" permissibleUsage="OPERATIONAL" reportStatus="CORRECTION"
-  translatedBulletinID="FTGU31MGGT131100" translatedBulletinReceptionTime="2019-05-03T12:35:37Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T12:35:37Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1312Z
-     BECMG 1314/1316 36014KT FEW018
-      TEMPO 1320/1406 8000 TSRA SCT018TCU FEW025CB
-     BECMG 1401/1403 36010KT BKN016 
-      TEMPO 1406/1412 RADZ BKN080=-->
+<?xml version="1.0"?>
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="CORRECTION" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T13:59:47Z" translatedBulletinReceptionTime="2020-05-26T13:59:47Z" translatedBulletinID="FTXX99XXXX260000" gml:id="uuid.2118584c-4d47-4bfa-9ef7-1838dc19af3b">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.b688c5ad-4017-467f-93d1-07203e2a7451">
-      <gml:timePosition>2019-04-13T11:41:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.0c233f2f-24ad-43e2-8209-a2eb0e9402f5">
+      <gml:timePosition>2020-05-13T11:41:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.830186b5-e0f2-4b8e-a3aa-157c01d61526">
+    <aixm:AirportHeliport gml:id="uuid.2cf3291b-e679-42e8-b071-f45e83602a63">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.a17be18e-4059-4e27-91a8-1f018e9fe0a5">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.885bff24-6266-40c7-a8be-a6b6ff82578d">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>GUATEMALA/LA_AURORA</aixm:name>
+          <aixm:designator>MGGT</aixm:designator>
+          <aixm:name>GUATEMALA/LA AU</aixm:name>
           <aixm:locationIndicatorICAO>MGGT</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.18179041-58dd-4c01-ad27-cfdc793a2856" srsDimension="2"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-              <gml:pos>14.58 -90.52</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.f6c75505-ea2c-4e8b-924c-fd62721a433c">
+              <gml:pos>14.57 -90.53</gml:pos>
+              <aixm:elevation uom="M">1509</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
@@ -37,14 +26,14 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
   <iwxxm:validPeriod>
-    <gml:TimePeriod gml:id="uuid.4b61a5aa-1558-4592-ba4e-8af9b1b2d803">
-      <gml:beginPosition>2019-04-13T12:00:00Z</gml:beginPosition>
-      <gml:endPosition>2019-04-14T12:00:00Z</gml:endPosition>
+    <gml:TimePeriod gml:id="uuid.6215f1c9-ad20-410e-82d3-8fcbd27fe6dd">
+      <gml:beginPosition>2020-05-13T12:00:00Z</gml:beginPosition>
+      <gml:endPosition>2020-05-14T12:00:00Z</gml:endPosition>
     </gml:TimePeriod>
   </iwxxm:validPeriod>
   <iwxxm:baseForecast>
-    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" gml:id="uuid.a4d9143f-639e-4eb8-a742-d892603a2d0e">
-      <iwxxm:phenomenonTime xlink:href="#uuid.4b61a5aa-1558-4592-ba4e-8af9b1b2d803"/>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" gml:id="uuid.583527a7-17f0-4e03-b800-79bac2106cdc">
+      <iwxxm:phenomenonTime xlink:href="#uuid.6215f1c9-ad20-410e-82d3-8fcbd27fe6dd"/>
       <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
       <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
       <iwxxm:surfaceWind>
@@ -54,7 +43,7 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
         </iwxxm:AerodromeSurfaceWindForecast>
       </iwxxm:surfaceWind>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.2ccc5b35-1b4b-4eac-846b-91a222ce14ca">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.b07a2a11-5893-4b96-a834-4ef487ac3312">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
@@ -73,14 +62,14 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
         <iwxxm:AerodromeAirTemperatureForecast>
           <iwxxm:maximumAirTemperature uom="Cel">26</iwxxm:maximumAirTemperature>
           <iwxxm:maximumAirTemperatureTime>
-            <gml:TimeInstant gml:id="uuid.abc7732f-2342-417c-992d-3a9434075652">
-              <gml:timePosition>2019-04-13T20:00:00Z</gml:timePosition>
+            <gml:TimeInstant gml:id="uuid.c472475b-1e7b-47b7-b009-6117baaed8ed">
+              <gml:timePosition>2020-05-13T20:00:00Z</gml:timePosition>
             </gml:TimeInstant>
           </iwxxm:maximumAirTemperatureTime>
           <iwxxm:minimumAirTemperature uom="Cel">16</iwxxm:minimumAirTemperature>
           <iwxxm:minimumAirTemperatureTime>
-            <gml:TimeInstant gml:id="uuid.daff5888-43fa-42ba-98e0-86b4c7145d70">
-              <gml:timePosition>2019-04-13T12:00:00Z</gml:timePosition>
+            <gml:TimeInstant gml:id="uuid.0543062e-fd2d-4bb2-8dc6-079ca00e5931">
+              <gml:timePosition>2020-05-13T12:00:00Z</gml:timePosition>
             </gml:TimeInstant>
           </iwxxm:minimumAirTemperatureTime>
         </iwxxm:AerodromeAirTemperatureForecast>
@@ -88,14 +77,15 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:baseForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
-      gml:id="uuid.86cc61b0-1a6e-41b7-a9c4-f86406f9966e">
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="BECOMING" gml:id="uuid.75be20c3-706f-4c20-9c1d-2673496c1245">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.cfbaa75d-fcb2-4095-8679-affaedac1ba0">
-          <gml:beginPosition>2019-04-13T14:00:00Z</gml:beginPosition>
-          <gml:endPosition>2019-04-13T16:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.b4767740-9edd-41e1-bf6c-eeac5402818e">
+          <gml:beginPosition>2020-05-13T14:00:00Z</gml:beginPosition>
+          <gml:endPosition>2020-05-13T16:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
       <iwxxm:surfaceWind>
         <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
           <iwxxm:meanWindDirection uom="deg">360</iwxxm:meanWindDirection>
@@ -103,7 +93,7 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
         </iwxxm:AerodromeSurfaceWindForecast>
       </iwxxm:surfaceWind>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.752b8712-9fba-4985-87eb-061bd87ad349">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.d6cd239c-2c69-4954-ab4f-d1afdbe0febe">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
@@ -115,18 +105,17 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
-      gml:id="uuid.2840feea-6bc1-454a-8d0d-97314176d7a4">
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="TEMPORARY_FLUCTUATIONS" gml:id="uuid.a48515e6-06ee-4b62-8863-b52e87d4108c">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.18a81f97-d8dd-43dd-b5af-f840027e2302">
-          <gml:beginPosition>2019-04-13T20:00:00Z</gml:beginPosition>
-          <gml:endPosition>2019-04-14T06:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.c3a23276-4250-45f6-aad7-a7931e957319">
+          <gml:beginPosition>2020-05-13T20:00:00Z</gml:beginPosition>
+          <gml:endPosition>2020-05-14T06:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
       <iwxxm:prevailingVisibility uom="m">8000</iwxxm:prevailingVisibility>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/TSRA"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.6f83ebf6-4976-43d8-ab19-6987da0c4f0e">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.8dc73ad1-a9e7-470a-8fe7-9eb9cd69bd33">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
@@ -146,14 +135,15 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
-      gml:id="uuid.58c6d40f-9a42-48c0-beee-9587a6f35a3b">
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="BECOMING" gml:id="uuid.62e824e9-5fe3-4b51-a422-d5a334b418a3">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.b4475b34-2535-4209-b2a8-333b71a71de5">
-          <gml:beginPosition>2019-04-14T01:00:00Z</gml:beginPosition>
-          <gml:endPosition>2019-04-14T03:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.1ad7c0ca-90c8-4dc7-b4f5-d6f3c4869bd9">
+          <gml:beginPosition>2020-05-14T01:00:00Z</gml:beginPosition>
+          <gml:endPosition>2020-05-14T03:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
       <iwxxm:surfaceWind>
         <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
           <iwxxm:meanWindDirection uom="deg">360</iwxxm:meanWindDirection>
@@ -161,7 +151,7 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
         </iwxxm:AerodromeSurfaceWindForecast>
       </iwxxm:surfaceWind>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.a3170ac9-ca06-4173-b667-0c04345eea6a">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.6de801bc-afb2-4e1e-b356-dd1a46bbc96d">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
@@ -173,17 +163,19 @@ TAC: TAF COR MGGT 131141Z 1312/1412 36010KT 9999 SCT016 SCT080 TX26/1320Z TN16/1
     </iwxxm:MeteorologicalAerodromeForecast>
   </iwxxm:changeForecast>
   <iwxxm:changeForecast>
-    <iwxxm:MeteorologicalAerodromeForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
-      gml:id="uuid.021b817f-c428-48b4-8272-73df60070888">
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="TEMPORARY_FLUCTUATIONS" gml:id="uuid.69a9de89-6dad-4ac0-9ed5-c406d33555bc">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.3b4f188c-8692-409b-b0ca-eb85f605e18d">
-          <gml:beginPosition>2019-04-14T06:00:00Z</gml:beginPosition>
-          <gml:endPosition>2019-04-14T12:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.97e67c04-bc4e-441b-b675-503c8e8e4eb1">
+          <gml:beginPosition>2020-05-14T06:00:00Z</gml:beginPosition>
+          <gml:endPosition>2020-05-14T12:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
-      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RADZ"/>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RA"/>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/DZ"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.4483e3aa-45f4-4bce-b4c3-b62e3c93ed97">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.7471ec78-5b69-4d71-ba24-b3420206a1c2">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
               <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>

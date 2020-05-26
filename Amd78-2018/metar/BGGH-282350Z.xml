@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="false" gml:id="uuid.6f8dd442-5460-413d-a84c-624f99a51ef2" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI BGGH 282350Z 100P50KT 9999 SCT110 BKN130 M07/M11 Q1021-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.ecf37492-4edb-4341-be62-9d9fe230912d">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.ada12ff9-d019-41d8-9cfb-147391f570e2">
-      <gml:timePosition>2019-04-28T23:50:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.a70149e2-21ef-4c96-8d6c-6c4b3569affc">
+      <gml:timePosition>2020-04-28T23:50:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.91515ed4-a95a-4ce8-af68-90c092f85f5e">
+    <aixm:AirportHeliport gml:id="uuid.215e2c4b-50e0-440f-bc7e-693a8f69c317">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.acdc401d-5097-4cad-bb2b-c964bfe11abb">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.eda95dfb-e04e-4393-b19a-f1911757fafb">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>GODTHAB_(PORT)</aixm:name>
+          <aixm:designator>BGGH</aixm:designator>
+          <aixm:name>GODTHAB (PORT)</aixm:name>
           <aixm:locationIndicatorICAO>BGGH</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.3eee3f8a-c6c6-410a-9630-bd9f4ef25e42" srsDimension="2"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-              <gml:pos>64.17 -51.75</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.330091f8-11c5-44cc-a4cf-f15baf55a223">
+              <gml:pos>64.2 -51.68</gml:pos>
+              <aixm:elevation uom="M">70</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.ada12ff9-d019-41d8-9cfb-147391f570e2"/>
+  <iwxxm:observationTime xlink:href="#uuid.a70149e2-21ef-4c96-8d6c-6c4b3569affc"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.ac4cb2da-2709-42b7-966a-bf0d4c5dd621">
-      <!--SPECI BGGH 282350Z 100P50KT 9999 SCT110 BKN130 M07/M11 Q1021-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.4c761fe4-19fc-4a4c-a563-9d3101e142b2" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">-7</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-11</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1021</iwxxm:qnh>

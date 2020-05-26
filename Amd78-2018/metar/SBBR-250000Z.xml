@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="false" gml:id="uuid.dd5d6865-19b5-40c8-82d7-bc71a6b36660" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2019-02-25T16:24:04Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-02-25T16:23:42Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: METAR SBBR 250000Z 32003KT 290V350 9999 VCTS //////CB 20/19 Q1017-->
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:40Z" translatedBulletinReceptionTime="2020-05-26T12:26:40Z" translatedBulletinID="SAXX99XXXX260000" gml:id="uuid.6def7c6f-67f2-402e-bf15-d1fea2bd1b57">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.52ec460b-d4b3-47bb-840d-d0c41b1045e7">
-      <gml:timePosition>2019-02-25T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.d119a668-0c88-44b3-b51d-e57ca4c920bc">
+      <gml:timePosition>2020-05-25T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.65b7a967-6489-4452-a3a7-249784b06e81">
+    <aixm:AirportHeliport gml:id="uuid.5054dcd2-58f7-48b9-8ae7-21e458caa027">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.8b9af897-85aa-4674-90c1-f5af6ba319b5">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.cca43cc4-6b1a-4635-adc5-629309ff8d4d">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>BRASILIA AEROPORTO</aixm:name>
+          <aixm:designator>SBBR</aixm:designator>
+          <aixm:name>BRASILIA (CIV/MI</aixm:name>
           <aixm:locationIndicatorICAO>SBBR</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.31283567-6a45-4e34-ba2f-1bf1d7db0b00" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              axisLabels="Lat Long">
-              <gml:pos>-15.87 -47.94</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.db5afbf5-0962-4d9a-b32b-c4024dc2aebd">
+              <gml:pos>-15.87 -47.92</gml:pos>
+              <aixm:elevation uom="M">1061</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.52ec460b-d4b3-47bb-840d-d0c41b1045e7"/>
+  <iwxxm:observationTime xlink:href="#uuid.d119a668-0c88-44b3-b51d-e57ca4c920bc"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.0ace6464-cb5a-4c86-ba0f-da58cadb2ecf">
-      <!--METAR SBBR 250000Z 32003KT 290V350 9999 VCTS //////CB 20/19 Q1017-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.50033316-8e35-47e4-a329-effad52b5de8" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">20</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">19</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1017</iwxxm:qnh>
@@ -59,7 +50,7 @@ TAC: METAR SBBR 250000Z 32003KT 290V350 9999 VCTS //////CB 20/19 Q1017-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+              <iwxxm:amount xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/notObservable"/>
               <iwxxm:base nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true" uom="N/A"/>
               <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>

@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="false" gml:id="uuid.e0affdcf-6a69-4cd6-92ce-250dadc58bd4" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI ESMS 290020Z 09022KT CAVOK 01/M03 Q1004 R88/09//95-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.958979fb-1408-4b7e-b590-9b2c028a5c13">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.8f1c2fb9-b489-4c9f-96b0-b0df26dcf03c">
-      <gml:timePosition>2019-04-29T00:20:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.bdc95aff-25aa-4ddc-a7c7-87a3bedc6a4a">
+      <gml:timePosition>2020-04-29T00:20:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.1e5c35b3-3a44-4bbb-a88d-5559ac324495">
+    <aixm:AirportHeliport gml:id="uuid.0e5ca99e-e97a-4bf0-b687-84fc4af527d4">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.50588efa-8056-47e1-9846-c6b389064a8e">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.2a633938-11c2-41b3-8054-4bb815074fc8">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>ESMS</aixm:designator>
           <aixm:name>MALMO/STURUP</aixm:name>
           <aixm:locationIndicatorICAO>ESMS</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.ff6f3702-7b82-4852-a6d2-827e18b5a0fd" srsDimension="2"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-              <gml:pos>55.55 13.37</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.014a86fd-76a4-4583-90c8-11afb4ce250b">
+              <gml:pos>55.53 13.37</gml:pos>
+              <aixm:elevation uom="M">106</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.8f1c2fb9-b489-4c9f-96b0-b0df26dcf03c"/>
+  <iwxxm:observationTime xlink:href="#uuid.bdc95aff-25aa-4ddc-a7c7-87a3bedc6a4a"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="true" gml:id="uuid.329722cf-715c-4f23-9ee5-2544072aa7d4">
-      <!--SPECI ESMS 290020Z 09022KT CAVOK 01/M03 Q1004 R88/09//95-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.dde9910e-1766-4d6b-a19a-d71c52adb66d" cloudAndVisibilityOK="true">
       <iwxxm:airTemperature uom="Cel">1</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-3</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1004</iwxxm:qnh>
@@ -50,7 +41,7 @@ TAC: SPECI ESMS 290020Z 09022KT CAVOK 01/M03 Q1004 R88/09//95-->
         <iwxxm:AerodromeRunwayState allRunways="true">
           <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/0"/>
           <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/9"/>
-          <iwxxm:depthOfDeposit nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
+          <iwxxm:depthOfDeposit uom="N/A" xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
           <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/95"/>
         </iwxxm:AerodromeRunwayState>
       </iwxxm:runwayState>

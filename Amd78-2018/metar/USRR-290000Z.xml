@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="false" gml:id="uuid.58bdabc1-141d-4abc-94bc-dc212573c2d2" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:55Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:55Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: METAR USRR 290000Z 09008MPS 0900 R07/1000 BLSN VV019 M12/M14 Q1004 R07/451045 TEMPO 0700 +SN BLSN-->
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:40Z" translatedBulletinReceptionTime="2020-05-26T12:26:40Z" translatedBulletinID="SAXX99XXXX260000" gml:id="uuid.91584913-dd43-4590-bdd9-7236d0f36e8f">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.0a2296ba-a33b-47e6-9c03-c235f98341c7">
-      <gml:timePosition>2019-04-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.0a0db626-824d-4915-b43b-8e20ac9553dc">
+      <gml:timePosition>2020-04-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.56d2a2a7-4279-4f39-b64f-250ee1aef3cf">
+    <aixm:AirportHeliport gml:id="uuid.e85d01fa-c4cd-4f41-991f-6d03d7cd312a">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.510632db-584c-4844-b77d-17e0a9599038">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.299a0853-9586-4edd-87a0-79f370b46d7b">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>USRR</aixm:designator>
           <aixm:name>SURGUT</aixm:name>
           <aixm:locationIndicatorICAO>USRR</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.7cc69d60-3062-4469-9ba7-0c1618463a5e" srsDimension="2"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-              <gml:pos>61.25 73.50</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.a30cc532-cc9f-4931-8506-6cafc8fb2507">
+              <gml:pos>61.33 73.42</gml:pos>
+              <aixm:elevation uom="M">44</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.0a2296ba-a33b-47e6-9c03-c235f98341c7"/>
+  <iwxxm:observationTime xlink:href="#uuid.0a0db626-824d-4915-b43b-8e20ac9553dc"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.23f2367c-2880-43cd-a926-5691af63be79">
-      <!--METAR USRR 290000Z 09008MPS 0900 R07/1000 BLSN VV019 M12/M14 Q1004 R07/451045 TEMPO 0700 +SN BLSN-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.2f45d7c2-88cc-4f22-8f75-838c86507c50" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">-12</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-14</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1004</iwxxm:qnh>
@@ -54,9 +45,9 @@ TAC: METAR USRR 290000Z 09008MPS 0900 R07/1000 BLSN VV019 M12/M14 Q1004 R07/4510
       <iwxxm:rvr>
         <iwxxm:AerodromeRunwayVisualRange pastTendency="MISSING_VALUE">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.bda2df98-3ef9-49a7-8cef-4a11c9787829">
+            <aixm:RunwayDirection gml:id="uuid.942ab044-74d9-4c05-87df-339fc9af3c48">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.a7490a0c-adaa-4bbf-aa57-000fdbf2090b">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.fb36b6a4-6978-4dfd-99de-9a75b3de72ea">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>07</aixm:designator>
@@ -75,7 +66,7 @@ TAC: METAR USRR 290000Z 09008MPS 0900 R07/1000 BLSN VV019 M12/M14 Q1004 R07/4510
       </iwxxm:cloud>
       <iwxxm:runwayState>
         <iwxxm:AerodromeRunwayState allRunways="false">
-          <iwxxm:runway xlink:href="#uuid.bda2df98-3ef9-49a7-8cef-4a11c9787829"/>
+          <iwxxm:runway xlink:href="#uuid.942ab044-74d9-4c05-87df-339fc9af3c48"/>
           <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/4"/>
           <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/5"/>
           <iwxxm:depthOfDeposit uom="mm">10</iwxxm:depthOfDeposit>
@@ -85,8 +76,7 @@ TAC: METAR USRR 290000Z 09008MPS 0900 R07/1000 BLSN VV019 M12/M14 Q1004 R07/4510
     </iwxxm:MeteorologicalAerodromeObservation>
   </iwxxm:observation>
   <iwxxm:trendForecast>
-    <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
-      gml:id="uuid.14095553-da63-419d-a2e1-260a32ff0ca1">
+    <iwxxm:MeteorologicalAerodromeTrendForecast gml:id="uuid.a2220a1f-1af3-418b-b6f3-f17e15892083" changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false">
       <iwxxm:phenomenonTime nilReason="http://codes.wmo.int/common/nil/missing"/>
       <iwxxm:prevailingVisibility uom="m">700</iwxxm:prevailingVisibility>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+SN"/>

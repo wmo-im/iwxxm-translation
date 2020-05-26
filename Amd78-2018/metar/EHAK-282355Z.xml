@@ -1,35 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="true" gml:id="uuid.37f048b3-225a-4b1b-bee8-bfea43179f34" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI EHAK 282355Z AUTO 33009KT 9999 DZ FEW006/// SCT011/// BKN025/// 04/02 Q0998 W///H///-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.ea05ebdf-df0a-4ba4-9a97-7ff96289d410">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.af1a85bf-f9fb-497e-b276-31b66f2d9e13">
-      <gml:timePosition>2019-04-28T23:55:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.7cd35c35-dcf9-492a-a8d6-eb8e8ba4da0b">
+      <gml:timePosition>2020-04-28T23:55:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.a0defaf4-ecbb-41ff-86e4-097fef50a917">
+    <aixm:AirportHeliport gml:id="uuid.d59ca0cf-00cb-421e-8172-19d258a720e7">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.6340159e-e7e6-4fc5-b01b-ae0ed2c7d812">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.01ad79be-77d6-48ed-934e-e7de7b75c2db">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>EHAK</aixm:designator>
+          <aixm:name>A12-CPP SEA</aixm:name>
           <aixm:locationIndicatorICAO>EHAK</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.15f34eeb-8e63-4789-b14f-264a54df3e27">
+              <gml:pos>55.42 3.82</gml:pos>
+              <aixm:elevation uom="M">50</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.af1a85bf-f9fb-497e-b276-31b66f2d9e13"/>
+  <iwxxm:observationTime xlink:href="#uuid.7cd35c35-dcf9-492a-a8d6-eb8e8ba4da0b"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.9d73577d-25b3-4f3c-b80c-78dc6fcb16e6">
-      <!--SPECI EHAK 282355Z AUTO 33009KT 9999 DZ FEW006/// SCT011/// BKN025/// 04/02 Q0998 W///H///-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.d1fbc3cf-2c3a-4995-b476-626ffcbaf3dc" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">4</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">2</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">998</iwxxm:qnh>
@@ -73,8 +71,8 @@ TAC: SPECI EHAK 282355Z AUTO 33009KT 9999 DZ FEW006/// SCT011/// BKN025/// 04/02
       </iwxxm:cloud>
       <iwxxm:seaCondition>
         <iwxxm:AerodromeSeaCondition>
-          <iwxxm:seaSurfaceTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
-          <iwxxm:significantWaveHeight nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
+          <iwxxm:seaSurfaceTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+          <iwxxm:significantWaveHeight uom="N/A" xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/notObservable"/>
         </iwxxm:AerodromeSeaCondition>
       </iwxxm:seaCondition>
     </iwxxm:MeteorologicalAerodromeObservation>

@@ -1,42 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:SPECI automatedStation="false" gml:id="uuid.373435d1-ecd3-44e4-b2ea-108200ebb66e" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:54Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:54Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI EETN 290020Z 24006KT 9999 FEW019 M05/M07 Q1015 R08/0///95 NOSIG-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.88c631d7-0f6f-46be-8c15-3f65dbb4939e">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.62f4e6e8-bbb3-41fc-b8db-ebea9640992f">
-      <gml:timePosition>2019-04-29T00:20:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.a7e76a55-ff07-4102-af7c-10ff7a1c8365">
+      <gml:timePosition>2020-04-29T00:20:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.f32773fc-c5ad-41de-a3f1-154dbc1d292b">
+    <aixm:AirportHeliport gml:id="uuid.709d45f7-5036-423d-93f0-9a22359816ed">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.0a2f68f4-041a-4df7-8f4e-4c4c7628ab8c">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.8266d88a-f614-474e-9535-df24fb0e4ac1">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>TALLIN</aixm:name>
+          <aixm:designator>EETN</aixm:designator>
+          <aixm:name>TALLINN</aixm:name>
           <aixm:locationIndicatorICAO>EETN</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint axisLabels="Lat Long" gml:id="uuid.8adfaed2-e208-405e-b1b4-5ee0e4079ef0" srsDimension="2"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-              <gml:pos>59.35 24.80</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.00aa7325-8188-4cc7-95ab-00861db8c551">
+              <gml:pos>59.4 24.82</gml:pos>
+              <aixm:elevation uom="M">40</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.62f4e6e8-bbb3-41fc-b8db-ebea9640992f"/>
+  <iwxxm:observationTime xlink:href="#uuid.a7e76a55-ff07-4102-af7c-10ff7a1c8365"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.85354cf9-017d-46a0-9800-260a14b3dc0a">
-      <!--SPECI EETN 290020Z 24006KT 9999 FEW019 M05/M07 Q1015 R08/0///95 NOSIG-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.5d859290-3cf1-4bba-8671-4d63bf1ef1b7" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">-5</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-7</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1015</iwxxm:qnh>
@@ -65,9 +56,9 @@ TAC: SPECI EETN 290020Z 24006KT 9999 FEW019 M05/M07 Q1015 R08/0///95 NOSIG-->
       <iwxxm:runwayState>
         <iwxxm:AerodromeRunwayState allRunways="false">
           <iwxxm:runway>
-            <aixm:RunwayDirection gml:id="uuid.66e61d7b-2707-441f-ad03-4d69e6d5f846">
+            <aixm:RunwayDirection gml:id="uuid.18f7055e-72b6-4fdd-9ff1-34d45f585486">
               <aixm:timeSlice>
-                <aixm:RunwayDirectionTimeSlice gml:id="uuid.8f448572-d20f-4f34-a594-3727e0379515">
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.3aa99eb3-27b2-40f5-8921-ab72b3715e6f">
                   <gml:validTime/>
                   <aixm:interpretation>SNAPSHOT</aixm:interpretation>
                   <aixm:designator>08</aixm:designator>
@@ -76,11 +67,11 @@ TAC: SPECI EETN 290020Z 24006KT 9999 FEW019 M05/M07 Q1015 R08/0///95 NOSIG-->
             </aixm:RunwayDirection>
           </iwxxm:runway>
           <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/0"/>
-          <iwxxm:depthOfDeposit nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
+          <iwxxm:depthOfDeposit uom="N/A" xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
           <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/95"/>
         </iwxxm:AerodromeRunwayState>
       </iwxxm:runwayState>
     </iwxxm:MeteorologicalAerodromeObservation>
   </iwxxm:observation>
-  <iwxxm:trendForecast nilReason="http://codes.wmo.int/common/nil/noSignificantChange" xsi:nil="true"/>
+  <iwxxm:trendForecast xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/noSignificantChange"/>
 </iwxxm:SPECI>

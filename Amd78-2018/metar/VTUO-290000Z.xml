@@ -1,35 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<iwxxm:METAR automatedStation="false" gml:id="uuid.27cbc6bd-20e6-403f-aefc-0945c572ceba" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="TTAAiiCCCCYYGGgg" translatedBulletinReceptionTime="2019-05-03T10:53:55Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2019-05-03T10:53:55Z"
-  xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: METAR VTUO 290000Z 22003KT 190V360 2000 BR FEW035 25/25 Q1011 A2987 BECMG FM0100 3000 BR-->
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:40Z" translatedBulletinReceptionTime="2020-05-26T12:26:40Z" translatedBulletinID="SAXX99XXXX260000" gml:id="uuid.d12e7106-b37d-4b1c-946d-6829f5cc5189">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.3a353f68-1e94-4c47-966c-3a5705b379ab">
-      <gml:timePosition>2019-04-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.59b60b1b-02f8-43aa-bc80-4108d499cd5d">
+      <gml:timePosition>2020-04-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.bf3a9732-5c53-42be-acd9-32d9140f41ab">
+    <aixm:AirportHeliport gml:id="uuid.bfb97a43-9119-4f3e-a6b5-7409ed77857b">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.5639d3b5-c96e-463a-8f18-303575120bff">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.e7e979b9-fbf0-4b54-a7b6-e95a0222c854">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>VTUO</aixm:designator>
+          <aixm:name>BURIRUM</aixm:name>
           <aixm:locationIndicatorICAO>VTUO</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.f4cc86b7-a658-45ba-b178-b0951e16735d">
+              <gml:pos>15.23 103.25</gml:pos>
+              <aixm:elevation uom="M">183</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.3a353f68-1e94-4c47-966c-3a5705b379ab"/>
+  <iwxxm:observationTime xlink:href="#uuid.59b60b1b-02f8-43aa-bc80-4108d499cd5d"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.64a044ef-122a-4d45-a13a-d2ba9a611951">
-      <!--METAR VTUO 290000Z 22003KT 190V360 2000 BR FEW035 25/25 Q1011 A2987 BECMG FM0100 3000 BR-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.68993f2c-43f1-41de-82e6-472c9c4457e8" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">25</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">25</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1011</iwxxm:qnh>
@@ -60,14 +58,14 @@ TAC: METAR VTUO 290000Z 22003KT 190V360 2000 BR FEW035 25/25 Q1011 A2987 BECMG F
     </iwxxm:MeteorologicalAerodromeObservation>
   </iwxxm:observation>
   <iwxxm:trendForecast>
-    <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="BECOMING" cloudAndVisibilityOK="false"
-      gml:id="uuid.6ad65742-a091-4d4a-84e4-f5edf85f05fb">
+    <iwxxm:MeteorologicalAerodromeTrendForecast gml:id="uuid.1eb80e72-4f7d-4aae-905d-8032d1756673" changeIndicator="BECOMING" cloudAndVisibilityOK="false">
       <iwxxm:phenomenonTime>
-        <gml:TimePeriod gml:id="uuid.c52bf4ec-ed93-4694-9e75-849fb1c39d48">
-          <gml:beginPosition>2019-04-29T01:00:00Z</gml:beginPosition>
-          <gml:endPosition indeterminatePosition="after">2019-04-29T01:00:00Z</gml:endPosition>
+        <gml:TimePeriod gml:id="uuid.55bfe33d-df97-4fba-afc3-8ee638677e7c">
+          <gml:beginPosition>2020-05-29T01:00:00Z</gml:beginPosition>
+          <gml:endPosition indeterminatePosition="after">2020-05-29T01:00:00Z</gml:endPosition>
         </gml:TimePeriod>
       </iwxxm:phenomenonTime>
+      <iwxxm:timeIndicator>FROM</iwxxm:timeIndicator>
       <iwxxm:prevailingVisibility uom="m">3000</iwxxm:prevailingVisibility>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/BR"/>
     </iwxxm:MeteorologicalAerodromeTrendForecast>
