@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T13:59:47Z" translatedBulletinReceptionTime="2020-05-26T13:59:47Z" translatedBulletinID="FTXX99XXXX260000" gml:id="uuid.fa5b1f4a-a75e-42ad-9f7a-14a556e55c90">
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL"
+           permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO"
+           translationTime="2020-05-26T13:59:47Z" translatedBulletinReceptionTime="2020-05-26T13:59:47Z" 
+           translatedBulletinID="FTXX99XXXX260000" gml:id="uuid.fa5b1f4a-a75e-42ad-9f7a-14a556e55c90">
   <iwxxm:issueTime>
     <gml:TimeInstant gml:id="uuid.36bbc063-e029-4b8e-a8fa-0f53f14b6dd6">
       <gml:timePosition>2020-05-13T11:00:00Z</gml:timePosition>
@@ -15,8 +20,8 @@
           <aixm:locationIndicatorICAO>DAOY</aixm:locationIndicatorICAO>
           <aixm:ARP>
             <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.7b9f40d0-fc80-4180-8b92-e7a125a93f43">
-              <gml:pos>0.0 0.0</gml:pos>
-              <aixm:elevation uom="M">0</aixm:elevation>
+              <gml:pos>33.72 1.09</gml:pos>
+              <aixm:elevation uom="M">1366</aixm:elevation>
               <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
