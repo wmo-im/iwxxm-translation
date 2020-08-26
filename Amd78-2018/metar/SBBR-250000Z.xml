@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:40Z" translatedBulletinReceptionTime="2020-05-26T12:26:40Z" translatedBulletinID="SAXX99XXXX260000" gml:id="uuid.6def7c6f-67f2-402e-bf15-d1fea2bd1b57">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.d119a668-0c88-44b3-b51d-e57ca4c920bc">
+      <gml:timePosition>2020-05-25T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.5054dcd2-58f7-48b9-8ae7-21e458caa027">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.cca43cc4-6b1a-4635-adc5-629309ff8d4d">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>SBBR</aixm:designator>
+          <aixm:name>BRASILIA (CIV/MI</aixm:name>
+          <aixm:locationIndicatorICAO>SBBR</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.db5afbf5-0962-4d9a-b32b-c4024dc2aebd">
+              <gml:pos>-15.87 -47.92</gml:pos>
+              <aixm:elevation uom="M">1061</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.d119a668-0c88-44b3-b51d-e57ca4c920bc"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.50033316-8e35-47e4-a329-effad52b5de8" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">20</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">19</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1017</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="true">
+          <iwxxm:meanWindDirection uom="deg">320</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">3</iwxxm:meanWindSpeed>
+          <iwxxm:extremeClockwiseWindDirection uom="deg">350</iwxxm:extremeClockwiseWindDirection>
+          <iwxxm:extremeCounterClockwiseWindDirection uom="deg">290</iwxxm:extremeCounterClockwiseWindDirection>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/VCTS"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/notObservable"/>
+              <iwxxm:base nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true" uom="N/A"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:METAR>

@@ -1,8 +1,7 @@
 DAAV-131700Z.xml - Use of PROB30 TEMPO condition, towering cumulus cloud type forecast
 DAOY-131100Z.xml - NIL TAF
 EHLW-131400Z.xml - Cancelled TAF
-KTPA-132340Z.xml - High wind speed sustained and gusts exceed measurement, no significant weather, CB cloud type forecast
-MGGT-131141Z.xml - Corrected TAF, missing valid period of previous TAF, max/min temperature forecast
+MGGT-131141Z.xml - Corrected TAF, max/min temperature forecast
 OIZC-131130Z.xml - No significant cloud forecast
 SARP-131100Z.xml - CAVOK, PROB 30
-SARP-131251Z.xml - Amended TAF, missing valid period of previous TAF
+SARP-131251Z.xml - Amended TAF

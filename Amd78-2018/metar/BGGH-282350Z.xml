@@ -1,42 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="false" gml:id="uuid.12d8a159-bcf3-44a7-96e3-0dbe41cbd6c7" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI BGGH 282350Z 100P50KT 9999 SCT110 BKN130 M07/M11 Q1021-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.ecf37492-4edb-4341-be62-9d9fe230912d">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.238c26a1-b1cd-4ac4-8c13-06e76dbe29fd">
-      <gml:timePosition>2018-10-28T23:50:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.a70149e2-21ef-4c96-8d6c-6c4b3569affc">
+      <gml:timePosition>2020-04-28T23:50:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.48871f79-4ef4-4233-845a-243012b29c75">
+    <aixm:AirportHeliport gml:id="uuid.215e2c4b-50e0-440f-bc7e-693a8f69c317">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.64bb8bc6-85a8-4661-9307-fa5f0346cd3d">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.eda95dfb-e04e-4393-b19a-f1911757fafb">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>GODTHAB_(PORT)</aixm:name>
+          <aixm:designator>BGGH</aixm:designator>
+          <aixm:name>GODTHAB (PORT)</aixm:name>
           <aixm:locationIndicatorICAO>BGGH</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.32659477-3374-47b5-8ac9-486f299c18d0" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
-              <gml:pos>64.17 -51.75</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.330091f8-11c5-44cc-a4cf-f15baf55a223">
+              <gml:pos>64.2 -51.68</gml:pos>
+              <aixm:elevation uom="M">70</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.238c26a1-b1cd-4ac4-8c13-06e76dbe29fd"/>
+  <iwxxm:observationTime xlink:href="#uuid.a70149e2-21ef-4c96-8d6c-6c4b3569affc"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.7d90eb4b-3831-4582-a9e0-ed299b89d711">
-      <!--SPECI BGGH 282350Z 100P50KT 9999 SCT110 BKN130 M07/M11 Q1021-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.4c761fe4-19fc-4a4c-a563-9d3101e142b2" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">-7</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-11</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1021</iwxxm:qnh>
@@ -50,19 +41,20 @@ TAC: SPECI BGGH 282350Z 100P50KT 9999 SCT110 BKN130 M07/M11 Q1021-->
       <iwxxm:visibility>
         <iwxxm:AerodromeHorizontalVisibility>
           <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
         </iwxxm:AerodromeHorizontalVisibility>
       </iwxxm:visibility>
       <iwxxm:cloud>
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/2" xlink:title="Scattered"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
               <iwxxm:base uom="[ft_i]">11000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">13000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

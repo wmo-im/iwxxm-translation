@@ -1,45 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="true" gml:id="uuid.e59ed78c-eb65-477f-b9e7-31e91fea408d" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: METAR CWFD 290000Z AUTO 20022KT ////SM // BKN003 BKN008 ///// A////-->
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:40Z" translatedBulletinReceptionTime="2020-05-26T12:26:40Z" translatedBulletinID="SAXX99XXXX260000" gml:id="uuid.919e4cfe-0a14-4b22-9625-086267a59f1a">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.4ee0664b-bd24-459f-a9c7-1c8abc9b4a91">
-      <gml:timePosition>2018-10-29T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.a56df833-4ca4-4afd-9519-415c802703a0">
+      <gml:timePosition>2020-04-29T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.6e1b292d-5d33-4102-a1ea-6be564a5dff1">
+    <aixm:AirportHeliport gml:id="uuid.9723e096-02a4-4a8c-9a17-1c12ae246c10">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.13727cc2-f725-4c4d-8672-68f12799e96e">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.e34f25a3-ffad-4544-9291-7bca43fd4680">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>CAPE DYER ARPT, NU</aixm:name>
+          <aixm:designator>CWFD</aixm:designator>
+          <aixm:name>CAPE DYER AIRPOR</aixm:name>
           <aixm:locationIndicatorICAO>CWFD</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.b9a8a300-86a2-41d3-8efb-6f7536275c7b" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
-              <gml:pos>66.58 -61.62</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.de524bd2-e7de-4cdf-b0bb-7243530f5e4c">
+              <gml:pos>66.56 -61.58</gml:pos>
+              <aixm:elevation uom="M">393</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.4ee0664b-bd24-459f-a9c7-1c8abc9b4a91"/>
+  <iwxxm:observationTime xlink:href="#uuid.a56df833-4ca4-4afd-9519-415c802703a0"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.77b8cd3f-3cc3-4abb-a7d2-777c33731eff">
-      <!--METAR CWFD 290000Z AUTO 20022KT ////SM // BKN003 BKN008 ///// A////-->
-      <iwxxm:airTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
-      <iwxxm:dewpointTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
-      <iwxxm:qnh nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.2342a755-9f39-4564-b619-a08abe76d85f" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:dewpointTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:qnh uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
       <iwxxm:surfaceWind>
         <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
           <iwxxm:meanWindDirection uom="deg">200</iwxxm:meanWindDirection>
@@ -47,18 +38,19 @@ TAC: METAR CWFD 290000Z AUTO 20022KT ////SM // BKN003 BKN008 ///// A////-->
         </iwxxm:AerodromeSurfaceWind>
       </iwxxm:surfaceWind>
       <iwxxm:visibility nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:rvr nilReason="http://codes.wmo.int/common/nil/missing" xsi:nil="true"/>
       <iwxxm:presentWeather nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
       <iwxxm:cloud>
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">300</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">800</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>

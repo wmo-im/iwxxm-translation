@@ -1,78 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TropicalCycloneAdvisory xmlns="http://icao.int/iwxxm/3.0" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="uuid.7defdefa-db24-4284-b295-99fac5af7b9c" permissibleUsage="OPERATIONAL"
-  reportStatus="NORMAL" translatedBulletinID="FKPZ23120836" translatedBulletinReceptionTime="2018-10-29T12:31:06Z"
-  translationCentreDesignator="KWNO" translationCentreName="NCEP Central Operations" translationTime="2018-10-29T12:31:06Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
-  <!--
-This example of Tropical Cyclone Advisory TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: FKPZ23 KNHC 120836
-TCAPZ3
-
-POST-TROPICAL CYCLONE PAUL ICAO ADVISORY NUMBER  16
-NWS NATIONAL HURRICANE CENTER MIAMI FL       EP182018
-0900 UTC WED SEP 12 2018
-
-TC ADVISORY
-DTG:                      20180912/0900Z
-TCAC:                     KNHC
-TC:                       PAUL
-ADVISORY NR:              2018/16
-OBS PSN:                  12/0830Z N2218 W12724
-MOV:                      W 08KT
-C:                        1005HPA
-MAX WIND:                 030KT
-FCST PSN +6 HR:           12/1500Z N2222 W12816
-FCST MAX WIND +6 HR:      025KT
-FCST PSN +12 HR:          12/2100Z N2224 W12906
-FCST MAX WIND +12 HR:     025KT
-FCST PSN +18 HR:          13/0300Z N2224 W12954
-FCST MAX WIND +18 HR:     025KT
-FCST PSN +24 HR:          13/0900Z N2224 W13033
-FCST MAX WIND +24 HR:     025KT
-RMK:                      THE FORECAST POSITION INFORMATION IN
-                          THIS PRODUCT IS INTERPOLATED FROM
-                          OFFICIAL FORECAST DATA VALID AT 0000...
-                          0600...1200...AND 1800Z.
-NXT MSG:                  NO MSG EXP
-
-$$-->
+<?xml version="1.0"?>
+<TropicalCycloneAdvisory xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T15:14:54Z" translatedBulletinReceptionTime="2020-05-26T15:14:54Z" translatedBulletinID="FKPZ23KNHC120836" gml:id="uuid.f5d76d49-1fe5-4e20-b697-0c0f9eeb5281">
   <issueTime>
-    <gml:TimeInstant gml:id="uuid.f986a0fe-1358-4d11-99fa-0c0c5cde6c56">
+    <gml:TimeInstant gml:id="uuid.9680014d-eb7e-4917-9624-854200c530c2">
       <gml:timePosition>2018-09-12T09:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </issueTime>
   <issuingTropicalCycloneAdvisoryCentre>
-    <Unit xmlns="http://www.aixm.aero/schema/5.1.1" gml:id="uuid.ce5b6c5b-38fc-4131-bc2b-4ad51e0e1417">
-      <timeSlice>
-        <UnitTimeSlice gml:id="uuid.4e7f3513-a64f-4647-80ba-e5851d33325b">
+    <aixm:Unit gml:id="uuid.d206f0b4-f9f4-4eaa-b17b-066678c806b8">
+      <aixm:timeSlice>
+        <aixm:UnitTimeSlice gml:id="uuid.24caf86c-7eb1-4751-8139-249604fb594c">
           <gml:validTime/>
-          <interpretation>SNAPSHOT</interpretation>
-          <type>OTHER:TCAC</type>
-          <designator>KNHC</designator>
-        </UnitTimeSlice>
-      </timeSlice>
-    </Unit>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:type>OTHER:TCAC</aixm:type>
+          <aixm:designator>KNHC</aixm:designator>
+        </aixm:UnitTimeSlice>
+      </aixm:timeSlice>
+    </aixm:Unit>
   </issuingTropicalCycloneAdvisoryCentre>
   <tropicalCycloneName>
-    <TropicalCyclone xmlns="http://def.wmo.int/metce/2013" gml:id="uuid.55921eef-6311-474e-9dc5-e57be1fd998a">
+    <TropicalCyclone xmlns="http://def.wmo.int/metce/2013" gml:id="uuid.a10bd8aa-39a1-440c-9d5e-7288925cd533">
       <name>PAUL</name>
     </TropicalCyclone>
   </tropicalCycloneName>
   <advisoryNumber>2018/16</advisoryNumber>
   <observation>
-    <TropicalCycloneObservedConditions gml:id="uuid.2c6a58ec-8c8f-46ad-964e-b2912e418710">
+    <TropicalCycloneObservedConditions gml:id="uuid.4874ba6d-5ade-45e5-a13f-9bb20430e931">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.884f88e6-10bb-44d3-bcf3-93a74351ef31">
+        <gml:TimeInstant gml:id="uuid.73afeaa2-059b-4e45-a3fe-d924ff9111fa">
           <gml:timePosition>2018-09-12T08:30:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <tropicalCyclonePosition>
-        <gml:Point axisLabels="latitude longitude" gml:id="uuid.856b7687-bb91-45b9-b24c-2ae5a5daa475" srsDimension="2"
-          srsName="urn:ogc:def:crs::4326">
+        <gml:Point gml:id="uuid.7bb35bfc-fa11-4d5b-97f0-4834accca10f" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
           <gml:pos>22.300 -127.400</gml:pos>
         </gml:Point>
       </tropicalCyclonePosition>
@@ -84,14 +43,14 @@ $$-->
     </TropicalCycloneObservedConditions>
   </observation>
   <forecast>
-    <TropicalCycloneForecastConditions gml:id="uuid.07e5aca7-c933-4ac8-ac0a-2cd507897fe3">
+    <TropicalCycloneForecastConditions gml:id="uuid.85ec1169-7fd1-4b5f-90a3-6f3f7d052a8e">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.4b25b9ba-3336-4db0-ab34-da351f89804d">
+        <gml:TimeInstant gml:id="uuid.9fba365a-750e-4dd0-b86e-ece2672ce002">
           <gml:timePosition>2018-09-12T15:00:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <tropicalCyclonePosition>
-        <gml:Point axisLabels="latitude longitude" gml:id="uuid.52ee8fca-cd57-48b0-9db9-5042edcc88ba">
+        <gml:Point gml:id="uuid.06a0dc1a-7036-4401-a0cb-cda601652f5e" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
           <gml:pos>22.367 -128.267</gml:pos>
         </gml:Point>
       </tropicalCyclonePosition>
@@ -99,14 +58,14 @@ $$-->
     </TropicalCycloneForecastConditions>
   </forecast>
   <forecast>
-    <TropicalCycloneForecastConditions gml:id="uuid.9df9ce69-b42f-4587-8632-b43c1b36fe28">
+    <TropicalCycloneForecastConditions gml:id="uuid.9ddbfe20-8a45-4c71-bed9-176442f3ab9b">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.440511a5-ff99-44a2-a42a-597d9734bb74">
+        <gml:TimeInstant gml:id="uuid.e5f335b6-bd29-474e-9a98-bc918988815a">
           <gml:timePosition>2018-09-12T21:00:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <tropicalCyclonePosition>
-        <gml:Point axisLabels="latitude longitude" gml:id="uuid.bc1d02ae-5265-4458-b4be-23ba512f6439">
+        <gml:Point gml:id="uuid.36c76ebf-a97b-454f-bb41-657189f086a9" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
           <gml:pos>22.400 -129.100</gml:pos>
         </gml:Point>
       </tropicalCyclonePosition>
@@ -114,14 +73,14 @@ $$-->
     </TropicalCycloneForecastConditions>
   </forecast>
   <forecast>
-    <TropicalCycloneForecastConditions gml:id="uuid.e1b1e241-f0ea-4328-8e9e-9506328f71bb">
+    <TropicalCycloneForecastConditions gml:id="uuid.14331ca3-a075-497c-a06a-779503c702ee">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.8170f435-c457-4a61-b2e3-8d8ee2665c0f">
+        <gml:TimeInstant gml:id="uuid.019e1250-5edf-4f62-940e-ee80a4334596">
           <gml:timePosition>2018-09-13T03:00:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <tropicalCyclonePosition>
-        <gml:Point axisLabels="latitude longitude" gml:id="uuid.56393e6a-21f0-4cf7-b522-8da27bc0aea1">
+        <gml:Point gml:id="uuid.9da07fbf-e902-4577-9781-ac6879470c51" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
           <gml:pos>22.400 -129.900</gml:pos>
         </gml:Point>
       </tropicalCyclonePosition>
@@ -129,14 +88,14 @@ $$-->
     </TropicalCycloneForecastConditions>
   </forecast>
   <forecast>
-    <TropicalCycloneForecastConditions gml:id="uuid.c8c4361a-5a88-4b6c-9adf-7219d2561f7e">
+    <TropicalCycloneForecastConditions gml:id="uuid.a5b3567a-4714-4db0-8b18-3cae1bb3c82c">
       <phenomenonTime>
-        <gml:TimeInstant gml:id="uuid.12bada86-f587-43fa-ad22-cb8abd65dece">
+        <gml:TimeInstant gml:id="uuid.c6e5faa7-bba1-4178-a456-d9352f20e893">
           <gml:timePosition>2018-09-13T09:00:00Z</gml:timePosition>
         </gml:TimeInstant>
       </phenomenonTime>
       <tropicalCyclonePosition>
-        <gml:Point axisLabels="latitude longitude" gml:id="uuid.b3eeee7c-d159-4f02-a52e-e1fc1bcfaf7c">
+        <gml:Point gml:id="uuid.5f9523f4-e93f-49c0-a27d-57b86a6d3e01" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
           <gml:pos>22.400 -130.550</gml:pos>
         </gml:Point>
       </tropicalCyclonePosition>
@@ -144,5 +103,5 @@ $$-->
     </TropicalCycloneForecastConditions>
   </forecast>
   <remarks>THE FORECAST POSITION INFORMATION IN THIS PRODUCT IS INTERPOLATED FROM OFFICIAL FORECAST DATA VALID AT 0000... 0600...1200...AND 1800Z.</remarks>
-  <nextAdvisoryTime nilReason="http://www.opengis.net/def/nil/OGC/0/inapplicable"/>
+  <nextAdvisoryTime nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
 </TropicalCycloneAdvisory>

@@ -1,42 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="true" gml:id="uuid.8240c5bc-f440-40ba-87ed-46ce4249f0c5" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: METAR ENFB 280000Z AUTO 12014KT //// FEW052/// 04/M08 Q1009 W///H52-->
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:40Z" translatedBulletinReceptionTime="2020-05-26T12:26:40Z" translatedBulletinID="SAXX99XXXX260000" gml:id="uuid.28d48378-87ef-42ef-b57b-056dcb85955d">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.0630c37a-6cf8-409d-9262-47182a86a3d2">
-      <gml:timePosition>2018-10-28T00:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.c3d37c0e-34ea-48a5-8fb3-75e33ecb4820">
+      <gml:timePosition>2020-04-28T00:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.01b3b0f4-c827-46bb-90af-6db4928b639d">
+    <aixm:AirportHeliport gml:id="uuid.0c79bdb8-1926-4830-8b13-d36c3e45017e">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.c2a7eaee-a4c3-4224-bb49-2c59bd1577be">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.277d5b2c-58f5-42ed-945f-e925f5174e10">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>OSLO/FORNEBU</aixm:name>
+          <aixm:designator>ENFB</aixm:designator>
+          <aixm:name>STATFJORD B OILP</aixm:name>
           <aixm:locationIndicatorICAO>ENFB</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.f87dc9d3-15b4-430c-a053-a99a94f68d2b" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
-              <gml:pos>59.90 10.62</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.10aa43d5-2f7f-4097-9e01-4e6be2c3425c">
+              <gml:pos>61.2 1.83</gml:pos>
+              <aixm:elevation uom="M">10</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.0630c37a-6cf8-409d-9262-47182a86a3d2"/>
+  <iwxxm:observationTime xlink:href="#uuid.c3d37c0e-34ea-48a5-8fb3-75e33ecb4820"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.72cfb7ec-6bac-416a-83d8-864d4eaaa69a">
-      <!--METAR ENFB 280000Z AUTO 12014KT //// FEW052/// 04/M08 Q1009 W///H52-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.f84ca882-1f81-46fc-a225-508e83612056" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">4</iwxxm:airTemperature>
       <iwxxm:dewpointTemperature uom="Cel">-8</iwxxm:dewpointTemperature>
       <iwxxm:qnh uom="hPa">1009</iwxxm:qnh>
@@ -51,7 +42,7 @@ TAC: METAR ENFB 280000Z AUTO 12014KT //// FEW052/// 04/M08 Q1009 W///H52-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">5200</iwxxm:base>
               <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
             </iwxxm:CloudLayer>
@@ -60,7 +51,7 @@ TAC: METAR ENFB 280000Z AUTO 12014KT //// FEW052/// 04/M08 Q1009 W///H52-->
       </iwxxm:cloud>
       <iwxxm:seaCondition>
         <iwxxm:AerodromeSeaCondition>
-          <iwxxm:seaSurfaceTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
+          <iwxxm:seaSurfaceTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
           <iwxxm:significantWaveHeight uom="m">5.2</iwxxm:significantWaveHeight>
         </iwxxm:AerodromeSeaCondition>
       </iwxxm:seaCondition>

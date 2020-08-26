@@ -1,44 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="false" gml:id="uuid.668133db-bc5a-44aa-9be6-dffe9ea828e9" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI LCRA 282350Z 28026G41KT 8000 TSRA FEW018 BKN030CB BKN060 14/// Q1001 TEMPO 4000 +TSRA BKN025CB-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.a36c2ee1-343f-4bab-b246-ffc1cb2f2d74">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.ae81114d-4d21-472f-9cb5-222755bb7bf3">
-      <gml:timePosition>2018-10-28T23:50:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.563c912b-a105-40d9-9db2-c0e7005860e0">
+      <gml:timePosition>2020-04-28T23:50:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.b6a6529f-e1d4-420f-9865-9ef6506f0af6">
+    <aixm:AirportHeliport gml:id="uuid.a620ecb2-688e-4398-9c52-b846bb385cc6">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.46980f9b-a21e-407c-b1eb-1b89bbd2e112">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.fb44324a-85a0-46cd-92ae-a4b95074bb21">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>AKROTIRI_(RAF)</aixm:name>
+          <aixm:designator>LCRA</aixm:designator>
+          <aixm:name>AKROTIRI (RAF)</aixm:name>
           <aixm:locationIndicatorICAO>LCRA</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.381fcf33-280c-4a29-9ee5-c6029ce31614" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
-              <gml:pos>34.58 32.98</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.6759601a-c4f1-4873-b652-b1ddca90e15a">
+              <gml:pos>34.57 32.97</gml:pos>
+              <aixm:elevation uom="M">23</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.ae81114d-4d21-472f-9cb5-222755bb7bf3"/>
+  <iwxxm:observationTime xlink:href="#uuid.563c912b-a105-40d9-9db2-c0e7005860e0"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.906d6566-8ae4-45cf-9384-4e98a508dfdf">
-      <!--SPECI LCRA 282350Z 28026G41KT 8000 TSRA FEW018 BKN030CB BKN060 14/// Q1001 TEMPO 4000 +TSRA BKN025CB-->
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.82765061-0022-4b05-a184-05d1a5712028" cloudAndVisibilityOK="false">
       <iwxxm:airTemperature uom="Cel">14</iwxxm:airTemperature>
-      <iwxxm:dewpointTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
+      <iwxxm:dewpointTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
       <iwxxm:qnh uom="hPa">1001</iwxxm:qnh>
       <iwxxm:surfaceWind>
         <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
@@ -57,20 +48,20 @@ TAC: SPECI LCRA 282350Z 28026G41KT 8000 TSRA FEW018 BKN030CB BKN060 14/// Q1001 
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/1" xlink:title="Few"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
               <iwxxm:base uom="[ft_i]">1800</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">3000</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">6000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
@@ -79,18 +70,17 @@ TAC: SPECI LCRA 282350Z 28026G41KT 8000 TSRA FEW018 BKN030CB BKN060 14/// Q1001 
     </iwxxm:MeteorologicalAerodromeObservation>
   </iwxxm:observation>
   <iwxxm:trendForecast>
-    <iwxxm:MeteorologicalAerodromeTrendForecast changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false"
-      gml:id="uuid.775490e2-026f-41d4-ab31-c4335454f8b3">
-      <iwxxm:phenomenonTime nilReason="missing"/>
+    <iwxxm:MeteorologicalAerodromeTrendForecast gml:id="uuid.c421b328-93ce-4123-ae93-464724da33ee" changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false">
+      <iwxxm:phenomenonTime nilReason="http://codes.wmo.int/common/nil/missing"/>
       <iwxxm:prevailingVisibility uom="m">4000</iwxxm:prevailingVisibility>
       <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/+TSRA"/>
       <iwxxm:cloud>
-        <iwxxm:AerodromeCloudForecast gml:id="uuid.5def44db-77e0-434f-a62d-5d6996b681d3">
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.07bbe921-5702-4fa3-bf4f-46560ef6281c">
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">2500</iwxxm:base>
-              <iwxxm:cloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/9" xlink:title="Cumulonimbus (CB)"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
         </iwxxm:AerodromeCloudForecast>

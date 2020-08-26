@@ -1,33 +1,39 @@
-<!--This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative-->
-<!--but is provided for your review and consideration. Comments and feedback are welcomed.-->
-<!--                                                                                      -->
-<!--TAC: TAF EHLW 131400Z 1309/1321 CNL-->
-<iwxxm:TAF gml:id="uuid.28ab9c43-7cbd-40f4-96c3-573e5c720601" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" isCancelReport="true"
-  translatedBulletinID="FTNL31KWBC131442" translatedBulletinReceptionTime="2018-08-13T14:00:37" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-08-15T18:28:24Z" xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
+<?xml version="1.0"?>
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL"
+           isCancelReport="true" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations"
+           translationCentreDesignator="KWNO" translationTime="2020-05-26T13:59:47Z" translatedBulletinReceptionTime="2020-05-26T13:59:47Z"
+           translatedBulletinID="FTXX99XXXX260000" gml:id="uuid.d3a964fb-5a73-4c4f-9664-7a70c34268c6">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.f1d08699-1f28-4515-aa55-3dc68cacc931">
-      <gml:timePosition>2018-08-13T14:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.d58e2964-b500-4f60-909b-f251d3c0ec9b">
+      <gml:timePosition>2020-05-13T14:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.32880375-78e6-4efb-8313-4c3679702527">
+    <aixm:AirportHeliport gml:id="uuid.245c2047-d6c3-446e-bfac-5b3be63a2a73">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.97016d96-4fab-4735-adf6-1822977a0058">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.b6c27c1c-b4dd-4385-9f55-c15e36e3a12e">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>EHLW</aixm:designator>
+          <aixm:name>LEEUWARDEN RNLAF</aixm:name>
           <aixm:locationIndicatorICAO>EHLW</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.e573f627-5e37-4329-9d19-0dcfe7212c53">
+              <gml:pos>53.22 5.75</gml:pos>
+              <aixm:elevation uom="M">2</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
   <iwxxm:cancelledReportValidPeriod>
-    <gml:TimePeriod gml:id="uuid.c1bb0ada-39ac-4951-9d18-a9d5c478a0a6">
-      <gml:beginPosition>2018-08-13T09:00:00Z</gml:beginPosition>
-      <gml:endPosition>2018-08-13T21:00:00Z</gml:endPosition>
+    <gml:TimePeriod gml:id="uuid.318af7e9-a2e6-4467-9778-35b0403161bb">
+      <gml:beginPosition>2020-05-13T14:00:00Z</gml:beginPosition>
+      <gml:endPosition>2020-05-13T21:00:00Z</gml:endPosition>
     </gml:TimePeriod>
   </iwxxm:cancelledReportValidPeriod>
 </iwxxm:TAF>

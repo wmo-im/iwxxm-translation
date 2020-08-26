@@ -1,31 +1,28 @@
 <?xml version="1.0"?>
-<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:iwxxm="http://icao.int/iwxxm/3.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  gml:id="uuid.8bc387de-f49e-44d3-ad99-f9bc278babac" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="TTAACCCC291927" translatedBulletinReceptionTime="2018-10-29T19:27:56Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T19:27:56Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
-  <!--
-This example of Terminal Aerodrome Forecast TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: TAF DAOY 131100Z NIL=-->
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL"
+           permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO"
+           translationTime="2020-05-26T13:59:47Z" translatedBulletinReceptionTime="2020-05-26T13:59:47Z" 
+           translatedBulletinID="FTXX99XXXX260000" gml:id="uuid.fa5b1f4a-a75e-42ad-9f7a-14a556e55c90">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.ead7a290-1c48-49b6-b1c5-909b36f4a7da">
-      <gml:timePosition>2018-10-13T11:00:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.36bbc063-e029-4b8e-a8fa-0f53f14b6dd6">
+      <gml:timePosition>2020-05-13T11:00:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.05a5df29-6d8e-4462-9c11-57ba48b4a379">
+    <aixm:AirportHeliport gml:id="uuid.04ae3ee7-8e55-42c9-9e4a-5fb123fed037">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.5df541eb-dfba-4bbc-bafe-9c9e3669ec87">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.e9917a73-a95f-411c-aa78-ec1aa239eadd">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>DAOY</aixm:designator>
           <aixm:locationIndicatorICAO>DAOY</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.8caaf6ec-4b63-45b5-a19d-f80c42b7eda8" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.7b9f40d0-fc80-4180-8b92-e7a125a93f43">
               <gml:pos>33.72 1.09</gml:pos>
+              <aixm:elevation uom="M">1366</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>

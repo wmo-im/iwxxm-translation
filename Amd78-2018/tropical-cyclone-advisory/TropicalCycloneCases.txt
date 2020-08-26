@@ -1,4 +1,7 @@
 FKNT23KNHC-1500.xml - Abbreviated TEST message.
 FKNT23KNHC-1501.xml - EXERCISE message, multiple CB polygon groups, TOP BLW FLxxx, TOP FLxxx, NIL remark, no future messages.
 FKPQ30RJTD-1800.xml - CB circle with TOP ABV FLxxx, NIL remark
-FKPZ23KNHC-0836.xml - Dissipating TC, no CB group.
+FKPZ23KNHC-0836.xml - Weakening/dissipating TC, no CB group.
+FKPA21PHFO-2920.xml - Amd 77 version
+FKNT21KNHC-0840.xml - Amd 77 version with dissipation at end of period
+FKNT23KNHC-1458.xml - Amd 77 last issuance with no forecast positions

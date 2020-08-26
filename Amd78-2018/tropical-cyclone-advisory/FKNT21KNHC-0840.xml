@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<TropicalCycloneAdvisory xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T15:14:54Z" translatedBulletinReceptionTime="2020-05-26T15:14:54Z" translatedBulletinID="FKNT21KNHC290840" gml:id="uuid.a4648c88-f255-49de-b481-d18636ca0af6">
+  <issueTime>
+    <gml:TimeInstant gml:id="uuid.44095a7a-4025-4a8a-9107-f20d976c7d22">
+      <gml:timePosition>2019-08-29T09:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </issueTime>
+  <issuingTropicalCycloneAdvisoryCentre>
+    <aixm:Unit gml:id="uuid.f7f0aabc-e993-4e3f-b30a-ddfa71748056">
+      <aixm:timeSlice>
+        <aixm:UnitTimeSlice gml:id="uuid.e54b8ab6-5945-4d5b-8df9-7ba99be9538d">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:type>OTHER:TCAC</aixm:type>
+          <aixm:designator>KNHC</aixm:designator>
+        </aixm:UnitTimeSlice>
+      </aixm:timeSlice>
+    </aixm:Unit>
+  </issuingTropicalCycloneAdvisoryCentre>
+  <tropicalCycloneName>
+    <TropicalCyclone xmlns="http://def.wmo.int/metce/2013" gml:id="uuid.cb1301c4-d02b-4341-8ac1-fd92178c82cd">
+      <name>ERIN</name>
+    </TropicalCyclone>
+  </tropicalCycloneName>
+  <advisoryNumber>2019/011</advisoryNumber>
+  <observation>
+    <TropicalCycloneObservedConditions gml:id="uuid.1cc080a8-d156-467f-ad88-d3c6f0d2007b">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.03a4ac38-dc9a-4eb4-9dbe-6b9bd8cb9f6d">
+          <gml:timePosition>2019-08-29T08:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point gml:id="uuid.d066f153-7d5c-4fe3-8007-08b0b717bd7a" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+          <gml:pos>36.100 -71.600</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <movement>MOVING</movement>
+      <movementDirection uom="deg">22.5</movementDirection>
+      <movementSpeed uom="[kn_i]">13</movementSpeed>
+      <centralPressure uom="hPa">1005</centralPressure>
+      <maximumSurfaceWindSpeed uom="[kn_i]">30</maximumSurfaceWindSpeed>
+    </TropicalCycloneObservedConditions>
+  </observation>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.0d9a02a2-1857-4062-a374-29c6c53d035d">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.46e512cf-9e0c-4279-8916-bacf11dc418c">
+          <gml:timePosition>2019-08-29T15:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point gml:id="uuid.43673cca-e3f0-4116-8074-ec7482f09afd" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+          <gml:pos>38.233 -70.050</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <maximumSurfaceWindSpeed uom="[kn_i]">30</maximumSurfaceWindSpeed>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.3c1c41f1-4255-4c93-829d-e4b4bafbbe42">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.ee920014-e85d-4962-9675-bfec1e6fd90a">
+          <gml:timePosition>2019-08-29T21:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point gml:id="uuid.41ec8ce9-1230-4307-a56c-4ac490ea1068" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+          <gml:pos>40.550 -68.200</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <maximumSurfaceWindSpeed uom="[kn_i]">30</maximumSurfaceWindSpeed>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.f261af8e-c8f2-4980-a20c-d60220ba0b42">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.4194fea4-0452-4401-94c0-968367041b81">
+          <gml:timePosition>2019-08-30T03:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point gml:id="uuid.505108b5-7c9a-4f30-a4d7-ee91c26ab869" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+          <gml:pos>43.050 -66.000</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <maximumSurfaceWindSpeed uom="[kn_i]">35</maximumSurfaceWindSpeed>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+  <remarks>THE FORECAST POSITION INFORMATION IN THIS PRODUCT IS INTERPOLATED FROM OFFICIAL FORECAST DATA VALID AT 0000... 0600...1200...AND 1800Z.</remarks>
+  <nextAdvisoryTime nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
+</TropicalCycloneAdvisory>

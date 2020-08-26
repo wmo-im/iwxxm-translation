@@ -1,44 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  automatedStation="true" gml:id="uuid.9195b432-3b42-4062-87cd-dd7e5bd4b5bc" permissibleUsage="OPERATIONAL" reportStatus="NORMAL"
-  translatedBulletinID="SAAAiiCCCYYGGgg" translatedBulletinReceptionTime="2018-10-29T13:27:57Z" translationCentreDesignator="KWNO"
-  translationCentreName="NCEP Central Operations" translationTime="2018-10-29T13:27:57Z"
-  xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0.0RC2/iwxxm.xsd">
-  <!--
-This example of METAR/SPECI TAC to XML translation should not be considered authorative
-but is provided for your review and consideration. Comments and feedback are welcomed.
-
-TAC: SPECI BGTL 290039Z AUTO 08009KT 6000 BR BKN010 ///// A3033-->
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" translationCentreName="NCEP Central Operations" translationCentreDesignator="KWNO" translationTime="2020-05-26T12:26:41Z" translatedBulletinReceptionTime="2020-05-26T12:26:41Z" translatedBulletinID="SPXX99XXXX260000" gml:id="uuid.c841a3b1-797c-451d-8a4a-ac8d86c61035">
   <iwxxm:issueTime>
-    <gml:TimeInstant gml:id="uuid.37bdfbdb-2605-4c66-869b-92d8d9f7c231">
-      <gml:timePosition>2018-10-29T00:39:00Z</gml:timePosition>
+    <gml:TimeInstant gml:id="uuid.5295a7f7-d4e8-4708-92f6-69e733fc4d93">
+      <gml:timePosition>2020-04-29T00:39:00Z</gml:timePosition>
     </gml:TimeInstant>
   </iwxxm:issueTime>
   <iwxxm:aerodrome>
-    <aixm:AirportHeliport gml:id="uuid.16f3f702-6e5a-4a80-98b3-5a23a907ea3c">
+    <aixm:AirportHeliport gml:id="uuid.e775e981-6494-4fed-af7f-fa79e3b4e84d">
       <aixm:timeSlice>
-        <aixm:AirportHeliportTimeSlice gml:id="uuid.aa29cce9-e1f3-4afa-a5ff-219e290de623">
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.07fc50a0-6108-4ec4-8ddc-da3a54f2b295">
           <gml:validTime/>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
-          <aixm:name>THULE_AB</aixm:name>
+          <aixm:designator>BGTL</aixm:designator>
+          <aixm:name>THULE AB</aixm:name>
           <aixm:locationIndicatorICAO>BGTL</aixm:locationIndicatorICAO>
           <aixm:ARP>
-            <aixm:ElevatedPoint gml:id="uuid.f4b710a1-d5ba-4e3d-9f4f-d04cd6225cd1" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4326"
-              uomLabels="deg deg">
-              <gml:pos>76.53 -68.50</gml:pos>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.77825a2e-e339-497e-b652-9eba7660f024">
+              <gml:pos>76.53 -68.7</gml:pos>
+              <aixm:elevation uom="M">77</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
             </aixm:ElevatedPoint>
           </aixm:ARP>
         </aixm:AirportHeliportTimeSlice>
       </aixm:timeSlice>
     </aixm:AirportHeliport>
   </iwxxm:aerodrome>
-  <iwxxm:observationTime xlink:href="#uuid.37bdfbdb-2605-4c66-869b-92d8d9f7c231"/>
+  <iwxxm:observationTime xlink:href="#uuid.5295a7f7-d4e8-4708-92f6-69e733fc4d93"/>
   <iwxxm:observation>
-    <iwxxm:MeteorologicalAerodromeObservation cloudAndVisibilityOK="false" gml:id="uuid.57fa2bd7-fe81-43c8-8008-1477635fd5ce">
-      <!--SPECI BGTL 290039Z AUTO 08009KT 6000 BR BKN010 ///// A3033-->
-      <iwxxm:airTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
-      <iwxxm:dewpointTemperature nilReason="http://codes.wmo.int/common/nil/notObservable" uom="N/A" xsi:nil="true"/>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.075b7eb1-0125-4676-babf-22ea470778fa" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:dewpointTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
       <iwxxm:qnh uom="hPa">1027.1</iwxxm:qnh>
       <iwxxm:surfaceWind>
         <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
@@ -56,7 +47,7 @@ TAC: SPECI BGTL 290039Z AUTO 08009KT 6000 BR BKN010 ///// A3033-->
         <iwxxm:AerodromeCloud>
           <iwxxm:layer>
             <iwxxm:CloudLayer>
-              <iwxxm:amount xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/3" xlink:title="Broken"/>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
               <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
             </iwxxm:CloudLayer>
           </iwxxm:layer>
