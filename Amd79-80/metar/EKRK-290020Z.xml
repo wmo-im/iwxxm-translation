@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" gml:id="uuid.f1721600-6919-42fc-b09d-6048b212dc0c">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.09703e08-3e25-40dd-9bd9-b4aa37f404fb">
+      <gml:timePosition>2021-11-29T00:20:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.2710f21a-3baf-449b-b5cc-b27973dc3bd5">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.563817ea-cc4a-4221-83b6-b55631de836a">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>COPENHAGEN ROSKILDE AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>EKRK</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>RKE</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.ffddfcbf-6d1b-4bc4-8065-b241b525f7e0">
+              <gml:pos>55.58560181 12.13140011</gml:pos>
+              <aixm:elevation uom="M">45</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.09703e08-3e25-40dd-9bd9-b4aa37f404fb"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.0bc27b74-46d6-4986-862e-419f8e45703f" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">0</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-3</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1004</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">90</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">17</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">27</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/OVC"/>
+              <iwxxm:base uom="[ft_i]">10000</iwxxm:base>
+              <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:runwayState>
+        <iwxxm:AerodromeRunwayState allRunways="false" fromPreviousReport="true">
+          <iwxxm:runway nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/2"/>
+          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1"/>
+          <iwxxm:depthOfDeposit uom="mm">00</iwxxm:depthOfDeposit>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/67"/>
+        </iwxxm:AerodromeRunwayState>
+      </iwxxm:runwayState>
+      <iwxxm:runwayState>
+        <iwxxm:AerodromeRunwayState allRunways="false" fromPreviousReport="true">
+          <iwxxm:runway nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/2"/>
+          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1"/>
+          <iwxxm:depthOfDeposit uom="mm">00</iwxxm:depthOfDeposit>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/81"/>
+        </iwxxm:AerodromeRunwayState>
+      </iwxxm:runwayState>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:SPECI>
