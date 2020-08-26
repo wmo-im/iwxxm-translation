@@ -147,7 +147,7 @@
       </phenomenonTime>
     </VolcanicAshForecastConditions>
   </forecast>
-  <remarks nilReason="http://codes.wmo.int/common/nil/missing"/>
+  <remarks nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
   <nextAdvisoryTime>
     <gml:TimeInstant gml:id="uuid.1a666f45-d1c8-478e-85d4-ed3553e272e0">
       <gml:timePosition>2018-06-01T21:00:00Z</gml:timePosition>
