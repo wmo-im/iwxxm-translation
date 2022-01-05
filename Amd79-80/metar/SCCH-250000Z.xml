@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" gml:id="uuid.9fea55c1-3dc9-42c4-b73c-6732a657a78e">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.1d697ad3-5d95-429b-b9b9-137d7e5618e1">
+      <gml:timePosition>2021-11-25T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.49f745a4-49c7-486c-99ee-ccc103faa5a9">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.bc0326f6-613a-4222-bb5f-15fc6b7f6070">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>GRAL. BERNARDO OHIGGINS AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>SCCH</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>YAI</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.c5577d56-ea2d-43ac-bf8d-892eff8598c3">
+              <gml:pos>-36.58250046 -72.03140259</gml:pos>
+              <aixm:elevation uom="M">151</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.1d697ad3-5d95-429b-b9b9-137d7e5618e1"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.8acb7a47-ca89-4a8f-9544-4e798256bd5c" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">20</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">4</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1014</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">190</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">9</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/notDetectedByAutoSystem"/>
+              <iwxxm:base nilReason="http://codes.wmo.int/common/nil/notDetectedByAutoSystem" xsi:nil="true" uom="N/A"/>
+              <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:METAR>

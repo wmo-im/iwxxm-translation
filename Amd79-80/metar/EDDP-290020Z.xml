@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.b0bb0283-f138-4ed4-a9f9-5a107e2bc6ff">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.fcb482e0-cf4a-4f12-9265-0949c8227c0b">
+      <gml:timePosition>2021-11-29T00:20:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.e2d0bdc5-12ce-4394-b292-76c7d73f90e3">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.86efcde8-3a3a-4451-938f-f8e897be02cc">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>LEIPZIG HALLE AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>EDDP</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>LEJ</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.d4601801-da2c-4d3e-9056-1ed3e6ab8a78">
+              <gml:pos>51.43239975 12.24160004</gml:pos>
+              <aixm:elevation uom="M">142</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.fcb482e0-cf4a-4f12-9265-0949c8227c0b"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.5a005d82-cdb4-411c-af3d-261b2d04ff8a" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">7</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">6</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">996</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="true">
+          <iwxxm:meanWindDirection uom="deg">210</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">8</iwxxm:meanWindSpeed>
+          <iwxxm:extremeClockwiseWindDirection uom="deg">240</iwxxm:extremeClockwiseWindDirection>
+          <iwxxm:extremeCounterClockwiseWindDirection uom="deg">180</iwxxm:extremeCounterClockwiseWindDirection>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
+              <iwxxm:base uom="[ft_i]">2800</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">6000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast>
+    <iwxxm:MeteorologicalAerodromeTrendForecast gml:id="uuid.c3a064da-ee6b-42f6-bc33-3ac1bd73f25e" changeIndicator="BECOMING" cloudAndVisibilityOK="false">
+      <iwxxm:phenomenonTime nilReason="http://codes.wmo.int/common/nil/missing"/>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindTrendForecast>
+          <iwxxm:meanWindDirection uom="deg">250</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">15</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">25</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWindTrendForecast>
+      </iwxxm:surfaceWind>
+    </iwxxm:MeteorologicalAerodromeTrendForecast>
+  </iwxxm:trendForecast>
+</iwxxm:SPECI>

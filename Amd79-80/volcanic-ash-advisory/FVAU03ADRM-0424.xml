@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<VolcanicAshAdvisory xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://icao.int/iwxxm/2021-2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" gml:id="uuid.772d4a2d-1357-4221-b527-2a27451a3a6f">
+  <issueTime>
+    <gml:TimeInstant gml:id="uuid.da05fe5f-927a-4662-b1c5-640ae2261140">
+      <gml:timePosition>2018-06-01T04:25:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </issueTime>
+  <issuingVolcanicAshAdvisoryCentre>
+    <Unit xmlns="http://www.aixm.aero/schema/5.1.1" gml:id="uuid.af3809ef-bbc7-4932-84f2-a7a8c1eabeb1">
+      <timeSlice>
+        <UnitTimeSlice gml:id="uuid.2c186fdc-b59d-4aa9-999e-b476e3a5b685">
+          <gml:validTime/>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>DARWIN</name>
+          <type>OTHER:VAAC</type>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </issuingVolcanicAshAdvisoryCentre>
+  <volcano>
+    <EruptingVolcano xmlns="http://def.wmo.int/metce/2013" gml:id="uuid.887cd086-b804-427d-81fb-92e0c5171890">
+      <name>MERAPI 263250</name>
+      <position>
+        <gml:Point axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2" gml:id="uuid.4a644179-e67f-4f58-b25e-a257a76ee5e7">
+          <gml:pos>-7.550 110.450</gml:pos>
+        </gml:Point>
+      </position>
+      <eruptionDate>2018-06-01T04:25:00Z</eruptionDate>
+    </EruptingVolcano>
+  </volcano>
+  <stateOrRegion>INDONESIA</stateOrRegion>
+  <summitElevation uom="m">2968</summitElevation>
+  <advisoryNumber>2018/30</advisoryNumber>
+  <informationSource>HIMAWARI-8, VONA, PILOT REPORT</informationSource>
+  <colourCode xlink:href="http://codes.wmo.int/49-2/AviationColourCode/RED"/>
+  <eruptionDetails>ERUPTN TO FL380 MOV SW, FL300 MOV TO S, FL240 MOV E, FL180 MOV N</eruptionDetails>
+  <observation>
+    <VolcanicAshObservedOrEstimatedConditions status="IDENTIFIABLE" isEstimated="false" gml:id="uuid.3f35bbae-d3ac-44a6-85c0-ab5df5071b5b">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.bbba4efc-0190-4d7a-a40a-64877553c68f">
+          <gml:timePosition>2018-06-01T04:25:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <ashCloud>
+        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.1db6738b-8212-4444-9d42-0a397d5d21e3">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.0ca1ba4a-47a3-4396-943e-7a9488d33e7d">
+              <aixm:upperLimit uom="FL">180</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.8766b637-3fbd-448e-b1f6-034978bf1e8c" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="8">-7.617 110.117 -7.450 110.400 -7.500 110.783 -7.083 110.884 -7.083 110.517 -7.183 110.167 -7.450 110.033 -7.617 110.117</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+          <directionOfMotion uom="deg">360</directionOfMotion>
+          <speedOfMotion uom="[kn_i]">10</speedOfMotion>
+        </VolcanicAshCloudObservedOrEstimated>
+      </ashCloud>
+      <ashCloud>
+        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.81bb4a0a-78b1-449f-a631-056903a74b23">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.74856fee-fe08-45f6-a403-d47537db0b17">
+              <aixm:upperLimit uom="FL">240</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.79886a4e-b4f6-4287-94fd-33c03c7a46bb" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="6">-7.800 110.817 -7.383 110.850 -7.433 110.583 -7.950 110.483 -8.017 110.717 -7.800 110.817</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+          <directionOfMotion uom="deg">90</directionOfMotion>
+          <speedOfMotion uom="[kn_i]">5</speedOfMotion>
+        </VolcanicAshCloudObservedOrEstimated>
+      </ashCloud>
+      <ashCloud>
+        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.aa1209e1-7ba0-4c99-8d93-31c08e8081eb">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.fd84c3f8-c4f5-4266-94c4-8266d6ee4aa1">
+              <aixm:upperLimit uom="FL">300</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.04261a1d-ddb6-4285-b2a6-4afcdb2b1aa6" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="7">-7.950 110.433 -7.917 110.333 -8.183 110.117 -8.283 110.383 -8.283 110.667 -8.000 110.733 -7.950 110.433</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+          <directionOfMotion uom="deg">180</directionOfMotion>
+          <speedOfMotion uom="[kn_i]">15</speedOfMotion>
+        </VolcanicAshCloudObservedOrEstimated>
+      </ashCloud>
+      <ashCloud>
+        <VolcanicAshCloudObservedOrEstimated gml:id="uuid.5914f94d-5d5c-4882-bbd2-e490a7759f53">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.b74446d7-826a-4e7b-8b12-bc559896a335">
+              <aixm:upperLimit uom="FL">380</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.49668f93-4cd9-4ea3-bb26-1a4fdedec3c3" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="7">-7.800 110.250 -7.783 110.133 -7.900 110.033 -8.283 109.817 -8.317 109.984 -7.934 110.350 -7.800 110.250</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+          <directionOfMotion uom="deg">225</directionOfMotion>
+          <speedOfMotion uom="[kn_i]">15</speedOfMotion>
+        </VolcanicAshCloudObservedOrEstimated>
+      </ashCloud>
+    </VolcanicAshObservedOrEstimatedConditions>
+  </observation>
+  <forecast>
+    <VolcanicAshForecastConditions gml:id="uuid.ef262f57-6d26-40ce-8352-9dc55f8e43fa" status="PROVIDED">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.3ab75c61-f675-4254-8d5b-c126985c0b89">
+          <gml:timePosition>2018-06-01T10:25:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <ashCloud>
+        <VolcanicAshCloudForecast gml:id="uuid.0bd28ba4-e087-4b24-8f5f-5012f696136c">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.34d76330-7376-470d-8c35-3fe6ed2f58a0">
+              <aixm:upperLimit uom="FL">180</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.2e570d26-5382-4f96-b6b4-9cf7a32a5b69" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="6">-7.033 110.350 -7.250 110.934 -7.000 111.217 -6.783 110.767 -6.767 110.400 -7.033 110.350</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+        </VolcanicAshCloudForecast>
+      </ashCloud>
+      <ashCloud>
+        <VolcanicAshCloudForecast gml:id="uuid.5bbdda95-a922-47d1-8ae5-5dcbcc74c44d">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.f70c703a-a035-464a-9b43-6134c477b115">
+              <aixm:upperLimit uom="FL">240</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.fac62bf4-5e05-4bb9-b4d2-0cfafdd624f6" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="6">-7.117 111.267 -7.250 110.984 -8.383 110.783 -8.483 111.100 -7.917 111.283 -7.117 111.267</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+        </VolcanicAshCloudForecast>
+      </ashCloud>
+      <ashCloud>
+        <VolcanicAshCloudForecast gml:id="uuid.5fba5f06-8331-4a37-b2f4-7ee6ca471b4a">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.da240ab9-fb0d-4fa6-83ee-e27231db547c">
+              <aixm:upperLimit uom="FL">300</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.67c138a4-b017-4597-894f-b2b79e796dcf" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">-8.400 110.750 -8.417 110.033 -8.750 109.967 -8.767 110.867 -8.400 110.750</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+        </VolcanicAshCloudForecast>
+      </ashCloud>
+      <ashCloud>
+        <VolcanicAshCloudForecast gml:id="uuid.eacca43f-28db-49fb-a842-ebc0bf3fa25f">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.cdcd09c7-43fe-4a8a-9080-3b9efeaf6d93">
+              <aixm:upperLimit uom="FL">380</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.10cbb7a9-0328-4d14-8f86-ac7d845540cb" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">-8.300 110.067 -8.183 109.817 -8.467 109.650 -8.633 109.884 -8.300 110.067</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+        </VolcanicAshCloudForecast>
+      </ashCloud>
+    </VolcanicAshForecastConditions>
+  </forecast>
+  <forecast>
+    <VolcanicAshForecastConditions gml:id="uuid.f39ec72a-0fe5-4df8-ab51-71fec9698bbe" status="PROVIDED">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.124a3ea6-688b-4ea7-be24-d43edb3643c7">
+          <gml:timePosition>2018-06-01T16:25:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <ashCloud>
+        <VolcanicAshCloudForecast gml:id="uuid.423461eb-f2fa-49eb-a45e-6f956bc92fc3">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.2a0116f9-ebad-46db-b49d-0e7b6bde9ae0">
+              <aixm:upperLimit uom="FL">180</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.cc4772d3-ef4b-4db5-90ac-4fffb85a0243" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="6">-6.533 110.283 -6.900 110.350 -7.017 111.067 -6.767 111.300 -6.283 110.950 -6.533 110.283</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+        </VolcanicAshCloudForecast>
+      </ashCloud>
+      <ashCloud>
+        <VolcanicAshCloudForecast gml:id="uuid.1a545137-9a98-4a69-bcea-add394cfaad3">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.e6458336-96b6-46ce-bfe6-50670ee7ad66">
+              <aixm:upperLimit uom="FL">240</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.ad334f21-bd85-449b-b91a-e592e0ac91e2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="6">-7.250 111.467 -7.233 111.183 -8.267 110.967 -8.400 111.450 -7.833 111.550 -7.250 111.467</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+        </VolcanicAshCloudForecast>
+      </ashCloud>
+      <ashCloud>
+        <VolcanicAshCloudForecast gml:id="uuid.9ba78064-05a6-4285-99ce-cf9a53d34f5a">
+          <ashCloudExtent>
+            <aixm:AirspaceVolume gml:id="uuid.c51d91af-7b93-437b-b32b-7efc70cf0fa2">
+              <aixm:upperLimit uom="FL">300</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit>GND</aixm:lowerLimit>
+              <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+              <aixm:horizontalProjection>
+                <aixm:Surface gml:id="uuid.631aacb4-e4cb-4739-af95-3cd9c325be3b" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+                  <gml:patches>
+                    <gml:PolygonPatch>
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList count="5">-8.567 110.000 -8.900 109.917 -8.867 110.900 -8.533 110.834 -8.567 110.000</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:PolygonPatch>
+                  </gml:patches>
+                </aixm:Surface>
+              </aixm:horizontalProjection>
+            </aixm:AirspaceVolume>
+          </ashCloudExtent>
+        </VolcanicAshCloudForecast>
+      </ashCloud>
+    </VolcanicAshForecastConditions>
+  </forecast>
+  <forecast>
+    <VolcanicAshForecastConditions gml:id="uuid.1b0d826b-d3be-4901-9a38-30ff18564682" status="NO_VOLCANIC_ASH_EXPECTED">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.c8c2f12d-2f64-42ad-b6db-f3bb54cbfe49">
+          <gml:timePosition>2018-06-01T22:25:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+    </VolcanicAshForecastConditions>
+  </forecast>
+  <remarks>HEIGHT BASED ON PILOT REPORT TO FL380, SAT IMAGERY AND CURRENT MOVEMENT. GROUND REPORT OF ERUPTION ESTIMATED TO FL300. FORECAST BASED ON SAT IMAGERY, SURABAYA 01/0000Z SOUNDING AND MODEL GUIDANCE.</remarks>
+  <nextAdvisoryTime>
+    <gml:TimeInstant gml:id="uuid.615d5c46-73f8-4b49-839b-bc4137b751ff">
+      <gml:timePosition indeterminatePosition="before">2018-06-01T05:25:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </nextAdvisoryTime>
+</VolcanicAshAdvisory>

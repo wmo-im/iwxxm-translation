@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.dee3bdf0-6858-4524-8383-52679e377c07">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.f6030bb4-e35f-4904-9eec-d1fa07326f61">
+      <gml:timePosition>2021-11-29T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.0e70a828-3a71-446e-bac1-d2659a029131">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.8f207503-b417-414b-8ffc-de9ce550dd9e">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>HALL BEACH AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>CYUX</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>YUX</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.6150c365-5e3f-469f-9c36-5f97b1eb242a">
+              <gml:pos>68.77610016 -81.2425</gml:pos>
+              <aixm:elevation uom="M">9</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.f6030bb4-e35f-4904-9eec-d1fa07326f61"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.bd4c8306-76ca-4271-a9bc-419c5c0c5952" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">-13</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-15</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1000.3</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">80</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">27</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">33</iwxxm:windGustSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">200</iwxxm:prevailingVisibility>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:rvr nilReason="http://codes.wmo.int/common/nil/missing" xsi:nil="true"/>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/-SN"/>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/BLSN"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:verticalVisibility uom="[ft_i]">100</iwxxm:verticalVisibility>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:METAR>
