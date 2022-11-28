@@ -106,7 +106,7 @@ FCST 1800Z VA CLD APRX N4200 E02145 – N4145 E02215 – N4100 E02215 - N4130 E0
                   <aixm:horizontalProjection>
                     <aixm:Surface gml:id="polygon-va-obs-position-YUDD-YYYYMM10T12Z1" uomLabels="deg deg" axisLabels="Lat Lon" srsDimension="2"
                       srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                      <gml:polygonPatches>
+                      <gml:patches>
                         <gml:PolygonPatch>
                           <gml:exterior>
                             <gml:LinearRing>
@@ -114,7 +114,7 @@ FCST 1800Z VA CLD APRX N4200 E02145 – N4145 E02215 – N4100 E02215 - N4130 E0
                             </gml:LinearRing>
                           </gml:exterior>
                         </gml:PolygonPatch>
-                      </gml:polygonPatches>
+                      </gml:patches>
                     </aixm:Surface>
                   </aixm:horizontalProjection>
                 </aixm:AirspaceVolume>
@@ -134,7 +134,7 @@ FCST 1800Z VA CLD APRX N4200 E02145 – N4145 E02215 – N4100 E02215 - N4130 E0
                   <aixm:horizontalProjection>
                     <aixm:Surface gml:id="polygon-va-obs-position-YUDD-YYYYMM10T12Z2" uomLabels="deg deg" axisLabels="Lat Lon" srsDimension="2"
                       srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                      <gml:polygonPatches>
+                      <gml:patches>
                         <gml:PolygonPatch>
                           <gml:exterior>
                             <gml:LinearRing>
@@ -142,7 +142,7 @@ FCST 1800Z VA CLD APRX N4200 E02145 – N4145 E02215 – N4100 E02215 - N4130 E0
                             </gml:LinearRing>
                           </gml:exterior>
                         </gml:PolygonPatch>
-                      </gml:polygonPatches>
+                      </gml:patches>
                     </aixm:Surface>
                   </aixm:horizontalProjection>
                 </aixm:AirspaceVolume>
@@ -175,7 +175,7 @@ FCST 1800Z VA CLD APRX N4200 E02145 – N4145 E02215 – N4100 E02215 - N4130 E0
                 <aixm:AirspaceVolume gml:id="av-va-fcst-position-YUDD-YYYYMM10T22Z1">
                   <aixm:horizontalProjection>
                     <aixm:Surface gml:id="polygon-va-fcst-position-YUDD-YYYYMM10T22Z1" uomLabels="deg deg" axisLabels="Lat Lon" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                      <gml:polygonPatches>
+                      <gml:patches>
                         <gml:PolygonPatch>
                           <gml:exterior>
                             <gml:LinearRing>
@@ -183,7 +183,7 @@ FCST 1800Z VA CLD APRX N4200 E02145 – N4145 E02215 – N4100 E02215 - N4130 E0
                             </gml:LinearRing>
                           </gml:exterior>
                         </gml:PolygonPatch>
-                      </gml:polygonPatches>
+                      </gml:patches>
                     </aixm:Surface>
                   </aixm:horizontalProjection>
                 </aixm:AirspaceVolume>
@@ -197,7 +197,7 @@ FCST 1800Z VA CLD APRX N4200 E02145 – N4145 E02215 – N4100 E02215 - N4130 E0
                 <aixm:AirspaceVolume gml:id="av-va-fcst-position-YUDD-YYYYMM10T22Z2">
                   <aixm:horizontalProjection>
                     <aixm:Surface gml:id="polygon-va-fcst-position-YUDD-YYYYMM10T22Z2" uomLabels="deg deg" axisLabels="Lat Lon" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                      <gml:polygonPatches>
+                      <gml:patches>
                         <gml:PolygonPatch>
                           <gml:exterior>
                             <gml:LinearRing>
@@ -205,7 +205,7 @@ FCST 1800Z VA CLD APRX N4200 E02145 – N4145 E02215 – N4100 E02215 - N4130 E0
                             </gml:LinearRing>
                           </gml:exterior>
                         </gml:PolygonPatch>
-                      </gml:polygonPatches>
+                      </gml:patches>
                     </aixm:Surface>
                   </aixm:horizontalProjection>
                 </aixm:AirspaceVolume>

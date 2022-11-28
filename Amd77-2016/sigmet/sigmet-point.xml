@@ -88,7 +88,7 @@ NZZC NEW ZEALAND FIR SEV TURB OBS AT 2123Z S4123 E17315 FL045 STNR NC=
        <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
        <aixm:horizontalProjection>
         <aixm:Surface gml:id="analysis-OBS-surface-0" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-         <gml:polygonPatches>
+         <gml:patches>
           <gml:PolygonPatch>
            <gml:exterior>
             <gml:Ring>
@@ -105,7 +105,7 @@ NZZC NEW ZEALAND FIR SEV TURB OBS AT 2123Z S4123 E17315 FL045 STNR NC=
             </gml:Ring>
            </gml:exterior>
           </gml:PolygonPatch>
-         </gml:polygonPatches>
+         </gml:patches>
         </aixm:Surface>
        </aixm:horizontalProjection>
       </aixm:AirspaceVolume>

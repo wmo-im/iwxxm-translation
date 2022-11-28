@@ -117,7 +117,7 @@ FCST AT 2200Z TC CENTRE PSN N2740 W07345
                               <aixm:upperLimitReference>STD</aixm:upperLimitReference>
                               <aixm:horizontalProjection>
                                   <aixm:Surface gml:id="tc-obs-N2706-sfc" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                                      <gml:polygonPatches>
+                                      <gml:patches>
                                           <gml:PolygonPatch>
                                               <gml:exterior>
                                                   <gml:Ring>
@@ -134,7 +134,7 @@ FCST AT 2200Z TC CENTRE PSN N2740 W07345
                                                   </gml:Ring>
                                               </gml:exterior>
                                           </gml:PolygonPatch>
-                                      </gml:polygonPatches>
+                                      </gml:patches>
                                   </aixm:Surface>
                               </aixm:horizontalProjection>
                           </aixm:AirspaceVolume>
@@ -176,7 +176,7 @@ FCST AT 2200Z TC CENTRE PSN N2740 W07345
                                 <aixm:AirspaceVolume gml:id="as2">
                                     <aixm:horizontalProjection>
                                         <aixm:Surface gml:id="sfc002" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                                            <gml:polygonPatches>
+                                            <gml:patches>
                                                 <gml:PolygonPatch>
                                                     <gml:exterior>
                                                         <gml:Ring>
@@ -193,7 +193,7 @@ FCST AT 2200Z TC CENTRE PSN N2740 W07345
                                                         </gml:Ring>
                                                     </gml:exterior>
                                                 </gml:PolygonPatch>
-                                            </gml:polygonPatches>
+                                            </gml:patches>
                                         </aixm:Surface>
                                     </aixm:horizontalProjection>
                                 </aixm:AirspaceVolume>
