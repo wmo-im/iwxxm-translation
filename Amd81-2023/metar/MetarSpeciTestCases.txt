@@ -1,0 +1,39 @@
+All METAR/SPECI IWXXM examples listed here have their root attribute "translatedBulletinID"
+set to "S[A|P]XX99XXXX260000". This is artifact of this set of observations used. In operational
+practice, and if a IWXXM METAR document was generated from the traditional alphanumeric code
+form of the METAR, "translatedBulletinID" should be set to the actual WMO AHL values.
+
+BGBW-282350Z.xml - Missing wind, no directional visibility
+BGGH-282350Z.xml - Wind speed exceeds measurement
+BGJN-282350Z.xml - Wind gust exceeds measurement
+BGTL-290039Z.xml - Missing temperatures
+BIAR-290000Z.xml - Variable wind direction, missing altimeter
+CWFD-290000Z.xml - Missing visibility, current weather, cloud layer and altimeter
+CYEK-290000Z.xml - Prevailing visibility exceeds measurement
+EDDH-282350Z.xml - Recent weather, TEMPO trend forecast 
+EDDH-290020Z.xml - No significant weather in TEMPO forecast
+EDDP-290020Z.xml - Trend forecast with BECMG
+EETN-290020Z.xml - NOSIG trend forecast
+EFHK-290020Z.xml - Multiple RVRs and tendencies, No significant cloud
+EHAK-282355Z.xml - Missing cloud types and missing state-of-the-sea
+EHJR-282355Z.xml - Missing visibility, present and recent weather and sky condition, state-of-the-sea
+EKCH-282350Z.xml - CAVOK, Runway conditions
+EKRK-290020Z.xml - Use of R99
+ENFB-280000Z.xml - Missing visibility, sea temperature;sea state provided
+ENFB-282350Z.xml - Missing visibility, sea temperature;wave height provided
+ESMS-290020Z.xml - Use of R88 - note: transliterated Ö to O in the airport name due to AIXM name constraints
+FALE-290006Z.xml - Variable wind, runway RVRs
+LCRA-282350Z.xml - Thunderstorm
+LTCN-282350Z.xml - Varible wind direction, trend no signficant weather - note: transliterated Ş to S in the airport name due to AIXM name constraints
+NTAA-290000Z.xml - Wind shear on runway
+NTAA-290015Z.xml - Wind shear on all runways
+SBBR-250000Z.xml - Missing amount and base on cumulonimbus cloud layer
+SCCH-250000Z.xml - Missing cloud amount and base on cloud layer from automated station - note: removal of ` due to AIXM name constraints
+UAAA-290000Z.xml - Runway cleared with friction report
+UBBB-290000Z.xml - Runway cleared with missing friction report
+URMT-290000Z.xml - Directional minimum visibility, horizontal visibility and surface state of runway, trend forecast
+USRR-290000Z.xml - Heavy snow
+USTR-290030Z.xml - Directional minimum visibility in heavy snow showers
+VTUO-290000Z.xml - Use of FM in trend forecast
+WSSS-290000Z.xml - Use of FM in trend forecast
+ZSPD-290000Z.xml - Use of TL in trend forecast

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<VolcanicAshAdvisory xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://icao.int/iwxxm/2023-1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" gml:id="uuid.af5d4f71-d407-45b2-8c19-e508e608342a">
+  <issueTime>
+    <gml:TimeInstant gml:id="uuid.0cd2b83e-c170-4a48-b729-7d5719f45434">
+      <gml:timePosition>2018-05-30T16:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </issueTime>
+  <issuingVolcanicAshAdvisoryCentre>
+    <Unit xmlns="http://www.aixm.aero/schema/5.1.1" gml:id="uuid.01d919af-dec2-4a10-9aef-753528424d54">
+      <timeSlice>
+        <UnitTimeSlice gml:id="uuid.89b91611-ba9e-4ccb-9a5f-c00ad9a04ea0">
+          <gml:validTime/>
+          <interpretation>SNAPSHOT</interpretation>
+          <name>BUENOS AIRES</name>
+          <type>OTHER:VAAC</type>
+        </UnitTimeSlice>
+      </timeSlice>
+    </Unit>
+  </issuingVolcanicAshAdvisoryCentre>
+  <volcano>
+    <EruptingVolcano xmlns="http://def.wmo.int/metce/2013" gml:id="uuid.32eeed6d-6579-4388-a1fc-8b86487805ed">
+      <name>NEVADO DE CHILLAN 357070</name>
+      <position>
+        <gml:Point axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2" gml:id="uuid.0132ccea-2d8e-40cb-985e-27eacae9a782">
+          <gml:pos>-36.850 -71.367</gml:pos>
+        </gml:Point>
+      </position>
+      <eruptionDate>2018-05-30T16:00:00Z</eruptionDate>
+    </EruptingVolcano>
+  </volcano>
+  <stateOrRegion>CHILE</stateOrRegion>
+  <summitElevation uom="[ft_i]">10538</summitElevation>
+  <advisoryNumber>2018/030</advisoryNumber>
+  <informationSource>GOES-E. GFS WINDS. VOLCANO WEB CAMERA.</informationSource>
+  <colourCode nilReason="http://codes.wmo.int/common/nil/withheld" xsi:nil="true"/>
+  <eruptionDetails>WEAK EMISSIONS OF STEAM AND PSBL VA</eruptionDetails>
+  <observation>
+    <VolcanicAshObservedOrEstimatedConditions status="NOT_IDENTIFIABLE" isEstimated="false" gml:id="uuid.7df13042-8f95-481b-89ae-83832152cf18">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.2012312d-16ee-4b47-a5ad-d2ee92196533">
+          <gml:timePosition>2018-05-30T15:15:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <wind>
+        <WindObservedOrEstimated gml:id="uuid.f549b6c7-531f-41c8-8b02-efc678af1961" variableWindDirection="false">
+          <verticalLayer>
+            <aixm:AirspaceLayer gml:id="uuid.c16afe21-c175-4a6a-9441-e9f9242f1996">
+              <aixm:upperLimit uom="FL">100</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit uom="FL">100</aixm:lowerLimit>
+              <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+            </aixm:AirspaceLayer>
+          </verticalLayer>
+          <windDirection uom="deg">310</windDirection>
+          <windSpeed uom="[kn_i]">15</windSpeed>
+        </WindObservedOrEstimated>
+      </wind>
+      <wind>
+        <WindObservedOrEstimated gml:id="uuid.460a8a98-bfe8-413d-b6b8-ecce103fbdb0" variableWindDirection="false">
+          <verticalLayer>
+            <aixm:AirspaceLayer gml:id="uuid.d84cc5d3-a9fd-4598-b6fd-f3fbfa8ecc5c">
+              <aixm:upperLimit uom="FL">140</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit uom="FL">140</aixm:lowerLimit>
+              <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+            </aixm:AirspaceLayer>
+          </verticalLayer>
+          <windDirection uom="deg">290</windDirection>
+          <windSpeed uom="[kn_i]">30</windSpeed>
+        </WindObservedOrEstimated>
+      </wind>
+      <wind>
+        <WindObservedOrEstimated gml:id="uuid.a8e208ac-0562-4392-99bf-ba5b143478f3" variableWindDirection="false">
+          <verticalLayer>
+            <aixm:AirspaceLayer gml:id="uuid.1d726b3a-b35c-49c5-ba80-bf58238a4383">
+              <aixm:upperLimit uom="FL">180</aixm:upperLimit>
+              <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+              <aixm:lowerLimit uom="FL">180</aixm:lowerLimit>
+              <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+            </aixm:AirspaceLayer>
+          </verticalLayer>
+          <windDirection uom="deg">280</windDirection>
+          <windSpeed uom="[kn_i]">35</windSpeed>
+        </WindObservedOrEstimated>
+      </wind>
+    </VolcanicAshObservedOrEstimatedConditions>
+  </observation>
+  <forecast>
+    <VolcanicAshForecastConditions gml:id="uuid.7eb9d787-9dcd-4cf3-baf5-ae6a9f810327" status="NOT_AVAILABLE">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.b1f1b30d-2a3b-4a67-95ec-f2f7bff5b840">
+          <gml:timePosition>2018-05-30T21:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+    </VolcanicAshForecastConditions>
+  </forecast>
+  <forecast>
+    <VolcanicAshForecastConditions gml:id="uuid.75becb50-d37b-482a-bbd1-7696ad4e6d2b" status="NOT_AVAILABLE">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.7700b522-a718-4c50-ae73-a02a4e3ef973">
+          <gml:timePosition>2018-05-31T03:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+    </VolcanicAshForecastConditions>
+  </forecast>
+  <forecast>
+    <VolcanicAshForecastConditions gml:id="uuid.cc6a508e-91a2-4f50-8fa3-e527b11a2a9a" status="NOT_AVAILABLE">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.5d381b13-8f18-4c1f-96a8-558d75bbc2c0">
+          <gml:timePosition>2018-05-31T09:30:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+    </VolcanicAshForecastConditions>
+  </forecast>
+  <remarks>WEBCAM SHOWS SPORADIC WEAK EMISSIONS OF WV AND GASES WITH PSBL ASH. VA IS NOT SEEN IN STLT IMAGERY. WILL KEEP MONITORING AND ISSUE AN ADVICE IF NECESARY. ...SMN</remarks>
+  <nextAdvisoryTime nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
+</VolcanicAshAdvisory>

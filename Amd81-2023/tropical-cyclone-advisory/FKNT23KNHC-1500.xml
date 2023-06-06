@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<TropicalCycloneAdvisory xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://icao.int/iwxxm/2023-1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" permissibleUsage="NON-OPERATIONAL" permissibleUsageReason="TEST" reportStatus="NORMAL" gml:id="uuid.fcec7568-2d8d-4dd5-87a4-34c63f390349">
+  <issueTime/>
+  <issuingTropicalCycloneAdvisoryCentre/>
+</TropicalCycloneAdvisory>

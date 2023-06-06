@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2023-1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" reportStatus="AMENDMENT" permissibleUsage="OPERATIONAL" gml:id="uuid.d7f66154-808d-49be-b347-d3f3325f3a63">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.713ce151-0036-4c96-8e55-6499177b7860">
+      <gml:timePosition>2023-05-13T12:51:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.2c3a4e3f-ff6e-4a98-a0a7-5462be502e92">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.559e1afc-09ed-43cb-98bd-bb45558d2c93">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>POS</aixm:designator>
+          <aixm:name>LIBERTADOR GRAL D JOSE DE SAN MARTIN AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>SARP</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>PSS</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.b9d4b2aa-f43a-480e-9aee-9f34729a450c">
+              <gml:pos>-27.3858 -55.9707</gml:pos>
+              <aixm:elevation uom="M">131</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:validPeriod>
+    <gml:TimePeriod gml:id="uuid.70f49929-e00d-4e88-9eec-5d52855f17de">
+      <gml:beginPosition>2023-05-13T13:00:00Z</gml:beginPosition>
+      <gml:endPosition>2023-05-14T12:00:00Z</gml:endPosition>
+    </gml:TimePeriod>
+  </iwxxm:validPeriod>
+  <iwxxm:baseForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="true" gml:id="uuid.40d70bda-9620-41cf-8e04-4588cb69dcfd">
+      <iwxxm:phenomenonTime xlink:href="#uuid.70f49929-e00d-4e88-9eec-5d52855f17de"/>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">50</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">5</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:temperature>
+        <iwxxm:AerodromeAirTemperatureForecast>
+          <iwxxm:maximumAirTemperature uom="Cel">28</iwxxm:maximumAirTemperature>
+          <iwxxm:maximumAirTemperatureTime>
+            <gml:TimeInstant gml:id="uuid.df604efa-00f0-4bfa-bc6b-d21331c9cdbe">
+              <gml:timePosition>2023-05-13T18:00:00Z</gml:timePosition>
+            </gml:TimeInstant>
+          </iwxxm:maximumAirTemperatureTime>
+          <iwxxm:minimumAirTemperature uom="Cel">15</iwxxm:minimumAirTemperature>
+          <iwxxm:minimumAirTemperatureTime>
+            <gml:TimeInstant gml:id="uuid.337ac75c-9ac0-4d6d-81b4-c4dc4f6fbf6a">
+              <gml:timePosition>2023-05-14T10:00:00Z</gml:timePosition>
+            </gml:TimeInstant>
+          </iwxxm:minimumAirTemperatureTime>
+        </iwxxm:AerodromeAirTemperatureForecast>
+      </iwxxm:temperature>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:baseForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="PROBABILITY_30" gml:id="uuid.3d53f025-9234-469d-a01b-01a386fe1e99">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.fa5ad6e4-c331-4a58-a25e-f851af4e22e7">
+          <gml:beginPosition>2023-05-14T07:00:00Z</gml:beginPosition>
+          <gml:endPosition>2023-05-14T11:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">5000</iwxxm:prevailingVisibility>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/BR"/>
+      <iwxxm:cloud nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+</iwxxm:TAF>
