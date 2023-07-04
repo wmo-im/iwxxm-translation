@@ -1,4 +1,4 @@
-![build](https://github.com/iwxxm-translation/actions/workflows/build.yml/badge.svg)
+![build](https://github.com/wmo-im/iwxxm-translation/actions/workflows/build.yml/badge.svg)
 
 # IWXXM Translation Suite
 A repository of examples of IWXXM and Traditional Alphanumeric Code (TAC) message pairs that are deemed to be equivalent. As a body these examples represent
