@@ -112,7 +112,7 @@ YUDD SHANLON FIR/UIR OBSC TS FCST S OF N54 AND E OF W012 TOP FL390 MOV E 20KT WK
                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
                           <aixm:horizontalProjection>
                             <aixm:Surface gml:id="sfc1" uomLabels="deg deg" axisLabels="Lat Lon" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                              <gml:polygonPatches>
+                              <gml:patches>
                                 <gml:PolygonPatch>
                                   <gml:exterior>
                                     <gml:LinearRing>
@@ -123,7 +123,7 @@ YUDD SHANLON FIR/UIR OBSC TS FCST S OF N54 AND E OF W012 TOP FL390 MOV E 20KT WK
                                     </gml:LinearRing>
                                   </gml:exterior>
                                 </gml:PolygonPatch>
-                              </gml:polygonPatches>
+                              </gml:patches>
                             </aixm:Surface>
                           </aixm:horizontalProjection>
                         </aixm:AirspaceVolume>

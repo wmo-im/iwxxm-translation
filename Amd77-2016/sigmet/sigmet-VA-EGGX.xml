@@ -106,7 +106,7 @@ EGGX SHANWICK OCEANIC FIR VA ERUPTION MT HEKLA PSN N6359 W01940 VA CLD OBS AT 16
                               axisLabels="Lat Lon"
                               srsDimension="2"
                               srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                              <gml:polygonPatches>
+                              <gml:patches>
                                 <gml:PolygonPatch>
                                   <gml:exterior>
                                     <gml:LinearRing>
@@ -120,7 +120,7 @@ EGGX SHANWICK OCEANIC FIR VA ERUPTION MT HEKLA PSN N6359 W01940 VA CLD OBS AT 16
                                     </gml:LinearRing>
                                   </gml:exterior>
                                 </gml:PolygonPatch>
-                              </gml:polygonPatches>
+                              </gml:patches>
                             </aixm:Surface>
                           </aixm:horizontalProjection>
                         </aixm:AirspaceVolume>
@@ -153,7 +153,7 @@ EGGX SHANWICK OCEANIC FIR VA ERUPTION MT HEKLA PSN N6359 W01940 VA CLD OBS AT 16
                                 <aixm:AirspaceVolume gml:id="av-va-fcst-position-EGGX-YYYYMM25T22Z">
                                     <aixm:horizontalProjection>
                                         <aixm:Surface gml:id="polygon-va-fcst-position-EGGX-YYYYMM25T22Z" uomLabels="deg deg" axisLabels="Lat Lon" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                                            <gml:polygonPatches>
+                                            <gml:patches>
                                                 <gml:PolygonPatch>
                                                     <gml:exterior>
                                                         <gml:LinearRing>
@@ -167,7 +167,7 @@ EGGX SHANWICK OCEANIC FIR VA ERUPTION MT HEKLA PSN N6359 W01940 VA CLD OBS AT 16
                                                         </gml:LinearRing>
                                                     </gml:exterior>
                                                 </gml:PolygonPatch>
-                                            </gml:polygonPatches>
+                                            </gml:patches>
                                         </aixm:Surface>
                                     </aixm:horizontalProjection>
                                 </aixm:AirspaceVolume>

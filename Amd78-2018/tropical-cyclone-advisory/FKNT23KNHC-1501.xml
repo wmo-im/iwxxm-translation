@@ -42,7 +42,7 @@
           <aixm:maximumLimit uom="FL">350</aixm:maximumLimit>
           <aixm:horizontalProjection>
             <aixm:Surface gml:id="uuid.aaede9f4-b233-4013-9f71-b92d1367ac8a" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
-              <gml:polygonPatches>
+              <gml:patches>
                 <gml:PolygonPatch>
                   <gml:exterior>
                     <gml:LinearRing>
@@ -50,7 +50,7 @@
                     </gml:LinearRing>
                   </gml:exterior>
                 </gml:PolygonPatch>
-              </gml:polygonPatches>
+              </gml:patches>
             </aixm:Surface>
           </aixm:horizontalProjection>
         </aixm:AirspaceVolume>
@@ -63,7 +63,7 @@
           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
           <aixm:horizontalProjection>
             <aixm:Surface gml:id="uuid.b6f21a5a-e46e-4c09-9854-066ecea4f24d" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
-              <gml:polygonPatches>
+              <gml:patches>
                 <gml:PolygonPatch>
                   <gml:exterior>
                     <gml:LinearRing>
@@ -71,7 +71,7 @@
                     </gml:LinearRing>
                   </gml:exterior>
                 </gml:PolygonPatch>
-              </gml:polygonPatches>
+              </gml:patches>
             </aixm:Surface>
           </aixm:horizontalProjection>
         </aixm:AirspaceVolume>

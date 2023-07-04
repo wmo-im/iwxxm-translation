@@ -109,7 +109,7 @@ OBS N OF S50 TOP ABV FL100 STNR WKN
                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
                           <aixm:horizontalProjection>
                             <aixm:Surface gml:id="obs-sfc" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
-                              <gml:polygonPatches>
+                              <gml:patches>
                                 <gml:PolygonPatch>
                                   <gml:exterior>
                                     <gml:LinearRing>
@@ -118,7 +118,7 @@ OBS N OF S50 TOP ABV FL100 STNR WKN
                                     </gml:LinearRing>
                                   </gml:exterior>
                                 </gml:PolygonPatch>
-                              </gml:polygonPatches>
+                              </gml:patches>
                             </aixm:Surface>
                           </aixm:horizontalProjection>
                         </aixm:AirspaceVolume>
