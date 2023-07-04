@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.da96ffc0-6bfe-4f6e-84bc-7e94cd609151">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.ded6e984-a7b5-4d0d-b705-769ec7351401">
+      <gml:timePosition>2021-11-29T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.189a94dc-cf77-40e5-a148-0020e9a1a9aa">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.77b3fd6a-e313-42bd-afec-e4d494d3e1a0">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>BRATSK AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>UIBB</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>BTK</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.19bc3e3b-1a7a-42a3-8f8d-c1158fc3a657">
+              <gml:pos>56.37060165 101.697998</gml:pos>
+              <aixm:elevation uom="M">491</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.ded6e984-a7b5-4d0d-b705-769ec7351401"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.ccf229dc-b19d-4ff4-b2e4-e0d59cbf8209" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">-1</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-7</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1018</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="true">
+          <iwxxm:meanWindDirection uom="deg">250</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="m/s">5</iwxxm:meanWindSpeed>
+          <iwxxm:extremeClockwiseWindDirection uom="deg">280</iwxxm:extremeClockwiseWindDirection>
+          <iwxxm:extremeCounterClockwiseWindDirection uom="deg">220</iwxxm:extremeCounterClockwiseWindDirection>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
+              <iwxxm:base uom="[ft_i]">3300</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:runwayState>
+        <iwxxm:AerodromeRunwayState allRunways="false">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.49386bbe-5f86-494d-8bdf-4ce4c3a9b9df">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.dfe62949-80cb-4aa5-8bbd-c63f9c4a7fc9">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>30</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/8"/>
+          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1"/>
+          <iwxxm:depthOfDeposit uom="mm">10</iwxxm:depthOfDeposit>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/50"/>
+        </iwxxm:AerodromeRunwayState>
+      </iwxxm:runwayState>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/noSignificantChange"/>
+</iwxxm:METAR>

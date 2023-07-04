@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2023-1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.1248aab1-5cb3-4dc2-8385-85e81e438bfa">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.fee9fc7a-e8b7-4b81-9ade-1c7bf5cba101">
+      <gml:timePosition>2023-05-29T00:20:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.0edf6dc8-ea0f-42b7-8322-f3e203821e2f">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.6888805f-4fe0-4028-baf0-a83c9f932d33">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>TALLINN AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>EETN</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>TLL</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.8783a8f7-f896-438a-9e6e-2d824ecd540c">
+              <gml:pos>59.41329956 24.83279991</gml:pos>
+              <aixm:elevation uom="M">40</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.fee9fc7a-e8b7-4b81-9ade-1c7bf5cba101"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.8c86f06d-90a8-4184-873c-2baff88d3cfe" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">-5</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-7</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1015</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">240</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">6</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
+              <iwxxm:base uom="[ft_i]">1900</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:runwayState>
+        <iwxxm:AerodromeRunwayState allRunways="false">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.5e141f8f-f724-4576-bc69-e2d1421cd7cf">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.5f841a0d-d946-445a-914e-4f0a338348f2">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>08</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/0"/>
+          <iwxxm:depthOfDeposit uom="N/A" xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/95"/>
+        </iwxxm:AerodromeRunwayState>
+      </iwxxm:runwayState>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/noSignificantChange"/>
+</iwxxm:SPECI>

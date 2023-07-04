@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.59f0a169-d8de-48ba-be41-774f1650a827">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.1476dbc6-891d-40e9-9bf9-9fd5f7a38736">
+      <gml:timePosition>2021-11-29T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.4092b952-41dd-4947-a9a5-8c0c0e21a51b">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.7772b771-4100-4866-ad52-c016bf4a0726">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>SHANGHAI PUDONG INTERNATIONAL AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>ZSPD</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>PVG</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.01a6fb6a-f28f-4419-ade6-8d6c5c4d1080">
+              <gml:pos>31.14340019 121.8050003</gml:pos>
+              <aixm:elevation uom="M">4</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.1476dbc6-891d-40e9-9bf9-9fd5f7a38736"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.f1f519fc-37ca-4ab0-a94c-583234089717" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">13</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">13</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1018</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">130</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="m/s">3</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">800</iwxxm:prevailingVisibility>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="MISSING_VALUE">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.87b2c27b-181d-4a0c-be74-6286aa49df8b">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.ff5fd53c-82b2-4ff1-989e-6591a117b3c9">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>17L</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">2000</iwxxm:meanRVR>
+          <iwxxm:meanRVROperator>ABOVE</iwxxm:meanRVROperator>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.1a2576b9-9b06-480b-8187-7d60dc57c891">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.729fab9a-74bb-4d9f-909d-ec86e8d2cbcd">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>16R</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">600</iwxxm:meanRVR>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="UPWARD">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.b956d27f-0c25-4120-b621-223b995c0744">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.6921410b-cdd4-41ce-8224-804fe6cc39c0">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>17R</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">1600</iwxxm:meanRVR>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="UPWARD">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.4e78e27d-6074-4831-ac1f-4b43e7e1dc2e">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.dc824fe9-9b3a-4e24-aa7e-bbca4e196b2c">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>16L</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">900</iwxxm:meanRVR>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/FG"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">200</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast>
+    <iwxxm:MeteorologicalAerodromeTrendForecast gml:id="uuid.aed942ad-18ac-4f54-94d1-1daa69b16404" changeIndicator="BECOMING" cloudAndVisibilityOK="false">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.79150fb3-a334-4559-b6c9-d935172a0104">
+          <gml:beginPosition indeterminatePosition="after">2021-11-29T00:00:00Z</gml:beginPosition>
+          <gml:endPosition>2021-11-29T01:30:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:timeIndicator>UNTIL</iwxxm:timeIndicator>
+      <iwxxm:prevailingVisibility uom="m">3000</iwxxm:prevailingVisibility>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/BR"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.718fcb40-c89d-490a-8cc9-1c2facb7154c">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
+              <iwxxm:base uom="[ft_i]">400</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">2000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeTrendForecast>
+  </iwxxm:trendForecast>
+</iwxxm:METAR>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" gml:id="uuid.6344d1e2-d9a6-4653-9ef9-732aab3c3f6d">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.b0fa22eb-b516-4422-8551-397d4f3e7eca">
+      <gml:timePosition>2021-11-29T00:39:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.d019fc1f-1283-4bfc-9b97-3c13af0da97e">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.8e6f0b19-fc7f-4ad4-a901-b29efe7116ff">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>THULE AIR BASE</aixm:name>
+          <aixm:locationIndicatorICAO>BGTL</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>THU</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.396ef782-fe93-4c6e-be1e-4bd54b78e24a">
+              <gml:pos>76.53119659 -68.70320129</gml:pos>
+              <aixm:elevation uom="M">77</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.b0fa22eb-b516-4422-8551-397d4f3e7eca"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.64027d6b-ac24-47ab-bb2e-7b84ae032eed" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:dewpointTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:qnh uom="hPa">1027.1</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">80</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">9</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">6000</iwxxm:prevailingVisibility>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/BR"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">1000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:SPECI>

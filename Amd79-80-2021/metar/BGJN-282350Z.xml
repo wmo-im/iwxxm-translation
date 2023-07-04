@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.73d9bb3d-c366-4be3-ae41-b144252c038c">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.2648e254-f7a5-4f89-9432-6a9eb0689391">
+      <gml:timePosition>2021-11-28T23:50:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.f3b8dfc1-5c8e-4410-93f0-8d6d89a2b13f">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.15443460-cf31-4098-900a-dc433cc00a45">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>ILULISSAT AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>BGJN</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>JAV</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.a91bbe5c-1e0e-45e6-8458-235845be8588">
+              <gml:pos>69.24320221 -51.05709839</gml:pos>
+              <aixm:elevation uom="M">29</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.2648e254-f7a5-4f89-9432-6a9eb0689391"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.90606fe9-f946-41e8-bed4-90f874245cb9" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">-19</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-26</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1024</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">140</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">35</iwxxm:meanWindSpeed>
+          <iwxxm:windGustSpeed uom="[kn_i]">50</iwxxm:windGustSpeed>
+          <iwxxm:windGustSpeedOperator>ABOVE</iwxxm:windGustSpeedOperator>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
+              <iwxxm:base uom="[ft_i]">18000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:SPECI>

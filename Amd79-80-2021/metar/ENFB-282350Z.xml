@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" gml:id="uuid.4ffdc835-c57e-4c42-b23f-9c2ac61f83ed">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.8b70a9de-4475-4984-8ffe-365f88fe5ccf">
+      <gml:timePosition>2021-11-28T23:50:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.e377f2dc-06eb-4941-9a68-40eb48d64879">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.4dfdf05c-9ee7-4ade-a822-6b1ef3a1c225">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:designator>FBU</aixm:designator>
+          <aixm:name>FORNEBU AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>ENFB</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>FBU</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.af74d4f2-6212-44b4-9b38-d3f44eb4e823">
+              <gml:pos>59.89580 10.6172</gml:pos>
+              <aixm:elevation uom="M">17</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.8b70a9de-4475-4984-8ffe-365f88fe5ccf"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.40ef79fd-d0d0-47d2-a2d6-ebf48ad78241" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">4</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-8</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1009</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">120</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">14</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
+              <iwxxm:base uom="[ft_i]">5200</iwxxm:base>
+              <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:seaCondition>
+        <iwxxm:AerodromeSeaCondition>
+          <iwxxm:seaSurfaceTemperature uom="N/A" nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+          <iwxxm:seaState xlink:href="http://codes.wmo.int/bufr4/codeflag/0-22-061/5"/>
+        </iwxxm:AerodromeSeaCondition>
+      </iwxxm:seaCondition>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:SPECI>

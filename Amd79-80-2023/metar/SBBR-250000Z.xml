@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2023-1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.459c0eb0-037b-4187-96de-0c309af9dfb9">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.c1ac09fc-05a2-4f8a-9b44-034f8a8b3239">
+      <gml:timePosition>2023-05-25T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.c58e3419-e543-4010-9a67-2ed068b98c4a">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.a56caa94-d050-4e52-b432-d03f2bbb75e8">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>PRESIDENTE JUSCELINO KUBISTSCHEK INTERNATIONAL AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>SBBR</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>BSB</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.eb9be908-c2fe-4c4c-9123-9dac6602eda5">
+              <gml:pos>-15.86916733 -47.92083359</gml:pos>
+              <aixm:elevation uom="M">1066</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.c1ac09fc-05a2-4f8a-9b44-034f8a8b3239"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.d3d5acf3-5a0c-4f15-a321-9be9670aaecb" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">20</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">19</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1017</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="true">
+          <iwxxm:meanWindDirection uom="deg">320</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">3</iwxxm:meanWindSpeed>
+          <iwxxm:extremeClockwiseWindDirection uom="deg">350</iwxxm:extremeClockwiseWindDirection>
+          <iwxxm:extremeCounterClockwiseWindDirection uom="deg">290</iwxxm:extremeCounterClockwiseWindDirection>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/VCTS"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/notObservable"/>
+              <iwxxm:base nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true" uom="N/A"/>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:METAR>

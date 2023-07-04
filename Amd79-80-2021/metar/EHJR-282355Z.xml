@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="true" permissibleUsage="OPERATIONAL" gml:id="uuid.b090cf3e-a024-4daa-90ad-3621619fb209">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.0a69d494-d993-454f-b47d-1bc243c033dc">
+      <gml:timePosition>2021-11-28T23:55:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.6eaf79fb-fad7-4596-8f02-5a1291df7860">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.11caf3d5-62e9-4a55-b8bc-37c7de0430d9">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>K13-A SEA</aixm:name>
+          <aixm:locationIndicatorICAO>EHJR</aixm:locationIndicatorICAO>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.ad060bc6-33af-4b14-9d2b-baebf14368f5">
+              <gml:pos>53.22 3.22</gml:pos>
+              <aixm:elevation uom="M">31</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.0a69d494-d993-454f-b47d-1bc243c033dc"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.062e83a5-c150-466b-a186-7f7ebe105d87" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">5</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">2</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1001</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">290</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">12</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:presentWeather nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/notDetectedByAutoSystem"/>
+              <iwxxm:base nilReason="http://codes.wmo.int/common/nil/notDetectedByAutoSystem" xsi:nil="true" uom="N/A"/>
+              <iwxxm:cloudType nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:recentWeather nilReason="http://codes.wmo.int/common/nil/notObservable" xsi:nil="true"/>
+      <iwxxm:seaCondition>
+        <iwxxm:AerodromeSeaCondition>
+          <iwxxm:seaSurfaceTemperature uom="Cel">6</iwxxm:seaSurfaceTemperature>
+          <iwxxm:significantWaveHeight uom="m">1.2</iwxxm:significantWaveHeight>
+        </iwxxm:AerodromeSeaCondition>
+      </iwxxm:seaCondition>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:SPECI>

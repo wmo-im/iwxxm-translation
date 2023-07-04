@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.eb0837de-059c-4bc9-9755-ef36b3ede884">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.0b73e72b-d40f-4238-9f3f-cf7ebcdf9adb">
+      <gml:timePosition>2021-11-28T23:50:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.b07f8487-ea33-455f-87d7-9b10de1cb39e">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.0c165978-b2f9-4905-b6f2-37c7cf4ede97">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>GODTHAAB / NUUK AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>BGGH</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>GOH</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.6fd700e4-86c6-42c9-b975-7a42c2571405">
+              <gml:pos>64.19090271 -51.67810059</gml:pos>
+              <aixm:elevation uom="M">86</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.0b73e72b-d40f-4238-9f3f-cf7ebcdf9adb"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.97648222-6b57-4822-a00b-07c009815635" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">-7</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-11</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1021</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">100</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">50</iwxxm:meanWindSpeed>
+          <iwxxm:meanWindSpeedOperator>ABOVE</iwxxm:meanWindSpeedOperator>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
+              <iwxxm:base uom="[ft_i]">11000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">13000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+</iwxxm:SPECI>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<TropicalCycloneAdvisory xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://icao.int/iwxxm/2021-2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" permissibleUsage="OPERATIONAL" reportStatus="NORMAL" gml:id="uuid.8eeeb6b0-8d98-472b-8d81-0c9be4cd00b3">
+  <issueTime>
+    <gml:TimeInstant gml:id="uuid.75a626f2-6457-4134-b26e-f9398049ff38">
+      <gml:timePosition>2021-07-23T15:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </issueTime>
+  <issuingTropicalCycloneAdvisoryCentre>
+    <aixm:Unit gml:id="uuid.a6321ff2-00ae-4fd2-853a-a50b98f1f003">
+      <aixm:timeSlice>
+        <aixm:UnitTimeSlice gml:id="uuid.282151c1-162a-40f9-98f7-f5ff477dd557">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:type>OTHER:TCAC</aixm:type>
+          <aixm:designator>KNHC</aixm:designator>
+        </aixm:UnitTimeSlice>
+      </aixm:timeSlice>
+    </aixm:Unit>
+  </issuingTropicalCycloneAdvisoryCentre>
+  <tropicalCycloneName>
+    <TropicalCyclone xmlns="http://def.wmo.int/metce/2013" gml:id="uuid.949d3491-a89e-4888-af83-c819e3a7e23d">
+      <name>THREE</name>
+    </TropicalCyclone>
+  </tropicalCycloneName>
+  <advisoryNumber>2021/004</advisoryNumber>
+  <observation>
+    <TropicalCycloneObservedConditions gml:id="uuid.b88b524b-239f-4f7b-97fb-c0143e63a951">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.46cc96ff-f686-404b-865c-ac36b5453212">
+          <gml:timePosition>2021-07-23T14:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition>
+        <gml:Point gml:id="uuid.597e1a7f-f9c8-44a1-abb8-5fe97bb87fde" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" srsDimension="2">
+          <gml:pos>29.000 -80.000</gml:pos>
+        </gml:Point>
+      </tropicalCyclonePosition>
+      <movement>MOVING</movement>
+      <movementDirection uom="deg">360</movementDirection>
+      <movementSpeed uom="[kn_i]">15</movementSpeed>
+      <intensityChange>WEAKEN</intensityChange>
+      <centralPressure uom="hPa">1014</centralPressure>
+      <maximumSurfaceWindSpeed uom="[kn_i]">30</maximumSurfaceWindSpeed>
+    </TropicalCycloneObservedConditions>
+  </observation>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.2cca7e15-652a-41ee-bd53-6c45d776e7f2">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.07f7921b-7ab5-4b7d-b6eb-ef294503601b">
+          <gml:timePosition>2021-07-23T21:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition nilReason="http://codes.wmo.int/common/nil/inapplicable" xsi:nil="true"/>
+      <maximumSurfaceWindSpeed uom="N/A" nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.b11a7700-8d77-4f73-9a88-24d4d06a285b">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.0d3df7ba-5b34-480b-9af0-5e93c90a3b87">
+          <gml:timePosition>2021-07-24T03:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition nilReason="http://codes.wmo.int/common/nil/inapplicable" xsi:nil="true"/>
+      <maximumSurfaceWindSpeed uom="N/A" nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.91de1def-5696-490f-ae2d-8e27d627949e">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.221a96bb-8fae-4e22-9319-c844f9082d99">
+          <gml:timePosition>2021-07-24T09:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition nilReason="http://codes.wmo.int/common/nil/inapplicable" xsi:nil="true"/>
+      <maximumSurfaceWindSpeed uom="N/A" nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <forecast>
+    <TropicalCycloneForecastConditions gml:id="uuid.9c0fdcdf-9fd7-4d5d-ad00-3672e2a6347b">
+      <phenomenonTime>
+        <gml:TimeInstant gml:id="uuid.5907a0c7-b873-40f2-b586-ecc54f47d6dc">
+          <gml:timePosition>2021-07-24T15:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </phenomenonTime>
+      <tropicalCyclonePosition nilReason="http://codes.wmo.int/common/nil/inapplicable" xsi:nil="true"/>
+      <maximumSurfaceWindSpeed uom="N/A" nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
+    </TropicalCycloneForecastConditions>
+  </forecast>
+  <remarks>THE FORECAST POSITION INFORMATION IN THIS PRODUCT IS INTERPOLATED FROM OFFICIAL FORECAST DATA VALID AT 0000... 0600...1200...AND 1800Z.</remarks>
+  <nextAdvisoryTime nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
+</TropicalCycloneAdvisory>

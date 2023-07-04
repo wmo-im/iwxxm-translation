@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2023-1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" reportStatus="CORRECTION" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.4e10f129-8438-42a1-8bdc-e3e9db4374f4">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.f38f4ebd-b60e-4dc9-8af4-0a24afa056e8">
+      <gml:timePosition>2023-05-29T00:20:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.48f27094-6fd9-44eb-9701-ba29f2263d59">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.89f99595-51ca-4423-a9d6-821709f3b1c0">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>HAMBURG AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>EDDH</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>HAM</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.f5e9046d-7e2d-4d44-a04b-90bdd8400a1b">
+              <gml:pos>53.63040161 9.988229752</gml:pos>
+              <aixm:elevation uom="M">16</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.f38f4ebd-b60e-4dc9-8af4-0a24afa056e8"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.a8123b89-5750-42c3-88b1-e1651d9689b0" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">0</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">0</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">996</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="true">
+          <iwxxm:meanWindSpeed uom="[kn_i]">2</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">1500</iwxxm:prevailingVisibility>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/SN"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
+              <iwxxm:base uom="[ft_i]">300</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">500</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast>
+    <iwxxm:MeteorologicalAerodromeTrendForecast gml:id="uuid.14669adb-e41b-4601-8b38-2e44832d1a39" changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false">
+      <iwxxm:phenomenonTime nilReason="http://codes.wmo.int/common/nil/missing"/>
+      <iwxxm:weather nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.22a1973b-ec78-4afa-95ac-e34c16666c64">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">400</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeTrendForecast>
+  </iwxxm:trendForecast>
+</iwxxm:SPECI>

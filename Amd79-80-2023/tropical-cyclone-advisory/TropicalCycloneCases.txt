@@ -1,0 +1,4 @@
+FKNT23KNHC-1500.xml - Abbreviated TEST message.
+FKNT23KNHC-1501.xml - EXERCISE message, multiple CB polygon groups, TOP BLW FLxxx, TOP FLxxx, NIL remark, no future messages.
+FKPQ30RJTD-1800.xml - CB circle with TOP ABV FLxxx, NIL remark.
+FKNT23KNHC-1458.xml - Weakening/dissipating TC, no CB group.

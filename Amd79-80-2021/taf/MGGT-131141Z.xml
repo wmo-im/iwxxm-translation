@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="CORRECTION" permissibleUsage="OPERATIONAL" gml:id="uuid.e4227653-2724-40a7-a7b0-29826ce573b4">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.2544b35a-de43-47ab-99fe-eaef57b5ff4f">
+      <gml:timePosition>2021-12-13T11:41:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.a955ced4-5769-4786-aa33-58425d065772">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.26158d1f-2185-4e11-a9b4-18521cb5dab7">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>LA AURORA AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>MGGT</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>GUA</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.b456ff4e-1827-47e5-b295-834bdd567ba2">
+              <gml:pos>14.58329964 -90.52749634</gml:pos>
+              <aixm:elevation uom="M">1509</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:validPeriod>
+    <gml:TimePeriod gml:id="uuid.2f3ffd70-578f-4322-9079-ea620cbcb38a">
+      <gml:beginPosition>2021-12-13T12:00:00Z</gml:beginPosition>
+      <gml:endPosition>2021-12-14T12:00:00Z</gml:endPosition>
+    </gml:TimePeriod>
+  </iwxxm:validPeriod>
+  <iwxxm:baseForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" gml:id="uuid.73a0c1a8-ebb6-4507-a03e-2c132d3a4160">
+      <iwxxm:phenomenonTime xlink:href="#uuid.2f3ffd70-578f-4322-9079-ea620cbcb38a"/>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">360</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">10</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.5c441b4a-41bd-43a4-996d-7696bde6b799">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
+              <iwxxm:base uom="[ft_i]">1600</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
+              <iwxxm:base uom="[ft_i]">8000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+      <iwxxm:temperature>
+        <iwxxm:AerodromeAirTemperatureForecast>
+          <iwxxm:maximumAirTemperature uom="Cel">26</iwxxm:maximumAirTemperature>
+          <iwxxm:maximumAirTemperatureTime>
+            <gml:TimeInstant gml:id="uuid.917458c4-10a0-4ffd-8483-6d983de4f97f">
+              <gml:timePosition>2021-12-13T20:00:00Z</gml:timePosition>
+            </gml:TimeInstant>
+          </iwxxm:maximumAirTemperatureTime>
+          <iwxxm:minimumAirTemperature uom="Cel">16</iwxxm:minimumAirTemperature>
+          <iwxxm:minimumAirTemperatureTime>
+            <gml:TimeInstant gml:id="uuid.715934fb-26f7-4f0f-9f1b-e333c7e9eb94">
+              <gml:timePosition>2021-12-13T12:00:00Z</gml:timePosition>
+            </gml:TimeInstant>
+          </iwxxm:minimumAirTemperatureTime>
+        </iwxxm:AerodromeAirTemperatureForecast>
+      </iwxxm:temperature>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:baseForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="BECOMING" gml:id="uuid.59baa2d4-cff0-4c6a-91e4-3cc347930f37">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.cb70f34d-482a-4464-baa2-913e372ae3d1">
+          <gml:beginPosition>2021-12-13T14:00:00Z</gml:beginPosition>
+          <gml:endPosition>2021-12-13T16:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">360</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">14</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.03df65a6-334b-4ef8-b652-5683d2e9722d">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
+              <iwxxm:base uom="[ft_i]">1800</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="TEMPORARY_FLUCTUATIONS" gml:id="uuid.aa2472d2-8c00-47c0-8166-de688f7ab413">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.849d3c35-cd2c-4464-af09-719d654d4360">
+          <gml:beginPosition>2021-12-13T20:00:00Z</gml:beginPosition>
+          <gml:endPosition>2021-12-14T06:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">8000</iwxxm:prevailingVisibility>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/TSRA"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.d992dfeb-c7ad-4e9d-a8cb-8fa433fbcb01">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
+              <iwxxm:base uom="[ft_i]">1800</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/TCU"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
+              <iwxxm:base uom="[ft_i]">2500</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/CB"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="BECOMING" gml:id="uuid.1b34beae-5223-4103-8d43-fb97350f8fb6">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.21ef8f19-28b3-4cf0-aa0b-2ed4d5f87bf4">
+          <gml:beginPosition>2021-12-14T01:00:00Z</gml:beginPosition>
+          <gml:endPosition>2021-12-14T03:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">360</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">10</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.42f41cce-84e3-4be5-a189-1e7ed7ac1cb3">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">1600</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="TEMPORARY_FLUCTUATIONS" gml:id="uuid.fb25f2f9-c52a-4af0-8815-9d49f206dd95">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.6819ac40-1ede-4462-bbd0-ab23020bf96d">
+          <gml:beginPosition>2021-12-14T06:00:00Z</gml:beginPosition>
+          <gml:endPosition>2021-12-14T12:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+      <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/RADZ"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.cbc6a430-95c3-476f-8a07-f5d3160abad9">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">8000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+</iwxxm:TAF>

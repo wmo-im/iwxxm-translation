@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<iwxxm:SPECI xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2023-1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.4a77920f-f9d1-4900-aa97-3770c2d8fb61">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.165af180-ac0b-4895-8ee4-9126d9896998">
+      <gml:timePosition>2023-05-29T00:20:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.962d4162-b730-4f53-bc68-aa3b5707a807">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.f9a582c2-1d6c-46ee-ad00-ece07a8e390a">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>HELSINKI VANTAA AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>EFHK</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>HEL</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.2eb2c412-a163-40e5-af64-9da10ba448bd">
+              <gml:pos>60.31719971 24.9633007</gml:pos>
+              <aixm:elevation uom="M">55</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.165af180-ac0b-4895-8ee4-9126d9896998"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.21d42b48-7f6f-455d-9f73-7a7e8743cdb1" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">-8</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">-9</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1015</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">320</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="[kn_i]">3</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">10000</iwxxm:prevailingVisibility>
+          <iwxxm:prevailingVisibilityOperator>ABOVE</iwxxm:prevailingVisibilityOperator>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.42dcb1b4-c6da-4e7e-9365-3adcb35a2db9">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.a27c9a14-9c19-48ef-bbcc-098cf3a73807">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>04R</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">800</iwxxm:meanRVR>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.f3dc79e3-24f8-4b77-9563-6e30086b6f80">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.33072ebf-f5c3-43ef-9cb3-1498a526988b">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>15</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">1500</iwxxm:meanRVR>
+          <iwxxm:meanRVROperator>ABOVE</iwxxm:meanRVROperator>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.ae79b9ea-bf38-4939-821b-d8762f37d03c">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.889f7ad4-bb82-41ba-bc04-3c775c12985e">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>22L</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">1500</iwxxm:meanRVR>
+          <iwxxm:meanRVROperator>ABOVE</iwxxm:meanRVROperator>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="NO_CHANGE">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.b1e59d5a-6661-40a9-86e8-2b858ad5d7b6">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.6c42cb58-1be6-4bca-96e0-4b87723c5dda">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>04L</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">1500</iwxxm:meanRVR>
+          <iwxxm:meanRVROperator>ABOVE</iwxxm:meanRVROperator>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/MIFG"/>
+      <iwxxm:cloud nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance" xsi:nil="true"/>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/noSignificantChange"/>
+</iwxxm:SPECI>

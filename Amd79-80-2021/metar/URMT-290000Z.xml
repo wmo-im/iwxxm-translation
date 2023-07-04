@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<iwxxm:METAR xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2021-2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2021-2 https://schemas.wmo.int/iwxxm/2021-2/iwxxm.xsd" reportStatus="NORMAL" automatedStation="false" permissibleUsage="OPERATIONAL" gml:id="uuid.4b1b16b1-b720-4d32-ada7-6792c63a819a">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.43b553d7-5c08-4374-88c6-a3542ca26b0f">
+      <gml:timePosition>2021-11-29T00:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.334d5bb8-301d-4734-8eac-8053d3353f11">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.581f6139-97d3-478d-aeaa-19c5dd69753d">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>STAVROPOL SHPAKOVSKOYE AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>URMT</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>STW</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.d759c0aa-944d-4ef0-9e7f-09816b0d56ed">
+              <gml:pos>45.10919952 42.1128006</gml:pos>
+              <aixm:elevation uom="M">453</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:observationTime xlink:href="#uuid.43b553d7-5c08-4374-88c6-a3542ca26b0f"/>
+  <iwxxm:observation>
+    <iwxxm:MeteorologicalAerodromeObservation gml:id="uuid.ed0de590-cd44-4272-850b-7dc616b5f192" cloudAndVisibilityOK="false">
+      <iwxxm:airTemperature uom="Cel">5</iwxxm:airTemperature>
+      <iwxxm:dewpointTemperature uom="Cel">5</iwxxm:dewpointTemperature>
+      <iwxxm:qnh uom="hPa">1010</iwxxm:qnh>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWind variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">90</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="m/s">6</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWind>
+      </iwxxm:surfaceWind>
+      <iwxxm:visibility>
+        <iwxxm:AerodromeHorizontalVisibility>
+          <iwxxm:prevailingVisibility uom="m">400</iwxxm:prevailingVisibility>
+          <iwxxm:minimumVisibility uom="m">350</iwxxm:minimumVisibility>
+          <iwxxm:minimumVisibilityDirection uom="deg">45</iwxxm:minimumVisibilityDirection>
+        </iwxxm:AerodromeHorizontalVisibility>
+      </iwxxm:visibility>
+      <iwxxm:rvr>
+        <iwxxm:AerodromeRunwayVisualRange pastTendency="DOWNWARD">
+          <iwxxm:runway>
+            <aixm:RunwayDirection gml:id="uuid.83c5926f-8245-4849-8b29-d4dd790997d6">
+              <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="uuid.9e34eb74-cb4e-4ca0-9977-793053cdc456">
+                  <gml:validTime/>
+                  <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+                  <aixm:designator>07</aixm:designator>
+                </aixm:RunwayDirectionTimeSlice>
+              </aixm:timeSlice>
+            </aixm:RunwayDirection>
+          </iwxxm:runway>
+          <iwxxm:meanRVR uom="m">1000</iwxxm:meanRVR>
+        </iwxxm:AerodromeRunwayVisualRange>
+      </iwxxm:rvr>
+      <iwxxm:presentWeather xlink:href="http://codes.wmo.int/306/4678/FG"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloud>
+          <iwxxm:verticalVisibility uom="[ft_i]">400</iwxxm:verticalVisibility>
+        </iwxxm:AerodromeCloud>
+      </iwxxm:cloud>
+      <iwxxm:runwayState>
+        <iwxxm:AerodromeRunwayState allRunways="false">
+          <iwxxm:runway xlink:href="#uuid.83c5926f-8245-4849-8b29-d4dd790997d6"/>
+          <iwxxm:depositType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-086/0"/>
+          <iwxxm:contamination xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-087/1"/>
+          <iwxxm:depthOfDeposit uom="mm">00</iwxxm:depthOfDeposit>
+          <iwxxm:estimatedSurfaceFrictionOrBrakingAction xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-089/70"/>
+        </iwxxm:AerodromeRunwayState>
+      </iwxxm:runwayState>
+    </iwxxm:MeteorologicalAerodromeObservation>
+  </iwxxm:observation>
+  <iwxxm:trendForecast>
+    <iwxxm:MeteorologicalAerodromeTrendForecast gml:id="uuid.2e2dab22-76f8-4a49-8737-345f49b394a5" changeIndicator="TEMPORARY_FLUCTUATIONS" cloudAndVisibilityOK="false">
+      <iwxxm:phenomenonTime nilReason="http://codes.wmo.int/common/nil/missing"/>
+      <iwxxm:prevailingVisibility uom="m">200</iwxxm:prevailingVisibility>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/FG"/>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.fdc9472a-937e-496e-9266-394670897e0e">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/OVC"/>
+              <iwxxm:base uom="[ft_i]">100</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeTrendForecast>
+  </iwxxm:trendForecast>
+</iwxxm:METAR>
