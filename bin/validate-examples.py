@@ -9,7 +9,7 @@ The main() is intended for use in a Continuous Integration process and as such r
 indicate validation failures.  The main() function reads the sub-directories under the LATEST_VERSION directory to get the
 IWXXM instances to validate.
 
-Written against Python 2.7
+Confirmed to run in Python 3.11
 """
 
 import sys, os
