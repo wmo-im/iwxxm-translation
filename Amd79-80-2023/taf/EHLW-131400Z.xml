@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2023-1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" reportStatus="NORMAL" isCancelReport="true" permissibleUsage="OPERATIONAL" gml:id="uuid.e1842c06-409a-4479-8b86-96c8e796a626">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.81548870-7eae-4d71-9e0d-a9a920ad84a0">
+      <gml:timePosition>2023-05-13T14:00:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.9d4677a4-a828-4fbb-9b7c-a7ce7aaff3fd">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.ab6f2e81-8a3c-4e03-81ac-8da0f1bc9747">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>LEEUWARDEN AIR BASE</aixm:name>
+          <aixm:locationIndicatorICAO>EHLW</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>LWR</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.f2c296fb-e004-4c7a-ac0f-ae9b490f115c">
+              <gml:pos>53.22859955 5.760560036</gml:pos>
+              <aixm:elevation uom="M">1</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:cancelledReportValidPeriod>
+    <gml:TimePeriod gml:id="uuid.6e1541eb-a5c0-4bd5-b321-bf96b1b90342">
+      <gml:beginPosition>2023-05-13T14:00:00Z</gml:beginPosition>
+      <gml:endPosition>2023-05-13T21:00:00Z</gml:endPosition>
+    </gml:TimePeriod>
+  </iwxxm:cancelledReportValidPeriod>
+</iwxxm:TAF>

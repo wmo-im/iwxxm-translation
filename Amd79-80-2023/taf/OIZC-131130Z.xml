@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<iwxxm:TAF xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns:iwxxm="http://icao.int/iwxxm/2023-1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://icao.int/iwxxm/2023-1 https://schemas.wmo.int/iwxxm/2023-1/iwxxm.xsd" reportStatus="NORMAL" permissibleUsage="OPERATIONAL" gml:id="uuid.e8c203ad-059c-4538-b1b8-29f51e266a0a">
+  <iwxxm:issueTime>
+    <gml:TimeInstant gml:id="uuid.6486045d-08dc-4740-a8cb-68ce333612a6">
+      <gml:timePosition>2023-05-13T11:30:00Z</gml:timePosition>
+    </gml:TimeInstant>
+  </iwxxm:issueTime>
+  <iwxxm:aerodrome>
+    <aixm:AirportHeliport gml:id="uuid.f1080ee2-89bc-4065-ae14-4a2ac259b7f5">
+      <aixm:timeSlice>
+        <aixm:AirportHeliportTimeSlice gml:id="uuid.bcdabba6-0680-46e5-9c6c-3dd20fc00c70">
+          <gml:validTime/>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>KONARAK AIRPORT</aixm:name>
+          <aixm:locationIndicatorICAO>OIZC</aixm:locationIndicatorICAO>
+          <aixm:designatorIATA>ZBR</aixm:designatorIATA>
+          <aixm:ARP>
+            <aixm:ElevatedPoint srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" gml:id="uuid.cb068dc4-c0db-439d-800c-61b33403ba6a">
+              <gml:pos>25.44330025 60.38209915</gml:pos>
+              <aixm:elevation uom="M">13</aixm:elevation>
+              <aixm:verticalDatum>EGM_96</aixm:verticalDatum>
+            </aixm:ElevatedPoint>
+          </aixm:ARP>
+        </aixm:AirportHeliportTimeSlice>
+      </aixm:timeSlice>
+    </aixm:AirportHeliport>
+  </iwxxm:aerodrome>
+  <iwxxm:validPeriod>
+    <gml:TimePeriod gml:id="uuid.752e548a-ce08-4fba-bb85-865fb0ab4be5">
+      <gml:beginPosition>2023-05-13T12:00:00Z</gml:beginPosition>
+      <gml:endPosition>2023-05-14T18:00:00Z</gml:endPosition>
+    </gml:TimePeriod>
+  </iwxxm:validPeriod>
+  <iwxxm:baseForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" gml:id="uuid.91ce7265-8ff5-417c-8c43-6bcdc2562ce5">
+      <iwxxm:phenomenonTime xlink:href="#uuid.752e548a-ce08-4fba-bb85-865fb0ab4be5"/>
+      <iwxxm:prevailingVisibility uom="m">4000</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">110</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="m/s">4</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/HZ"/>
+      <iwxxm:cloud nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:baseForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="TEMPORARY_FLUCTUATIONS" gml:id="uuid.f7ab5dc6-b61a-4e45-8dd6-0a34441d9399">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.62b0c983-18d4-4cb2-8682-c37816ca816e">
+          <gml:beginPosition>2023-05-13T12:00:00Z</gml:beginPosition>
+          <gml:endPosition>2023-05-13T17:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">4000</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">120</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="m/s">8</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:cloud>
+        <iwxxm:AerodromeCloudForecast gml:id="uuid.26f072c1-00fc-47ff-9f86-c34318654728">
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/FEW"/>
+              <iwxxm:base uom="[ft_i]">2000</iwxxm:base>
+              <iwxxm:cloudType xlink:href="http://codes.wmo.int/49-2/SigConvectiveCloudType/TCU"/>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/SCT"/>
+              <iwxxm:base uom="[ft_i]">2500</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+          <iwxxm:layer>
+            <iwxxm:CloudLayer>
+              <iwxxm:amount xlink:href="http://codes.wmo.int/49-2/CloudAmountReportedAtAerodrome/BKN"/>
+              <iwxxm:base uom="[ft_i]">7000</iwxxm:base>
+            </iwxxm:CloudLayer>
+          </iwxxm:layer>
+        </iwxxm:AerodromeCloudForecast>
+      </iwxxm:cloud>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="BECOMING" gml:id="uuid.d172d716-c459-41e5-8532-97d09aab387f">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.5da63869-9091-4f0b-8599-4b67b54eeef2">
+          <gml:beginPosition>2023-05-14T03:00:00Z</gml:beginPosition>
+          <gml:endPosition>2023-05-14T05:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">7000</iwxxm:prevailingVisibility>
+      <iwxxm:cloud nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+  <iwxxm:changeForecast>
+    <iwxxm:MeteorologicalAerodromeForecast cloudAndVisibilityOK="false" changeIndicator="TEMPORARY_FLUCTUATIONS" gml:id="uuid.4f3a1815-e68d-422f-ba6a-ba179d5b2616">
+      <iwxxm:phenomenonTime>
+        <gml:TimePeriod gml:id="uuid.eb050c15-7532-47d2-b6bb-b4b4313eab44">
+          <gml:beginPosition>2023-05-14T08:00:00Z</gml:beginPosition>
+          <gml:endPosition>2023-05-14T15:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </iwxxm:phenomenonTime>
+      <iwxxm:prevailingVisibility uom="m">4000</iwxxm:prevailingVisibility>
+      <iwxxm:surfaceWind>
+        <iwxxm:AerodromeSurfaceWindForecast variableWindDirection="false">
+          <iwxxm:meanWindDirection uom="deg">120</iwxxm:meanWindDirection>
+          <iwxxm:meanWindSpeed uom="m/s">9</iwxxm:meanWindSpeed>
+        </iwxxm:AerodromeSurfaceWindForecast>
+      </iwxxm:surfaceWind>
+      <iwxxm:weather xlink:href="http://codes.wmo.int/306/4678/SA"/>
+      <iwxxm:cloud nilReason="http://codes.wmo.int/common/nil/nothingOfOperationalSignificance"/>
+    </iwxxm:MeteorologicalAerodromeForecast>
+  </iwxxm:changeForecast>
+</iwxxm:TAF>
